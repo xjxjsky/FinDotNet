@@ -1,0 +1,9 @@
+.custom-text {
+    font-size: 24px; /* 调整字体大小，可以根据需要更改 */
+    font-weight: bold; /* 字体加粗 */
+    color: navy; /* 字体颜色设置为 navy */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    height: 100%; /* 确保父元素有高度 */
+  }

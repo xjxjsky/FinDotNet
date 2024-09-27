@@ -1,0 +1,32 @@
+{
+    "welcome": "Welcome",
+
+    "menu_search_stock": "Search Stock",
+    "tooltip_search_stock": "Search the Stocks you like!",
+ 
+    "menu_dashboard": "Dash Board",
+    "tooltip_dashboard": "DashBoard to what you want~",
+
+    "menu_real_alarm": "Real Alarm",
+    "tooltip_real_alarm": "RealAlarm to check my previous telecom industrial background~",
+
+    "menu_design_guide": "Design Guide",
+    "tooltip_design_guide": "This is showing what I've done for this app...",
+
+    "multi_fun_menu": "Multi Menu",
+    "multi_fun_menu_tip": "Multi Function Menu you can ckeck'em out!",
+
+    "menu_about": "About Jay",
+    "tooltip_about": "Tell u on myself...",
+
+    "login": "Login",
+    "signup": "Signup",
+    "logout": "Logout",
+    "language": "Language",
+    "submenu1": "Submenu 1",
+    "submenu2": "Submenu 2",
+    "submenu3": "Submenu 3",
+    "submenu2-1": "Submenu 2-1",
+    "submenu2-2": "Submenu 2-2"
+  }
+  

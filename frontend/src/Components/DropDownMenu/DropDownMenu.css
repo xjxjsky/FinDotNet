@@ -1,0 +1,52 @@
+.dropdown-content {
+  position: absolute;
+  left: 0; /* Align to the left */
+  top: 100%;
+  margin-top: 0.5rem; /* Adjust the spacing between button and dropdown */
+  background-color: rgba(55, 65, 81, 0.95); /* Dark gray background */
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  min-width: 12rem; /* Ensure dropdown is wide enough */
+  z-index: 50; /* Ensure dropdown is above other elements */
+}
+
+/* Show dropdown when hovering over the group or when the dropdown is open */
+.group:hover > .dropdown-content,
+.dropdown-content.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown menu items */
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1.5rem; /* Ensure consistent padding */
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0; /* Remove any margin to ensure left alignment */
+}
+
+/* Add nested dropdown styles */
+.dropdown-content .dropdown-content {
+  position: absolute; /* Ensure nested dropdowns are positioned absolutely */
+  left: 100%; /* Align to the right of the parent dropdown */
+  top: 0; /* Align to the top of the parent dropdown */
+  margin-top: 0; /* No vertical margin */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0;
+  min-width: 12rem; /* Ensure nested dropdown is wide enough */
+}
+
+/* Show nested dropdown when hovering over the parent item */
+.dropdown-content .group:hover > .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

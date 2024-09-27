@@ -1,0 +1,10 @@
+.custom-text {
+    font-size: 1.5rem;
+    font-weight: normal; /* 确保字体不加粗 */
+    color: #ffffff; /* 文本颜色 */
+  }
+  
+.tooltip-content {
+    /* 确保 Tooltip 样式在此文件中定义 */
+  }
+  

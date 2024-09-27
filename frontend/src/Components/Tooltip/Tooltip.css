@@ -1,0 +1,19 @@
+.tooltip-content {
+    position: relative;
+    padding: 8px;
+    background-color: rgba(75, 75, 75, 0.75);
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  
+  .tooltip-arrow {
+    content: "";
+    position: absolute;
+    top: 50%; /* 放置在提示框的中间 */
+    left: -6px; /* 箭头在提示框左侧 */
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent gray transparent transparent; /* 左侧为灰色，其他透明 */
+  }
+  

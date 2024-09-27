@@ -1,0 +1,42 @@
+--City
+INSERT INTO dbo.T_City (City_Code, CityName) VALUES ('City001', 'Sydney');
+INSERT INTO dbo.T_City (City_Code, CityName) VALUES ('City002', 'Melbourne');
+INSERT INTO dbo.T_City (City_Code, CityName) VALUES ('City003', 'Brisbane');
+INSERT INTO dbo.T_City (City_Code, CityName) VALUES ('City004', 'Perth');
+INSERT INTO dbo.T_City (City_Code, CityName) VALUES ('City005', 'Adelaide');
+INSERT INTO dbo.T_City (City_Code, CityName) VALUES ('City006', 'Canberra');
+INSERT INTO dbo.T_City (City_Code, CityName) VALUES ('City007', 'Hobart');
+INSERT INTO dbo.T_City (City_Code, CityName) VALUES ('City008', 'Darwin');
+
+
+--小区
+INSERT INTO dbo.T_Cell (Cell_Id, CellName, City_Code) VALUES ('C001', 'Cell A', 'City001');
+INSERT INTO dbo.T_Cell (Cell_Id, CellName, City_Code) VALUES ('C002', 'Cell B', 'City002');
+INSERT INTO dbo.T_Cell (Cell_Id, CellName, City_Code) VALUES ('C003', 'Cell C', 'City003');
+INSERT INTO dbo.T_Cell (Cell_Id, CellName, City_Code) VALUES ('C004', 'Cell D', 'City004');
+INSERT INTO dbo.T_Cell (Cell_Id, CellName, City_Code) VALUES ('C005', 'Cell E', 'City005');
+INSERT INTO dbo.T_Cell (Cell_Id, CellName, City_Code) VALUES ('C006', 'Cell F', 'City006');
+INSERT INTO dbo.T_Cell (Cell_Id, CellName, City_Code) VALUES ('C007', 'Cell G', 'City007');
+INSERT INTO dbo.T_Cell (Cell_Id, CellName, City_Code) VALUES ('C008', 'Cell H', 'City008');
+
+
+
+-- 插入 T_BaseStation 表的数据
+INSERT INTO [dbo].[T_BaseStation] ([BaseStation_Id], [BaseStationName], [Cell_Id]) VALUES ('BS001', 'Base Station 1', 'C001');
+INSERT INTO [dbo].[T_BaseStation] ([BaseStation_Id], [BaseStationName], [Cell_Id]) VALUES ('BS002', 'Base Station 2', 'C002');
+
+-- 插入 T_AlarmType 表的数据
+INSERT INTO [dbo].[T_AlarmType] ([AlarmType_Code], [AlarmName]) VALUES ('AT001', 'Fire Alarm');
+INSERT INTO [dbo].[T_AlarmType] ([AlarmType_Code], [AlarmName]) VALUES ('AT002', 'Burglar Alarm');
+
+-- 插入 T_RealAlarm 表的数据
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:00:00', '1234567890', 'John Doe', 'Company A', 0, 'BS001', 'AT001');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:05:00', '0987654321', 'Jane Smith', 'Company B', 1, 'BS002', 'AT002');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:10:00', '1122334455', 'Alice Johnson', 'Company C', 0, 'BS001', 'AT001');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:15:00', '5566778899', 'Bob Brown', 'Company D', 1, 'BS002', 'AT002');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:20:00', '6677889900', 'Charlie Davis', 'Company E', 0, 'BS001', 'AT001');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:25:00', '7788990011', 'Diana Evans', 'Company F', 1, 'BS002', 'AT002');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:30:00', '8899001122', 'Eve Foster', 'Company G', 0, 'BS001', 'AT001');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:35:00', '9900112233', 'Frank Green', 'Company H', 1, 'BS002', 'AT002');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:40:00', '1010101010', 'Grace Hall', 'Company I', 0, 'BS001', 'AT001');
+INSERT INTO [dbo].[T_RealAlarm] ([HappenTime], [PhoneNumber], [OpertionerName], [CompanyName], [FixOrNot], [BaseStation_Id], [AlarmType_Code]) VALUES ('2024-09-24 12:45:00', '2020202020', 'Henry King', 'Company J', 1, 'BS002', 'AT002');

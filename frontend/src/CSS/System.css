@@ -1,0 +1,7 @@
+.link-no-click {
+    cursor: default; /* 设置为默认的箭头样式 */
+  }
+  
+  .link-no-click:hover {
+    cursor: default; /* 在悬停时保持默认的箭头样式 */
+  }
