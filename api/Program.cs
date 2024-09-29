@@ -26,7 +26,6 @@ builder.Services.AddCors(options =>
 });
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -143,6 +142,5 @@ app.UseAuthorization();
 app.MapControllers(); //if you dont do this, swagger will not go to work.
 
 app.Run();
-
 
 /*builder.Services 用于注册应用程序的服务。例如，AddDbContext 用于注册数据库上下文，AddScoped 用于注册自定义服务接口的实现。*/
