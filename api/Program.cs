@@ -13,6 +13,18 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 //builder.WebHost.UseUrls("http://localhost:5177");
 
+// 添加 CORS 服务
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy.WithOrigins("https://findotnet-frontend.azurestaticwebapps.net")  // 替换为你的前端 Static Web Apps URL
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -105,6 +117,9 @@ builder.Services.AddHttpClient<IFMPService, FMPService>();
 builder.Services.AddScoped<IAlarmRepository, AlarmRepository>();
 
 var app = builder.Build();
+
+// 使用 CORS
+app.UseCors("AllowFrontend");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
