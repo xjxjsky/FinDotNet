@@ -1,0 +1,120 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'  # 根据你的项目使用的 .NET 版本
+
+      - name: Restore dependencies
+        working-directory: ./api  # 替换为后端项目的路径
+        run: dotnet restore
+
+      - name: Build backend
+        working-directory: ./api
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Run backend tests
+        working-directory: ./api
+        run: dotnet test --no-build --verbosity normal
+
+      - name: Publish backend
+        working-directory: ./api
+        run: dotnet publish --configuration Release --output ./publish
+
+      - name: Upload backend artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: backend
+          path: ./api/publish
+
+  deploy-backend:
+    needs: build-and-test-backend
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - name: Download backend artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: backend
+          path: ./publish
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy to Azure WebApp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: findotnet-backend  # 替换为你的后端 App Service 名称
+          slot-name: production         # 直接部署到生产槽
+          publish-profile: ${{ secrets.AZURE_CREDENTIALS }}  # 使用服务主体进行身份验证
+          package: ./publish
+
+  build-and-test-frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # 根据你的项目使用的 Node.js 版本
+
+      - name: Install dependencies
+        working-directory: ./front  # 替换为前端项目的路径
+        run: npm install
+
+      - name: Run frontend tests
+        working-directory: ./front
+        run: npm test -- --ci --reporters=default --coverage
+
+      - name: Build frontend
+        working-directory: ./front
+        run: npm run build
+
+      - name: Upload frontend artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: frontend
+          path: ./front/build
+
+  deploy-frontend:
+    needs: build-and-test-frontend
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - name: Download frontend artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: frontend
+          path: ./build
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}  # 只需使用默认的 GITHUB_TOKEN
+          action: "upload"
+          app_location: "/front"        # 前端代码所在目录
+          output_location: "build"      # 构建输出目录
