@@ -34,8 +34,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
-  }
-  ,
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -56,6 +55,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-class-properties": "^7.25.4",
     "@craco/craco": "^7.1.0",
     "@types/react-i18next": "^8.1.0",
     "@types/uuid": "^10.0.0",

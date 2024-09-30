@@ -78,7 +78,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'  # 根据你的项目使用的 Node.js 版本
+          node-version: '21'  # 根据你的项目使用的 Node.js 版本
 
       - name: Install dependencies
         working-directory: ./frontend  # 替换为前端项目的路径
