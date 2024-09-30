@@ -19,7 +19,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.x'  # 根据你的项目使用的 .NET 版本
+          dotnet-version: '8.0.x'  # 根据你的项目使用的 .NET 版本
 
       - name: Restore dependencies
         working-directory: ./api  # 替换为后端项目的路径
@@ -78,7 +78,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # 根据你的项目使用的 Node.js 版本
+          node-version: '21'  # 根据你的项目使用的 Node.js 版本
 
       - name: Install dependencies
         working-directory: ./front  # 替换为前端项目的路径
