@@ -81,22 +81,22 @@ jobs:
           node-version: '21'  # 根据你的项目使用的 Node.js 版本
 
       - name: Install dependencies
-        working-directory: ./front  # 替换为前端项目的路径
+        working-directory: ./frontend  # 替换为前端项目的路径
         run: npm install
 
       - name: Run frontend tests
-        working-directory: ./front
+        working-directory: ./frontend
         run: npm test -- --ci --reporters=default --coverage
 
       - name: Build frontend
-        working-directory: ./front
+        working-directory: ./frontend
         run: npm run build
 
       - name: Upload frontend artifact
         uses: actions/upload-artifact@v3
         with:
           name: frontend
-          path: ./front/build
+          path: ./frontend/build
 
   deploy-frontend:
     needs: build-and-test-frontend
