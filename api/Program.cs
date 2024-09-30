@@ -69,7 +69,6 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-
 /*register Identity service related*/
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 {
