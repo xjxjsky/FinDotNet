@@ -30,7 +30,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
+    "test": "jest --ci --reporters=default --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
