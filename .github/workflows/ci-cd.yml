@@ -123,5 +123,5 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}  # 只需使用默认的 GITHUB_TOKEN
           action: "upload"
-          app_location: "frontend"        # 指向前端代码所在目录，不带斜杠
+          app_location: "./frontend"        # 指向前端代码所在目录，不带斜杠
           output_location: "build"      # 构建输出目录
