@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6", // 从 es5 升级到 es6
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -13,12 +13,13 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "commonjs", // 从 esnext 改为 commonjs
+    "module": "commonjs", // 修改为 CommonJS
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["react", "react-dom"] // 确保添加了类型定义
   },
   "include": [
     "src"
