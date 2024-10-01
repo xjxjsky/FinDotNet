@@ -3,7 +3,7 @@ import "./Card.css";
 import { CompanySearch } from "../../company";
 import AddPortfolio from "../Portfolio/AddPortfolio/AddPortfolio";
 import { Link } from "react-router-dom";
-import { symbolName } from "typescript";
+//import { symbolName } from "typescript";
 
 interface Props {
   id: string;

@@ -85,7 +85,7 @@ const BalanceSheet = (props: Props) => {
       setBalanceSheet(value?.data[0]);
     };
     getData();
-  },[]);
+  },[ticker]);  // 在jest ci过程中没通过， 确保将 'ticker' 添加到依赖数组中
   return (
     <>
       {balanceSheet ? (

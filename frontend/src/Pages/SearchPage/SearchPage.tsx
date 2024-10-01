@@ -1,7 +1,7 @@
 import { useState, SyntheticEvent, useEffect } from "react";
 import { CompanySearch } from "../../company";
 import { searchCompanies } from "../../api";
-import Navbar from "../../Components/Navbar/Navbar";
+//import Navbar from "../../Components/Navbar/Navbar";
 import Search from "../../Components/Search/Search";
 import ListPortfolio from "../../Components/Portfolio/ListPortfolio/ListPortfolio";
 import CardList from "../../Components/CardList/CardList";
@@ -81,7 +81,7 @@ const SearchPage = (props: Props) => {
     e.preventDefault();
 
     portfolioDeleteAPI(e.target[0].value).then((res) => {
-      if (res?.status == 200) {
+      if (res?.status === 200) {                        // Expected '===' and instead saw '=='  eqeqeq
         toast.success("Stock deleted from portfolio!");
         getPortfolio();
       }
