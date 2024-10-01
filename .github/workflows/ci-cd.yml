@@ -64,13 +64,12 @@ jobs:
         with:
           app-name: findotnet-backend  # 替换为你的后端 App Service 名称
           slot-name: production         # 直接部署到生产槽
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}  # 使用服务主体进行身份验证
-          package: ./publish
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}  # 使用发布配置文件
 
   build-and-test-frontend:
     runs-on: ubuntu-latest
     env:
-      CI: false  # 设置环境变量以忽略CI中的警告错误, 让前端build通过
+      CI: false  # 设置环境变量以忽略 CI 中的警告错误, 让前端 build 通过
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -123,4 +122,4 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}  # 使用默认的 GITHUB_TOKEN
           action: "upload"
           app_location: "frontend"        # 指向前端代码所在目录，不带斜杠
-          output_location: "build"        # 构建输出目录
+          output_location: "build"        # 指向构建输出目录
