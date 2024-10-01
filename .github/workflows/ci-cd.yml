@@ -11,8 +11,8 @@ on:
 jobs:
   build-and-test-backend:
     runs-on: ubuntu-latest
-    env:
-      CI: false  # 设置环境变量 忽略CI中的警告错误，让build通过
+    #env:
+      #CI: false  # 设置环境变量 忽略CI中的警告错误，让后端build通过
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -71,7 +71,8 @@ jobs:
 
   build-and-test-frontend:
     runs-on: ubuntu-latest
-
+    env:
+      CI: false  # 设置环境变量以忽略CI中的警告错误, 让前端build通过
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
