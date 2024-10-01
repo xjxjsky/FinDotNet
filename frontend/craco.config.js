@@ -24,5 +24,17 @@ module.exports = {
         },
       },
     },
+
+    eslint: {
+      enable: true,
+      mode: "file", // 或 "parallel"
+      configure: {
+        rules: {
+          "react-hooks/exhaustive-deps": "warn",
+          "@typescript-eslint/no-unused-vars": "warn",
+          "jsx-a11y/anchor-is-valid": "warn",
+        },
+      },
+    },
   };
   
