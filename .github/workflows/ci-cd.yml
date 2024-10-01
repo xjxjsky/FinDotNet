@@ -94,11 +94,17 @@ jobs:
         working-directory: ./frontend
         run: npm run build
 
+      - name: List build output
+        run: ls -al ./frontend/build  # 确保这里的路径正确 添加一个日志以列出构建输出
+
       - name: Upload frontend artifact
         uses: actions/upload-artifact@v3
         with:
           name: frontend
-          path: ./frontend/build
+          path: ./frontend/build   # 确保这里的路径是构建输出的路径
+
+
+
 
   deploy-frontend:
     needs: build-and-test-frontend
@@ -118,5 +124,5 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}  # 只需使用默认的 GITHUB_TOKEN
           action: "upload"
-          app_location: "/frontend"        # 前端代码所在目录
+          app_location: "frontend"        # 指向前端代码所在目录，不带斜杠
           output_location: "build"      # 构建输出目录
