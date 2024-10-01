@@ -11,8 +11,6 @@ on:
 jobs:
   build-and-test-backend:
     runs-on: ubuntu-latest
-    #env:
-      #CI: false  # 设置环境变量 忽略CI中的警告错误，让后端build通过
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -103,25 +101,26 @@ jobs:
           name: frontend
           path: ./frontend/build   # 确保这里的路径是构建输出的路径
 
-
-
   deploy-frontend:
     needs: build-and-test-frontend
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
     steps:
-      - name: Download frontend artifact
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Download frontend build artifact
         uses: actions/download-artifact@v3
         with:
           name: frontend
-          path: ./build
+          path: ./frontend/build  # 将构建产物下载到 frontend/build 目录
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}  # 只需使用默认的 GITHUB_TOKEN
+          repo_token: ${{ secrets.GITHUB_TOKEN }}  # 使用默认的 GITHUB_TOKEN
           action: "upload"
-          app_location: "./FinDotNet/frontend"        # 更新为相对路径
-          output_location: "build"      # 构建输出目录
+          app_location: "frontend"        # 指向前端代码所在目录，不带斜杠
+          output_location: "build"        # 构建输出目录
