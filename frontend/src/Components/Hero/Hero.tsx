@@ -14,9 +14,11 @@ const Hero = (props: Props) => {
           </h1>
           <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
             Retrieving relevant financial & Telcom Alarm information from my website without fear-mongering or fake news!
-            欢迎来到ZTE Alarm 业务模块！This App is still under construction, it should take some time to light up!
-            Thank you.
           </p>
+          <p>欢迎来到ZTE Alarm 业务模块！
+            This App is still under construction, it should take some time to light up!
+            Thank you.
+          </p><br/>
           <div className="mx-auto lg:mx-0">
             <Link
               to="/search"
