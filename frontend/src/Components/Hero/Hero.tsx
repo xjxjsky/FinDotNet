@@ -13,8 +13,8 @@ const Hero = (props: Props) => {
             Financial data with your dream.
           </h1>
           <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
-            Search relevant financial documents without fear mongering and fake
-            news.
+            Search relevant financial infomations without fear mongering and fake
+            news from my website!
           </p>
           <div className="mx-auto lg:mx-0">
             <Link
