@@ -10,10 +10,10 @@ const Hero = (props: Props) => {
       <div className="container flex flex-col-reverse mx-auto p-8 lg:flex-row">
         <div className="flex flex-col space-y-10 mb-44 m-10 lg:m-10 xl:m-20 lg:mt-16 lg:w-full xl:mb-52">
           <h1 className="text-5xl font-bold text-center lg:text-6xl lg:max-w-4xl xl:max-w-5xl lg:text-left leading-tight">
-           Financial & Telcomm data with your dream.
+           Financial & Telecomm data with your dream.
           </h1>
           <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
-            Retrieving relevant financial & Telcom Alarm information from my website without fear-mongering or fake news!
+            Retrieving relevant Financial & Telcom Alarm information from my website without fear-mongering or fake news!
           </p>
           <p>欢迎来到ZTE Alarm 业务模块！<br/>
              This app is still under construction. It will take some time to be fully operational. Thank you.

@@ -34,23 +34,22 @@ const CompanyPage = (props: Props) => {
     <>
       {company ? (
         <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-hidden">
-        <Sidebar links={companyLinks} title="Company Dashboard"/>
-        <CompanyDashboard ticker={ticker!}>
-          <Tile title="Company Name" subTitle={company.companyName}/>
-          <Tile title="Price" subTitle={"$" + company.price.toString()}/>
-          <Tile title="DCF" subTitle={"$" + company.dcf.toString()}/>
-          <Tile title="Sector" subTitle={company.sector}/>
-         
-          <CompFinder ticker={company.symbol} />
-          <TenKFinder ticker={company.symbol}/>
-          <p className="bg-white shadow rounded text-medium text-gray-900 p-3 m-4">
-            {company.description}
-          </p>
-        </CompanyDashboard>
+          <Sidebar links={companyLinks} title="Company Dashboard" />
+          <CompanyDashboard ticker={ticker!}>
+            <Tile title="Company Name" subTitle={company.companyName} />
+            <Tile title="Price" subTitle={"$" + company.price.toString()} />
+            <Tile title="DCF" subTitle={"$" + company.dcf.toString()} />
+            <Tile title="Sector" subTitle={company.sector} />
 
+            <CompFinder ticker={company.symbol} />
+            <TenKFinder ticker={company.symbol} />
+            <p className="bg-white shadow rounded text-medium text-gray-900 p-3 m-4">
+              {company.description}
+            </p>
+          </CompanyDashboard>
         </div>
       ) : (
-        <Spinner/>
+        <Spinner />
       )}
     </>
   );
