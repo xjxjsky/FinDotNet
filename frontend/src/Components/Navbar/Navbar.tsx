@@ -7,7 +7,7 @@ import DropDownMenu from "../DropDownMenu/DropDownMenu";
 import { useTranslation } from "react-i18next"; // 引入 i18next
 import { FaGlobe } from "react-icons/fa"; // 导入图标库显示地球图标
 import { IoMdArrowDropdown } from "react-icons/io"; // 导入下拉箭头图标
-import { MdLanguage } from "react-icons/md"; // 导入语言图标
+//import { MdLanguage } from "react-icons/md"; // 导入语言图标
 
 interface Props {}
 

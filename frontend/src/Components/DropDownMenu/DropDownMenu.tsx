@@ -1,7 +1,7 @@
 // src/Components/DropDownMenu/DropDownMenu.tsx
 import React from "react";
 import "./DropDownMenu.css"; // 确保路径和文件名正确
-import { useTranslation } from "react-i18next"; // 引入 i18next
+//import { useTranslation } from "react-i18next"; // 引入 i18next
 
 interface DropDownMenuProps {
   title: string;

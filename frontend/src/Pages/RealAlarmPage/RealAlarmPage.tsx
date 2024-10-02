@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+//import { useParams } from "react-router";
 import Sidebar from "../../Components/Siderbar/Sidebar";
 import Spinner from "../../Components/Spinner/Spinner";
 import { realAlarmDataGetAPI } from "../../Services/AlarmService";
 import RealAlarmDashBoard from "../../Components/Alarm/RealAlarmDashBoard";
-import { AlarmProfile } from "../../common";
+//import { AlarmProfile } from "../../common";  AlarmProfile已废弃，AlarmGet实体在Models文件夹中的RealAlarm.ts中已定义
 import { AlarmGet } from "../../Models/RealAlarm";
 
 interface Props {

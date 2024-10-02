@@ -1,5 +1,4 @@
-import React from 'react';
-import {testIncomeStatementData} from "./testData";
+//import {testIncomeStatementData} from "./testData";
 
 
 type Props = {

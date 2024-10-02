@@ -21,7 +21,7 @@ const CompanyPage = (props: Props) => {
       setCompany(result?.data[0]);
     };
     getProfileInit();
-  }, []);
+  }, [ticker]);
 
   const companyLinks = [
     { to: "company-profile", label: "Company Profile" },

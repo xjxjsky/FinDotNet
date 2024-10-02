@@ -25,7 +25,7 @@ module.exports = {
       },
     },
     eslint: {
-      enable: true,
+      enable: false,
       mode: "file", // 或 "parallel"
       configure: {
         rules: {

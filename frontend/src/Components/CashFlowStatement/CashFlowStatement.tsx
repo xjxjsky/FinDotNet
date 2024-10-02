@@ -62,7 +62,7 @@ const CashFlowStatement = (props: Props) => {
 
     };
     fetchCashflow();
-  },[]);
+  },[ticker]);
   return <>
     {cashflowData ? (<Table config={config} data={cashflowData}/>)
     :(<Spinner/>)}
