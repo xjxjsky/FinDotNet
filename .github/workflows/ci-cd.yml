@@ -105,9 +105,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
-    env:
-      CD: false  # 设置环境变量以忽略 CI 中的警告错误, 让前端 build 通过
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
