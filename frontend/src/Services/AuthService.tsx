@@ -3,7 +3,7 @@ import { handleError } from "../Helpers/ErrorHandler";
 import { UserProfileToken } from "../Models/User";
 
 // 定义后端 API 的基本 URL
-const api = "http://localhost:5177/api/";
+const api = process.env.REACT_APP_API_URL;//"http://localhost:5177/api/";
 
 // 登录 API 请求函数
 export const loginAPI = async (username: string, password: string) => {
