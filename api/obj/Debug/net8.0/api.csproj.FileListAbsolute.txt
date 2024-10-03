@@ -147,3 +147,4 @@ D:\Project_V2.0\PORTFOLIO\FinDotNet\api\obj\Debug\net8.0\api.pdb
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\obj\Debug\net8.0\ref\api.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\obj\Debug\net8.0\api.sourcelink.json
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\appsettings.Production.json
