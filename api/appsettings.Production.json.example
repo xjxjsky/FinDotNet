@@ -1,0 +1,17 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Your_Production_Connection_String_Here"
+  },
+  "JWT": {
+    "Issuer": "https://your-production-domain.com",
+    "Audience": "https://your-production-domain.com",
+    "SigningKey": "Your_Production_Signing_Key_Here"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}

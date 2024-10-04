@@ -1,0 +1,30 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+.vs/
+
+# Environment configuration
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+
+# Logs
+*.log
+
+# NuGet Packages
+*.nupkg
+
+# Secrets
+secrets.json
+
+# IDE specific
+.idea/
+.vscode/
+
+# Temporary files
+*~
+*.tmp

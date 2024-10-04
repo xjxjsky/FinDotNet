@@ -148,3 +148,6 @@ D:\Project_V2.0\PORTFOLIO\FinDotNet\api\obj\Debug\net8.0\api.genruntimeconfig.ca
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\obj\Debug\net8.0\ref\api.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\obj\Debug\net8.0\api.sourcelink.json
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\appsettings.Production.json
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Azure.Security.KeyVault.Secrets.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\System.ClientModel.dll
