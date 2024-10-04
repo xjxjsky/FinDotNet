@@ -9,12 +9,37 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Serilog;
+using Microsoft.AspNetCore.Diagnostics;
+using System.Net;
+using api.Middleware;
 //using Azure.Identity;
 
 //Minimal Hosting Model：在 .NET 8 中，WebApplication.CreateBuilder(args) 已经自动加载了 appsettings.json、appsettings.{Environment}.json 和环境变量。
 //因此，无需手动配置 ConfigureAppConfiguration，除非有特定需求。
 //环境特定的配置文件：确保项目根目录下有 appsettings.Development.json 和 appsettings.Production.json，这些文件将根据 ASPNETCORE_ENVIRONMENT 环境变量自动加载。
 var builder = WebApplication.CreateBuilder(args); 
+
+// Configure Serilog
+/*项目中安装这四个包用于日志管理 dotnet add package Serilog/dotnet add package Serilog.AspNetCore/dotnet add package Serilog.Sinks.Console/dotnet add package Serilog.Sinks.File
+Serilog: 主包，提供基本的日志功能。
+Serilog.AspNetCore: 为 ASP.NET Core 提供支持，允许更好地集成和配置。
+Serilog.Sinks.Console: 将日志输出到控制台。
+Serilog.Sinks.File: 将日志输出到文件。
+*/
+// 读取配置文件中的日志路径
+//var logPath = Path.Combine(Directory.GetCurrentDirectory(), "logs/myapp.txt");
+var logPath = builder.Configuration["Logging:LogPath"];
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File(logPath, rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+
+builder.Host.UseSerilog(); // Use Serilog for logging
+
 
 // 1. 配置服务 Set Services you need!
 
@@ -138,29 +163,70 @@ if (!string.IsNullOrEmpty(keyVaultName))
 var app = builder.Build();
 
 // 2. 配置中间件
+// 2.1 Use Exception Handling Middleware
+app.UseMiddleware<ErrorHandlingMiddleware>();  //注册自定义异常处理中间件, 比下面的方法更加灵活
 
-// 2.1 使用 CORS
+// 添加异常处理
+// app.UseExceptionHandler(errorApp =>
+// {
+//     errorApp.Run(async context =>
+//     {
+//         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError; // 设置状态码为 500
+//         context.Response.ContentType = "application/json";
+
+//         var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+//         if (exceptionHandlerPathFeature?.Error != null)
+//         {
+//             // 记录错误日志
+//             Log.Error(exceptionHandlerPathFeature.Error, "An unhandled exception occurred.");
+
+//             // 返回自定义错误响应
+//             var response = new
+//             {
+//                 StatusCode = context.Response.StatusCode,
+//                 Message = "An unexpected error occurred. Please try again later."
+//             };
+
+//             await context.Response.WriteAsync(System.Text.Json.JsonSerializer.Serialize(response));
+//             /*
+//             // 返回自定义错误响应
+//             await context.Response.WriteAsync(new
+//             {
+//                 StatusCode = context.Response.StatusCode,
+//                 Message = "An unexpected error occurred. Please try again later."
+//             }.ToString());
+//             在之前的代码中，StatusCode 是通过 context.Response.StatusCode 动态设置的。具体来说，当你捕获到异常时，通常会将状态码设置为 500 Internal Server Error，
+//             然后返回一个包含该状态码的 JSON 响应。但在之前的代码中，StatusCode 的值是由 context.Response.StatusCode 动态生成的，因此在使用 ToString() 方法时不会转换成有效的 JSON 格式。
+//             要正确返回 JSON 响应，应该使用 JsonSerializer 或 JsonConvert 来序列化对象，而不是简单地调用 ToString()。
+//             */
+//         }
+//     });
+// });
+
+// 2.2 使用 CORS
 app.UseCors("AllowFrontend");
 
-// 2.2 开发环境使用 Swagger
+// 2.3 开发环境使用 Swagger
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(); // 访问地址通常为 https://localhost:5177/swagger/index.html
 }
 
-// 2.3 启用 HTTPS 重定向
+// 2.4 启用 HTTPS 重定向
 app.UseHttpsRedirection();
 
-// 2.4 认证与授权
+// 2.5 认证与授权
 app.UseAuthentication();
 app.UseAuthorization();
 
-// 2.5 映射控制器
-app.MapControllers();
+// 2.6 映射控制器
+app.MapControllers();;
 
 // 3. 运行应用
 app.Run();
+
+Log.Information("All the parts have been completed! Starting application...");
 
 // 定义强类型 JWT 配置类
 public class JwtSettings

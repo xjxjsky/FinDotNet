@@ -151,3 +151,13 @@ D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\appsettings.Production.
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Azure.Security.KeyVault.Secrets.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\System.ClientModel.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\System.Text.Json.dll
