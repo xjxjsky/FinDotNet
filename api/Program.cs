@@ -29,7 +29,12 @@ Serilog.Sinks.File: 将日志输出到文件。
 */
 // 读取配置文件中的日志路径
 //var logPath = Path.Combine(Directory.GetCurrentDirectory(), "logs/myapp.txt");
-var logPath = builder.Configuration["Logging:LogPath"];
+var logPath = builder.Configuration["Logging:LogPath"] ?? Environment.GetEnvironmentVariable("DEFAULT_LOG_PATH");
+
+if (string.IsNullOrEmpty(logPath))
+{
+    throw new ArgumentNullException(nameof(logPath), "Log path cannot be null or empty.");
+}
 // Configure Serilog
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
