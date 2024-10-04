@@ -1,4 +1,4 @@
-# Build results
+# Build outputs
 bin/
 obj/
 
@@ -7,7 +7,7 @@ obj/
 *.suo
 .vs/
 
-# Environment configuration
+#  Ignore environment-specific settings
 appsettings.Development.json
 appsettings.Staging.json
 appsettings.Production.json
@@ -28,3 +28,6 @@ secrets.json
 # Temporary files
 *~
 *.tmp
+
+# Coverage reports
+coverage/
