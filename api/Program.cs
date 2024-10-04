@@ -77,7 +77,7 @@ builder.Services.AddSwaggerGen(option =>
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
-        Description = "请输入Bearer令牌，例如: Bearer {token}",
+        Description = "Please enter a valid token，like: Bearer {token}",
         Name = "Authorization",
         Type = SecuritySchemeType.Http,
         Scheme = "Bearer",
