@@ -446,3 +446,18 @@ INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code
 2024-10-04 17:02:28.434 +10:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 15.305ms
 2024-10-04 17:02:28.434 +10:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
 2024-10-04 17:02:28.435 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 19.6302ms
+2024-10-04 21:01:08.849 +10:00 [INF] Application is shutting down...
+2024-10-04 21:01:08.917 +10:00 [INF] All the parts have been completed! Starting application...
+2024-10-04 21:03:28.618 +10:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-04 21:03:28.798 +10:00 [INF] Now listening on: http://localhost:5177
+2024-10-04 21:03:28.801 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-04 21:03:28.802 +10:00 [INF] Hosting environment: Development
+2024-10-04 21:03:28.802 +10:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-04 21:03:30.633 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 21:03:31.244 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 615.3385ms
+2024-10-04 21:03:31.672 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 21:03:31.676 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.8057ms
+2024-10-04 21:03:35.091 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 21:03:36.425 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1333.8455ms
+2024-10-04 21:13:59.142 +10:00 [INF] Application is shutting down...
+2024-10-04 21:13:59.161 +10:00 [INF] All the parts have been completed! Starting application...
