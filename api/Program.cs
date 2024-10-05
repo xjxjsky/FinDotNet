@@ -43,10 +43,14 @@ Serilog.Sinks.File: 将日志输出到文件。
 //     .WriteTo.File(logPath, rollingInterval: RollingInterval.Day)
 //     .CreateLogger();
 
-// 使用 LogManager 来管理 Serilog 日志
-LogManager.Logger.Information("Jay：Application starting...");
 
-builder.Host.UseSerilog(); // Use Serilog for logging
+// 初始化 Serilog 日志记录器
+LogManager.Instance.Initialize(builder.Configuration);
+
+// 使用 Serilog 作为日志记录器
+builder.Host.UseSerilog();
+// 使用 LogManager 来管理 Serilog 日志
+api.Helpers.LogManager.Instance.Logger.Information("Jay：Application starting...");
 
 
 
@@ -235,7 +239,7 @@ app.MapControllers();;
 // 3. 运行应用
 app.Run();
 
-//Log.Information("All the parts have been completed! Starting application...");
+LogManager.Instance.Logger.Information("Jay: All the parts have been completed! Starting application...");
 
 // 定义强类型 JWT 配置类
 public class JwtSettings

@@ -27,7 +27,7 @@ namespace api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] AlarmQueryObject query)
         {
-            LogManager.Logger.Information("Jay's here: AlarmController IActionResult GetAll");
+            api.Helpers.LogManager.Instance.Logger.Information("Jay's here: AlarmController IActionResult GetAll");
             if (!ModelState.IsValid)  //这两行代码确保做Validation check
                 return BadRequest(ModelState);
 
