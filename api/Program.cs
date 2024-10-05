@@ -13,6 +13,7 @@ using Serilog;
 using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 using api.Middleware;
+using api.Helpers;
 //using Azure.Identity;
 
 //Minimal Hosting Model：在 .NET 8 中，WebApplication.CreateBuilder(args) 已经自动加载了 appsettings.json、appsettings.{Environment}.json 和环境变量。
@@ -27,23 +28,26 @@ Serilog.AspNetCore: 为 ASP.NET Core 提供支持，允许更好地集成和配�
 Serilog.Sinks.Console: 将日志输出到控制台。
 Serilog.Sinks.File: 将日志输出到文件。
 */
-// 读取配置文件中的日志路径
+// 读取配置文件中的日志路径  我将Serilog 日志管理做成一个静态类 LogManager.cs
 //var logPath = Path.Combine(Directory.GetCurrentDirectory(), "logs/myapp.txt");
-var logPath = builder.Configuration["Logging:LogPath"] ?? Environment.GetEnvironmentVariable("DEFAULT_LOG_PATH");
+// var logPath = builder.Configuration["Logging:LogPath"] ?? Environment.GetEnvironmentVariable("DEFAULT_LOG_PATH");
 
-if (string.IsNullOrEmpty(logPath))
-{
-    throw new ArgumentNullException(nameof(logPath), "Log path cannot be null or empty.");
-}
-// Configure Serilog
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .WriteTo.Console()
-    .WriteTo.File(logPath, rollingInterval: RollingInterval.Day)
-    .CreateLogger();
+// if (string.IsNullOrEmpty(logPath))
+// {
+//     throw new ArgumentNullException(nameof(logPath), "Log path cannot be null or empty.");
+// }
+// // Configure Serilog
+// Log.Logger = new LoggerConfiguration()
+//     .MinimumLevel.Information()
+//     .WriteTo.Console()
+//     .WriteTo.File(logPath, rollingInterval: RollingInterval.Day)
+//     .CreateLogger();
 
+// 使用 LogManager 来管理 Serilog 日志
+LogManager.Logger.Information("Jay：Application starting...");
 
 builder.Host.UseSerilog(); // Use Serilog for logging
+
 
 
 // 1. 配置服务 Set Services you need!
@@ -231,7 +235,7 @@ app.MapControllers();;
 // 3. 运行应用
 app.Run();
 
-Log.Information("All the parts have been completed! Starting application...");
+//Log.Information("All the parts have been completed! Starting application...");
 
 // 定义强类型 JWT 配置类
 public class JwtSettings

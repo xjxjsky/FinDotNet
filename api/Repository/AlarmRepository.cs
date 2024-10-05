@@ -86,9 +86,5 @@ namespace api.Repository
 
         }
 
-        // public Task<List<T_AlarmType>> GetAllAsync(AlarmQueryObject query)
-        // {
-        //     throw new NotImplementedException();
-        // }
     }
 }

@@ -13,12 +13,13 @@ namespace api.Controllers
     [ApiController]
     public class AlarmController : ControllerBase // 由Controller改为继承 ControllerBase, 适合 API 控制器
     {
-        private readonly ILogger<AlarmController> _logger;
+        //private readonly ILogger<AlarmController> _logger;    //弃用.net 自带日志管理 启用 Serilog日志管理系统 LogManager Static Class
         private readonly IAlarmRepository _alarmRepo;
 
-        public AlarmController(ILogger<AlarmController> logger, IAlarmRepository alarmRepo)
+        //public AlarmController(ILogger<AlarmController> logger, IAlarmRepository alarmRepo)
+        public AlarmController(IAlarmRepository alarmRepo)
         {
-            _logger = logger;
+            //_logger = logger;
             _alarmRepo = alarmRepo;
         }
 
@@ -26,6 +27,7 @@ namespace api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] AlarmQueryObject query)
         {
+            LogManager.Logger.Information("Jay's here: AlarmController IActionResult GetAll");
             if (!ModelState.IsValid)  //这两行代码确保做Validation check
                 return BadRequest(ModelState);
 
