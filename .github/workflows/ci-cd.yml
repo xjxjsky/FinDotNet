@@ -65,7 +65,7 @@ jobs:
         with:
           app-name: findotnet-backend  # 替换为你的后端 App Service 名称
           slot-name: production         # 直接部署到生产槽
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}  # 使用发布配置文件
+          package: ./publish            # 这里指向发布输出目录
 
   build-and-test-frontend:
     runs-on: ubuntu-latest

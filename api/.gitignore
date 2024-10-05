@@ -31,3 +31,6 @@ secrets.json
 
 # Coverage reports
 coverage/
+
+# Ignore publish directory
+publish/

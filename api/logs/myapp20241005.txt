@@ -320,3 +320,17 @@ WHERE [p].[AppUserId] = @__user_Id_0
 2024-10-05 00:36:24.220 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.4809ms
 2024-10-05 00:39:42.079 +10:00 [INF] Application is shutting down...
 2024-10-05 00:39:42.268 +10:00 [INF] All the parts have been completed! Starting application...
+2024-10-05 21:41:42.518 +10:00 [INF] Jay：Application starting...
+2024-10-05 21:41:46.256 +10:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-05 21:41:46.562 +10:00 [INF] Now listening on: http://localhost:5177
+2024-10-05 21:41:46.564 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-05 21:41:46.564 +10:00 [INF] Hosting environment: Development
+2024-10-05 21:41:46.564 +10:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-05 21:41:48.044 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-05 21:41:48.603 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 563.2432ms
+2024-10-05 21:41:49.149 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-05 21:41:49.154 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.4702ms
+2024-10-05 21:41:51.440 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-05 21:41:52.417 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 976.466ms
+2024-10-05 22:58:12.713 +10:00 [INF] Application is shutting down...
+2024-10-05 22:58:13.002 +10:00 [INF] Jay: All the parts have been completed! Starting application...
