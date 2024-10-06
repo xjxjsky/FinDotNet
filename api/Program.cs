@@ -198,7 +198,7 @@ else
             if (exceptionHandlerPathFeature?.Error != null)
             {
                 // 记录错误日志
-                Log.Error(exceptionHandlerPathFeature.Error, "An unhandled exception occurred.");
+                Log.Error(exceptionHandlerPathFeature.Error, "An unhandled system exception occurred.");
 
                 // 返回自定义错误响应
                 var response = new

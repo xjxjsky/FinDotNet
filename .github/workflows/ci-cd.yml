@@ -94,6 +94,8 @@ jobs:
 
       - name: Build frontend
         working-directory: ./frontend
+        env:
+          REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}  # 注入环境变量
         run: npm run build
 
       - name: List build output
