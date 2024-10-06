@@ -179,6 +179,41 @@ var app = builder.Build();
 // 2.1 Use Exception Handling Middleware
 app.UseMiddleware<ErrorHandlingMiddleware>();  //注册自定义异常处理中间件, 比下面的方法更加灵活
 
+// 根据环境配置异常处理异常处理：在开发环境中使用 app.UseDeveloperExceptionPage() 显示详细的错误页面。
+//在生产环境中使用 app.UseExceptionHandler(...) 来捕获异常并返回 JSON 格式的错误响应。HTTP 严格传输安全：在生产环境中启用 app.UseHsts()。
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage(); // 开发环境使用开发者异常页面
+}
+else
+{
+    app.UseExceptionHandler(errorApp =>
+    {
+        errorApp.Run(async context =>
+        {
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError; // 设置状态码为 500
+            context.Response.ContentType = "application/json";
+
+            var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+            if (exceptionHandlerPathFeature?.Error != null)
+            {
+                // 记录错误日志
+                Log.Error(exceptionHandlerPathFeature.Error, "An unhandled exception occurred.");
+
+                // 返回自定义错误响应
+                var response = new
+                {
+                    StatusCode = context.Response.StatusCode,
+                    Message = "An unexpected error occurred. Please try again later."
+                };
+
+                await context.Response.WriteAsync(System.Text.Json.JsonSerializer.Serialize(response));
+            }
+        });
+    });
+    app.UseHsts(); // 使用 HTTP 严格传输安全（HSTS）
+}
+
 // 添加异常处理
 // app.UseExceptionHandler(errorApp =>
 // {
