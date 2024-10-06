@@ -15,7 +15,22 @@ const Hero = (props: Props) => {
           <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
             Retrieving relevant Financial & Telcom Alarm information from my website without fear-mongering or fake news!
           </p>
-          <p>欢迎来到ZTE Alarm 业务模块！<br/>
+          <br/>
+          <p>Temporary Access Link for Telecomm Alarm Demo Data <br/>
+
+             You can access the demo data for Telecomm alarms without needing to log in using the link below. If you prefer, you can also register and log in for full access.
+
+             Access Demo Data</p>
+          <div className="mx-auto lg:mx-0">
+            <Link
+              to="/RealAlarm"
+              className="py-5 px-10 text-2xl font-bold text-white bg-lightGreen rounded lg:py-4 hover:opacity-70"
+            >
+              Real Alarm
+            </Link>
+          </div>
+          
+          <p>Welcome to ZTE Alarm Bussiness Module！
              This app is still under construction. It will take some time to be fully operational. Thank you.
           </p><br/>
           <div className="mx-auto lg:mx-0">
