@@ -36,6 +36,10 @@ jobs:
       - name: Publish backend
         working-directory: ./api
         run: dotnet publish --configuration Release --output ./publish
+        
+      - name: List publish directory
+        working-directory: ./api/publish
+        run: ls -al
 
       - name: Upload backend artifact
         uses: actions/upload-artifact@v3
