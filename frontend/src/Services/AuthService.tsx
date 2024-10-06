@@ -9,6 +9,7 @@ const api = process.env.REACT_APP_API_URL;//"http://localhost:5177/api/";
 export const loginAPI = async (username: string, password: string) => {
   try {
     // 向后端发送 POST 请求，传递用户名和密码，并接收包含用户信息和令牌的响应
+    console.log("Jay here api:" + api);
     const data = await axios.post<UserProfileToken>(api + "account/login", {
       username: username,
       password: password,
