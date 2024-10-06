@@ -52,8 +52,6 @@ builder.Host.UseSerilog();
 // 使用 LogManager 来管理 Serilog 日志
 api.Helpers.LogManager.Instance.Logger.Information("Jay：Application starting...");
 
-
-
 // 1. 配置服务 Set Services you need!
 
 // 1.1 配置 CORS
