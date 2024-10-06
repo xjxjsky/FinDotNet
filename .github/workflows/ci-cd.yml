@@ -36,7 +36,7 @@ jobs:
       - name: Publish backend
         working-directory: ./api
         run: dotnet publish --configuration Release --output ./publish
-        
+
       - name: List publish directory
         working-directory: ./api/publish
         run: ls -al
@@ -64,6 +64,13 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - name: Set Connection String in Azure App Service
+        run: |
+          az webapp config connection-string set --name findotnet-backend \
+            --resource-group FinDotNetResourceGroup \
+            --settings DefaultConnection="${{ secrets.AZURE_SQL_CONNECTION_STRING }}" \
+            --connection-string-type SQLAzure
+
       - name: Deploy to Azure WebApp
         uses: azure/webapps-deploy@v2
         with:
@@ -71,7 +78,7 @@ jobs:
           slot-name: production         # 直接部署到生产槽
           package: ./publish            # 这里指向发布输出目录
 
-   build-and-test-frontend:
+  build-and-test-frontend:
     runs-on: ubuntu-latest
     env:
       CI: false  # 设置环境变量以忽略 CI 中的警告错误, 让前端 build 通过
