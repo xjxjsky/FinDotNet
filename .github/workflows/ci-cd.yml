@@ -71,15 +71,7 @@ jobs:
           slot-name: production         # 直接部署到生产槽
           package: ./publish            # 这里指向发布输出目录
 
-      #- name: Set Connection String in Azure App Service
-      #  run: |
-      #    az webapp config connection-string set --name findotnet-backend \
-      #      --resource-group YourResourceGroupName \
-      #      --settings DefaultConnection="${{ secrets.AZURE_SQL_CONNECTION_STRING }}" \
-      #      --connection-string-type SQLAzure
-
-
-  build-and-test-frontend:
+   build-and-test-frontend:
     runs-on: ubuntu-latest
     env:
       CI: false  # 设置环境变量以忽略 CI 中的警告错误, 让前端 build 通过

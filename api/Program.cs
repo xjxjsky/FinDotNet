@@ -60,7 +60,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
          // 替换为你的前端 Static Web Apps URL, 配置了一个名为 "AllowFrontend" 的策略，允许来自指定前端 URL 的跨域请求
-        policy.WithOrigins("https://witty-moss-0dca53900.5.azurestaticapps.net", 
+        policy.WithOrigins(
+        "https://witty-moss-0dca53900.5.azurestaticapps.net", 
         "http://localhost:5177",
         "http://localhost:3000"
         ) 

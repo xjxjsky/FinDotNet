@@ -1,0 +1,83 @@
+2024-10-06 17:47:41.963 +11:00 [INF] Jay：Application starting...
+2024-10-06 17:47:57.722 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-06 17:48:03.228 +11:00 [INF] Now listening on: http://localhost:5177
+2024-10-06 17:48:03.230 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-06 17:48:03.231 +11:00 [INF] Hosting environment: Development
+2024-10-06 17:48:03.231 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-06 17:48:19.240 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-06 17:48:25.078 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 6114.4789ms
+2024-10-06 17:48:26.413 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-06 17:48:26.417 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.5038ms
+2024-10-06 17:48:29.596 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-06 17:48:38.315 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8718.7219ms
+2024-10-06 17:49:16.025 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - null null
+2024-10-06 17:49:16.032 +11:00 [INF] CORS policy execution successful.
+2024-10-06 17:49:16.349 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - 204 null null 323.9024ms
+2024-10-06 17:49:16.456 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/account/login - application/json 51
+2024-10-06 17:49:16.478 +11:00 [INF] CORS policy execution successful.
+2024-10-06 17:49:16.602 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-10-06 17:49:21.954 +11:00 [INF] Executing endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-06 17:49:22.484 +11:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(api.Dtos.Account.LoginDto) on controller api.Controllers.AccountController (api).
+2024-10-06 17:49:26.539 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - null null
+2024-10-06 17:49:26.540 +11:00 [INF] CORS policy execution successful.
+2024-10-06 17:49:26.540 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - 204 null null 0.8052ms
+2024-10-06 17:49:26.675 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/account/login - application/json 51
+2024-10-06 17:49:26.676 +11:00 [INF] CORS policy execution successful.
+2024-10-06 17:49:26.678 +11:00 [INF] Executing endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-06 17:49:26.679 +11:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(api.Dtos.Account.LoginDto) on controller api.Controllers.AccountController (api).
+2024-10-06 17:49:42.178 +11:00 [INF] Executed DbCommand (336ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__ToLower_0
+2024-10-06 17:49:42.178 +11:00 [INF] Executed DbCommand (336ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__ToLower_0
+2024-10-06 17:49:43.906 +11:00 [INF] Executing OkObjectResult, writing value of type 'api.Dtos.Account.NewUserDto'.
+2024-10-06 17:49:43.906 +11:00 [INF] Executing OkObjectResult, writing value of type 'api.Dtos.Account.NewUserDto'.
+2024-10-06 17:49:44.081 +11:00 [INF] Executed action api.Controllers.AccountController.Login (api) in 17396.6046ms
+2024-10-06 17:49:44.081 +11:00 [INF] Executed action api.Controllers.AccountController.Login (api) in 21590.3523ms
+2024-10-06 17:49:44.082 +11:00 [INF] Executed endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-06 17:49:44.082 +11:00 [INF] Executed endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-06 17:49:44.092 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/account/login - 200 398 application/json; charset=utf-8 27636.6534ms
+2024-10-06 17:49:44.092 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/account/login - 200 398 application/json; charset=utf-8 17417.2799ms
+2024-10-06 17:49:44.716 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-06 17:49:44.716 +11:00 [INF] CORS policy execution successful.
+2024-10-06 17:49:44.717 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 1.2591ms
+2024-10-06 17:49:44.767 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-06 17:49:44.768 +11:00 [INF] CORS policy execution successful.
+2024-10-06 17:49:44.769 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 0.5213ms
+2024-10-06 17:49:45.082 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-06 17:49:45.083 +11:00 [INF] CORS policy execution successful.
+2024-10-06 17:49:45.387 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-06 17:49:45.393 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-06 17:49:46.016 +11:00 [INF] Executed DbCommand (435ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-06 17:49:46.356 +11:00 [INF] Executed DbCommand (84ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-06 17:49:46.358 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-06 17:49:46.366 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 973.236ms
+2024-10-06 17:49:46.367 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-06 17:49:46.368 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 1286.2615ms
+2024-10-06 17:49:46.396 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-06 17:49:46.397 +11:00 [INF] CORS policy execution successful.
+2024-10-06 17:49:46.402 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-06 17:49:46.402 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-06 17:49:46.406 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-06 17:49:46.412 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-06 17:49:46.413 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-06 17:49:46.414 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 11.0579ms
+2024-10-06 17:49:46.416 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-06 17:49:46.417 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 20.5244ms
