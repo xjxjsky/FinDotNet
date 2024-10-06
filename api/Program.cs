@@ -14,7 +14,6 @@ using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 using api.Middleware;
 using api.Helpers;
-//using Azure.Identity;
 
 //Minimal Hosting Model：在 .NET 8 中，WebApplication.CreateBuilder(args) 已经自动加载了 appsettings.json、appsettings.{Environment}.json 和环境变量。
 //因此，无需手动配置 ConfigureAppConfiguration，除非有特定需求。
