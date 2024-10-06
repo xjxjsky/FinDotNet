@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y7Xmj2gJM3bpPgX/dUn0LEyA6G1e4n0l8rTCwTH699av4qoReqe2vBfuE6EYUWFAMoNr6NtB5CPlYxVkFy0htQ==",
+  "dgSpecHash": "q5AI9vyjY7W/Y0M+mUkL1aztMVLPj5x8sh5++Ctj6x2/oW4PNUPjj3n7SNn8SODPhC0917mFh4v41vwBu3VeSQ==",
   "success": true,
   "projectFilePath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\api\\api.csproj",
   "expectedPackageFiles": [
@@ -108,8 +108,7 @@
     "C:\\Users\\IBM-PC\\.nuget\\packages\\system.text.json\\8.0.4\\system.text.json.8.0.4.nupkg.sha512",
     "C:\\Users\\IBM-PC\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
     "C:\\Users\\IBM-PC\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\IBM-PC\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\IBM-PC\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\8.0.0\\microsoft.netcore.app.host.linux-x64.8.0.0.nupkg.sha512"
+    "C:\\Users\\IBM-PC\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
