@@ -10,7 +10,6 @@ obj/
 #  Ignore environment-specific settings
 appsettings.Development.json
 appsettings.Staging.json
-appsettings.Production.json
 
 # Logs
 *.log
