@@ -31,7 +31,7 @@ const Navbar: React.FC<Props> = () => {
   };
 
   return (
-    <nav className="relative w-full mx-auto p-6 bg-black">
+    <nav className="fixed top-0 left-0 w-full bg-black shadow-md z-50 p-6">
       <div className="flex flex-wrap items-center justify-between text-white">
         <div className="flex items-center space-x-10">
           <Link to="/" className="link-no-click">

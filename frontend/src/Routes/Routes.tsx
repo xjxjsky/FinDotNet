@@ -13,6 +13,7 @@ import RegisterPage from "../Pages/RegisterPage/RegisterPage";
 import ProtectedRoute from "./ProtectedRoute";
 import DashBoardPage from "../Pages/DashBoardPage/DashBoardPage";
 import RealAlarmPage from "../Pages/RealAlarmPage/RealAlarmPage";
+import ResumePage from "../Pages/ResumePage/ResumePage";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
 
       { path: "Design-guide", element: <DesignGuide /> },
 
+      { path: "ResumePage", element: <ResumePage label={""} onClick={function (): void {
+        throw new Error("Function not implemented.");
+      } } /> },
+      
 
       {
         path: "company/:ticker",

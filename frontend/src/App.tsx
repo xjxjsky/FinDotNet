@@ -11,7 +11,9 @@ function App() {
     <>
       <UserProvider>
         <Navbar />
-        <Outlet />
+        <div className="mt-20"> {/* 根据导航栏实际高度调整 */}
+          <Outlet />
+        </div>
         <ToastContainer />
       </UserProvider>
     </>
