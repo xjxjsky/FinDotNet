@@ -13,14 +13,11 @@ const Hero = (props: Props) => {
             Financial & Telecomm data with your dream.
           </h1>
           <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
-            Retrieving relevant Financial & Telcom Alarm information from my
-            website without fear-mongering or fake news!
+            This app can only be run on a desktop PC to view all features. The React Native mobile version is still under development.
           </p>
 
           <p>
-            Welcome to my personal portolio website! <br />
-            My Resume here as your reference below!  
-            
+            Welcome to my portfolio website! Click <strong style={{ color: 'Green' }}>Jay's Resume</strong>  below to view my resume for your reference.
           </p>
           <div className="mx-auto lg:mx-0">
             <Link
@@ -32,7 +29,7 @@ const Hero = (props: Props) => {
           </div>
 
           <p>
-            Temporary Access Link for Telecomm Alarm Demo Data <br />
+            Temporary Access Link for Telecom Alarm Demo Data <br />
             You can access the demo data for Telecomm alarms without needing to
             log in using the link below. If you prefer, you can also register
             and log in for full access. Access Demo Data

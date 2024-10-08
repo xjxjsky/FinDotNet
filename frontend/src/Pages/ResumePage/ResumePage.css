@@ -48,3 +48,28 @@
     font-weight: bold;
   }
   
+/* 定义 resume-li 类的样式 */
+.resume-li {
+  list-style-type: disc; /* 设置项目符号为黑点 */
+  list-style-position: outside; /* 确保黑点在文本外部 */
+  margin-left: 20px; /* 调整黑点与文本之间的间距 */
+  padding-left: 0; /* 移除内边距，以便黑点从边缘开始 */
+}
+
+/* 定义 highlighted-p 类的样式 */
+.highlighted-p {
+  position: relative; /* 使伪元素相对于其父元素定位 */
+  margin-left: 20px; /* 与 <li> 保持一致的左侧间距 */
+  padding-left: 0; /* 与 <li> 保持一致的内边距 */
+}
+
+.highlighted-p::before {
+  content: "•"; /* 使用黑点作为符号 */
+  color: black; /* 黑点颜色 */
+  font-size: 1em; /* 与 <li> 保持一致的黑点大小 */
+  position: absolute; /* 使用绝对定位放置黑点 */
+  left: -20px; /* 将黑点放置在与 <li> 一致的位置 */
+  top: 0; /* 黑点与文本顶部对齐 */
+  line-height: 1.5em; /* 调整黑点和文字的垂直对齐 */
+}
+
