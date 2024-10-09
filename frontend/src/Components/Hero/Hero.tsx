@@ -19,6 +19,9 @@ const Hero = (props: Props) => {
           <p>
             Welcome to my portfolio website! Click <strong style={{ color: 'Green' }}>Jay's Resume</strong>  below to view my resume for your reference.
           </p>
+          <p>
+            To access the "Search Stock" menu, you should register an account or use "adminuser/FinDotNet_123" to log on directly.
+          </p>
           <div className="mx-auto lg:mx-0">
             <Link
               to="/ResumePage"

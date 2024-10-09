@@ -41,7 +41,7 @@ const Navbar: React.FC<Props> = () => {
             <Tooltip tooltipText={t("tooltip_search_stock")}>
               <Link
                 to="/search"
-                className="text-white hover:text-gray-300 hover:text-lg transition-all duration-300"
+                className="text-white no-underline hover:text-gray-300 hover:text-lg transition-all duration-300"
               >
                 {t("menu_search_stock")}
               </Link>
@@ -49,7 +49,7 @@ const Navbar: React.FC<Props> = () => {
             <Tooltip tooltipText={t("tooltip_dashboard")}>
               <Link
                 to="/DashBoard"
-                className="text-white hover:text-mypurple hover:text-lg transition-all duration-300"
+                className="text-white no-underline hover:text-mypurple hover:text-lg transition-all duration-300"
               >
                 {t("menu_dashboard")}
               </Link>
@@ -57,7 +57,7 @@ const Navbar: React.FC<Props> = () => {
             <Tooltip tooltipText={t("tooltip_real_alarm")}>
               <Link
                 to="/RealAlarm"
-                className="text-white hover:text-blue-400 hover:text-lg transition-all duration-300"
+                className="text-white no-underline hover:text-blue-400 hover:text-lg transition-all duration-300"
               >
                 {t("menu_real_alarm")}
               </Link>
@@ -65,19 +65,19 @@ const Navbar: React.FC<Props> = () => {
             <Tooltip tooltipText={t("tooltip_design_guide")}>
               <Link
                 to="/design-guide"
-                className="text-white hover:text-green-600 hover:text-lg transition-all duration-300"
+                className="text-white no-underline hover:text-green-600 hover:text-lg transition-all duration-300"
               >
                 {t("menu_design_guide")}
               </Link>
             </Tooltip>
             <DropDownMenu title={t("multi_fun_menu")}>
-              <Link to="/submenu1" className="dropdown-link" key="submenu1">
+              <Link to="/submenu1" className="dropdown-link no-underline" key="submenu1">
                 {t("submenu1")}
               </Link>
               <DropDownMenu title={t("submenu2")} key="submenu2">
                 <Link
                   to="/submenu2-1"
-                  className="dropdown-link"
+                  className="dropdown-link no-underline"
                   key="submenu2-1"
                 >
                   {t("submenu2_1")}
@@ -96,8 +96,8 @@ const Navbar: React.FC<Props> = () => {
             </DropDownMenu>
             <Tooltip tooltipText={t("tooltip_about")}>
               <Link
-                to="/about"
-                className="text-white hover:text-yellow-500 hover:text-lg transition-all duration-300"
+                to="/ResumePage"
+                className="text-white no-underline hover:text-yellow-500 hover:text-lg transition-all duration-300"
               >
                 {t("menu_about")}
               </Link>
