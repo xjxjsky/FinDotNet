@@ -15,8 +15,11 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
     <div className="resume-container">
       <ScrollToTop /> {/* 仅在加载此页面时滚动到顶部 */}
       <header className="resume-header">
-        <h1>Jay XIE</h1>
-        <h2>Software Engineer</h2>
+        <h1>Jay XIE </h1>
+        <section className="resume-section">
+            <h3 className="">【Project Experience Page】</h3>
+        </section>
+        
         <p>
           Email: xjxjsky@gmail.com | Github -{" "}
           <a href="https://github.com/xjxjsky/FinDotNet" target="_blank" rel="noopener noreferrer">
