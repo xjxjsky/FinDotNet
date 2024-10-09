@@ -14,6 +14,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import DashBoardPage from "../Pages/DashBoardPage/DashBoardPage";
 import RealAlarmPage from "../Pages/RealAlarmPage/RealAlarmPage";
 import ResumePage from "../Pages/ResumePage/ResumePage";
+import ProjectPage from "../Pages/ProjectPage/ProjectPage";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +46,9 @@ export const router = createBrowserRouter([
         throw new Error("Function not implemented.");
       } } /> },
       
+      { path: "ProjectPage", element: <ProjectPage label={""} onClick={function (): void {
+        throw new Error("Function not implemented.");
+      } } /> },
 
       {
         path: "company/:ticker",

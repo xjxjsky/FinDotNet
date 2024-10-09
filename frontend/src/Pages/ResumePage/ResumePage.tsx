@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./ResumePage.css"; // 引入样式文件
 import ScrollToTop from "../../Components/HelperComponents/ScrollToTop";
+import { Link } from "react-router-dom";
 
 // 定义 Props 类型
 type Props = {
@@ -17,12 +18,22 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
       <header className="resume-header">
         <h1>Jay XIE</h1>
         <h2>Software Engineer</h2>
+
         <p>
           Email: xjxjsky@gmail.com | Github -{" "}
           <a href="https://github.com/xjxjsky/FinDotNet" target="_blank" rel="noopener noreferrer">
             https://github.com/xjxjsky/FinDotNet
           </a>
         </p>
+
+        <div className="mt-6">
+          <Link
+            to="/ProjectPage"
+            className="inline-block py-3 px-8 text-lg font-semibold text-white bg-lightGreen rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+          >
+            Project Experience，Click here！
+          </Link>
+        </div>
       </header>
 
       <section className="resume-section">
@@ -243,8 +254,8 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
             application from scratch since 2007.
           </li>
           <li className="resume-li">
-            Developed and maintained several applications based on ASP.NET, Web
-            Service & Windows Forms.
+            Developed and maintained several applications based on ASP.NET, Web Service & Windows Forms, 
+            working on projects in the medical industry for companies, such as Pfizer Pharmaceuticals, Shanghai East Hospital.
           </li>
           <li className="resume-li">
             Delivered software products from the test server to the product
@@ -291,16 +302,6 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
           and tester. Wicresoft is an integrated IT service provider offering
           end-to-end, one-stop digital services for global customers, which was
           founded in 2002 as Microsoft’s first joint venture company in China.
-        </p>
-      </section>
-
-      <section className="resume-section">
-        <h3>Project Experience</h3>
-        <h4>Portfolio Project： | 2024</h4>
-        <p>
-          To Design and develop an web application base on Repository Partern
-          with React + ASP.NET core + Entity Framework(Azure SQL Database),
-          Providing{" "}
         </p>
       </section>
 
