@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./ResumePage.css"; // 引入样式文件
+import ScrollToTop from "../../Components/HelperComponents/ScrollToTop";
 
 // 定义 Props 类型
 type Props = {
@@ -9,19 +10,16 @@ type Props = {
 
 // 创建一个函数组件并使用 Props 类型
 const ResumePage: React.FC<Props> = ({ label, onClick }) => {
-  useEffect(() => {
-    // 组件挂载时滚动到顶部
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className="resume-container">
+      <ScrollToTop /> {/* 仅在加载此页面时滚动到顶部 */}
       <header className="resume-header">
         <h1>Jay XIE</h1>
         <h2>Software Engineer</h2>
         <p>
           Email: xjxjsky@gmail.com | Github -{" "}
-          <a href="https://github.com/xjxjsky/FinDotNet" target="_blank">
+          <a href="https://github.com/xjxjsky/FinDotNet" target="_blank" rel="noopener noreferrer">
             https://github.com/xjxjsky/FinDotNet
           </a>
         </p>
@@ -297,11 +295,6 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
       </section>
 
       <section className="resume-section">
-        <h3>Education</h3>
-        <h4>Computer Science | H.U.S.T</h4>
-      </section>
-
-      <section className="resume-section">
         <h3>Project Experience</h3>
         <h4>Portfolio Project： | 2024</h4>
         <p>
@@ -312,9 +305,16 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
       </section>
 
       <section className="resume-section">
+        <h3>Education</h3>
+        <h4>Computer Science | H.U.S.T</h4>
+      </section>
+
+      <section className="resume-section">
         <h3>Licenses & Certifications </h3>
-        <p>Software Programming and Data Modelling - TAFE NSW ID: 105183732</p>
-        <p>Microsoft Certified: Azure Data Fundamentals – Microsoft DP-900</p>
+        <ul>
+          <li className="resume-li">Software Programming and Data Modelling - TAFE NSW  ID: 105183732</li>
+          <li className="resume-li">Microsoft Certified: Azure Data Fundamentals – Microsoft DP-900</li>
+        </ul>
       </section>
 
       <section className="resume-section">
