@@ -77,3 +77,41 @@ a {
   color: blue; /* 设置链接文本颜色为蓝色 */
   text-decoration: underline; /* 添加下划线 */
 }
+
+.team-photo-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.team-photo-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+}
+
+.team-photo-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.photo-caption {
+  padding: 10px;
+}
+
+.photo-caption h4 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.photo-caption p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}

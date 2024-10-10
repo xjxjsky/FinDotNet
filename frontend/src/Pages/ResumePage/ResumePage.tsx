@@ -307,7 +307,7 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
 
       <section className="resume-section">
         <h3>Education</h3>
-        <h4>Computer Science | H.U.S.T</h4>
+        <h4>Computer Science | Bachelor | H.U.S.T</h4>
       </section>
 
       <section className="resume-section">
