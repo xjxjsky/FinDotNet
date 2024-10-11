@@ -48,7 +48,7 @@ const RealAlarmPage = (props: Props) => {
       {loading ? (
         <Spinner />
       ) : (
-        <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-hidden">
+        <div className="w-full relative flex ct-docs-disable-sidebar-content">
           <Sidebar links={alarmLinks} title="Alarm Dashboard" />
           <RealAlarmDashBoard message={props.message} alarms={alarms}>
             {/* 主内容区域，显示具体数据 */}
