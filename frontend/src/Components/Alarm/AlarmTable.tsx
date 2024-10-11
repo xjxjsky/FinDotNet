@@ -1,3 +1,4 @@
+// AlarmTable.tsx
 import React from "react";
 import { AlarmGet } from "../../Models/RealAlarm";
 
@@ -8,7 +9,7 @@ interface AlarmTableProps {
 const AlarmTable: React.FC<AlarmTableProps> = ({ alarms }) => {
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
+      <table className="min-w-max bg-white rounded-lg shadow-lg whitespace-nowrap">
         <thead className="bg-gray-800 text-white">
           <tr>
             <th className="py-4 px-6 border-b text-left">ID</th>
@@ -25,7 +26,6 @@ const AlarmTable: React.FC<AlarmTableProps> = ({ alarms }) => {
         </thead>
         <tbody className="text-gray-700">
           {alarms.map((alarm, index) => (
-            // 使用条件渲染来改变背景颜色
             <tr key={alarm.id} className={`hover:bg-gray-100 ${index % 2 === 0 ? "bg-blue-100" : ""}`}>
               <td className="py-4 px-6 border-b text-left">{alarm.id}</td>
               <td className="py-4 px-6 border-b text-left">{new Date(alarm.happenTime).toLocaleString()}</td>
@@ -33,7 +33,9 @@ const AlarmTable: React.FC<AlarmTableProps> = ({ alarms }) => {
               <td className="py-4 px-6 border-b text-left">{alarm.alarmTypeName}</td>
               <td className="py-4 px-6 border-b text-left">{alarm.companyName}</td>
               <td className="py-4 px-6 border-b text-left">{alarm.opertionerName}</td>
-              <td className="py-4 px-6 border-b text-left">{alarm.phoneNumber}</td>
+              <td className="py-4 px-6 border-b text-left truncate" title={alarm.phoneNumber}>
+                {alarm.phoneNumber}
+              </td>
               <td className="py-4 px-6 border-b text-left">
                 {alarm.isFixed ? (
                   <span className="text-green-600 font-semibold">Fixed</span>

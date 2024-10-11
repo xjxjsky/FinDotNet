@@ -17,7 +17,7 @@ const RealAlarmDashBoard: React.FC<Props> = ({
 }): JSX.Element => {
   return (
     <div className="relative md:ml-64 bg-blueGray-100 w-full bg-lightBlue-500">
-      <div className="px-4 md:px-6 mx-auto w-full pt-10"> {/* 调整 padding 以减少顶部空间 */}
+      <div className="px-4 md:px-6 mx-auto max-w-screen-xl w-full pt-10"> {/* 调整 padding 以减少顶部空间 */} {/* 添加 max-w-screen-xl */}
         <div className="custom-text text-center lg:text-left mb-2 mt-2"> {/* 可以根据需要调整 mb 和 mt */}
           {message}
         </div>
