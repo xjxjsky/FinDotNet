@@ -21,7 +21,11 @@ const RealAlarmDashBoard: React.FC<Props> = ({
         <div className="custom-text text-center lg:text-left mb-2 mt-2"> {/* 可以根据需要调整 mb 和 mt */}
           {message}
         </div>
-        <AlarmTable alarms={alarms} /> {/* 渲染 AlarmTable */}
+
+        <div className="overflow-x-auto">
+          <AlarmTable alarms={alarms} /> {/* 渲染 AlarmTable */}
+        </div>
+        
         <div className="flex flex-wrap mt-10">
           {/* 使用 Outlet 用于嵌套路由 */}
           <Outlet />
