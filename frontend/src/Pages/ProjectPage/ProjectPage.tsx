@@ -153,6 +153,55 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
       </section>
 
       <section className="resume-section">
+        <h3>Dev Life & programmer dream Showcase</h3>
+        <div className="team-photo-grid">
+          <div className="team-photo-card">
+            <img src="/pics/atGoogleCalif.jpg" alt="Microsoft Azure Fundamental Cert" />
+            <div className="photo-caption">
+              <h4>Mountain View, California U.S.</h4>
+              <p>Google's headquarters in Mountain View</p>
+              <p>Every programmer aspires to work at leading tech giants like Microsoft and Google.</p>
+            </div>
+          </div>
+          <div className="team-photo-card">
+            <img src="/pics/infosys reward.png" alt="Team Member 2" />
+            <div className="photo-caption">
+              <h4>Infosys HTDM Team Award</h4>
+              <p>High-Tech Discrete Manufacturing Industry Department & Microsoft Dev Team</p>
+            </div>
+          </div>
+          <div className="team-photo-card">
+            <img src="/pics/@HP(We're a dream team for being posted in HP office).jpg" alt="Team Member 2" />
+            <div className="photo-caption">
+              <h4>Dev Team Member 2</h4>
+              <p>We're a dream team for being posted in HP office</p>
+            </div>
+          </div>
+          <div className="team-photo-card">
+            <img src="/pics/@HP(We're a dream team for being posted in HP office).jpg" alt="Team Member 2" />
+            <div className="photo-caption">
+              <h4>Dev Team Member 2</h4>
+              <p>We're a dream team for being posted in HP office</p>
+            </div>
+          </div>
+          <div className="team-photo-card">
+            <img src="/pics/@HP(We're a dream team for being posted in HP office).jpg" alt="Team Member 2" />
+            <div className="photo-caption">
+              <h4>Dev Team Member 2</h4>
+              <p>We're a dream team for being posted in HP office</p>
+            </div>
+          </div>
+          <div className="team-photo-card">
+            <img src="/pics/@HP(We're a dream team for being posted in HP office).jpg" alt="Team Member 2" />
+            <div className="photo-caption">
+              <h4>Dev Team Member 2</h4>
+              <p>We're a dream team for being posted in HP office</p>
+            </div>
+          </div>
+          {/* Add more team member cards here */}
+        </div>
+      </section>
+      <section className="resume-section">
         <h3>Education</h3>
         <h4>Computer Science | Bachelor | H.U.S.T</h4>
       </section>

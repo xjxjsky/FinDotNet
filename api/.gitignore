@@ -13,6 +13,7 @@ appsettings.Staging.json
 
 # Logs
 *.log
+logs/              # 新增：忽略 logs 文件夹
 
 # NuGet Packages
 *.nupkg
