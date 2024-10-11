@@ -14,6 +14,7 @@ interface Props {
 const RealAlarmPage = (props: Props) => {
   const [alarms, setAlarms] = useState<AlarmGet[]>([]); // 存储告警数组
   const [loading, setLoading] = useState<boolean>(true); // 加载状态
+  const [error, setError] = useState<string | null>(null); // 添加错误状态
   
   useEffect(() => {
     const getAlarmInit = async () => {
@@ -26,6 +27,7 @@ const RealAlarmPage = (props: Props) => {
         }
       } catch (error) {
         console.error("Error fetching alarm data:", error);
+        setError("Failed to fetch alarm data."); // 设置错误信息
       } finally {
         // 这里可以放置任何需要在请求完成后执行的逻辑，比如隐藏 loading 动画等
         setLoading(false); // 请求完成后设置加载状态
@@ -47,8 +49,10 @@ const RealAlarmPage = (props: Props) => {
     <>
       {loading ? (
         <Spinner />
+      ) : error ? (
+        <div className="text-red-500 text-center">{error}</div> // 显示错误信息
       ) : (
-        <div className="w-full relative flex ct-docs-disable-sidebar-content">
+        <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-auto">
           <Sidebar links={alarmLinks} title="Alarm Dashboard" />
           <RealAlarmDashBoard message={props.message} alarms={alarms}>
             {/* 主内容区域，显示具体数据 */}
