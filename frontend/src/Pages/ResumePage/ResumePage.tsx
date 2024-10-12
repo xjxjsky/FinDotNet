@@ -31,7 +31,7 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
             to="/ProjectPage"
             className="inline-block py-3 px-8 text-lg font-semibold text-white bg-lightGreen rounded-full shadow-lg hover:bg-green-600 transition duration-300"
           >
-            Project Experience，Click here！
+            Project Experience | Click here！
           </Link>
         </div>
       </header>

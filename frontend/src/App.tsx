@@ -1,24 +1,35 @@
 import "./App.css";
+import Layout from "./Layout"; // 导入 Layout 组件
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import { Outlet } from "react-router";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { UserProvider } from "./Context/useAuth";
 import './Locales/i18n'; // 引入 i18n 配置
+import RealAlarmPage from "./Pages/RealAlarmPage/RealAlarmPage";
+// 导入其他页面组件...
 
+//在 App.tsx 中定义了自己的 Router 和 Routes，这与 index.tsx 中使用的 RouterProvider 产生了冲突。建议统一使用一种路由配置方式。
+//已经在 Routes/Routes.tsx 中定义了路由并使用了 RouterProvider，则 App.tsx 不需要再定义路由。App.tsx 可以作为一个包含其他全局组件的简单组件，或者完全不需要，取决于你的需求。
 function App() {
   return (
     <>
-      <UserProvider>
-        <Navbar />
-        <div className="mt-20"> {/* 根据导航栏实际高度调整 */}
-          <Outlet />
-        </div>
-        <ToastContainer />
-      </UserProvider>
+      
     </>
   );
 }
+
+// function App() {
+//   return (
+//     <UserProvider>
+//       <Navbar />
+//       {/* Navbar 已固定在顶部，布局由 Layout 组件管理 */}
+//       <ToastContainer />
+//     </UserProvider>
+//   );
+// }
+
 
 export default App;
 

@@ -18,8 +18,11 @@ type UserContextType = {
 
 type Props = { children: React.ReactNode };
 
-// 创建 UserContext
-const UserContext = createContext<UserContextType>({} as UserContextType);
+// 创建 UserContext 
+//第1种写法：const UserContext = createContext<UserContextType>({} as UserContextType);这种写法假设 UserContext 总是有一个默认值，即使这个值是一个空对象 {}。这在某些情况下可能会简化代码，因为你不需要处理 undefined 的情况，但也可能隐藏潜在的错误。
+//这种写法更安全，因为它明确表示 UserContext 可能为 undefined。在使用 useContext 时，你需要处理 undefined 的情况，这可以防止在没有 Provider 包裹的情况下出现意外错误。
+//Sum in one, 推荐： 如果希望代码更健壮并且能够明确处理 undefined 的情况，第2种写法更靠谱。如果确定 UserContext 总是会有一个默认值，并且希望简化代码逻辑，第1种写法也可以接受。
+const UserContext = createContext<UserContextType | undefined>(undefined); //选择第2种写法，更健壮！
 
 export const UserProvider = ({ children }: Props) => {
   const navigate = useNavigate(); // 使用 useNavigate 来进行页面导航
@@ -40,11 +43,7 @@ export const UserProvider = ({ children }: Props) => {
   }, []);
 
   // 注册用户的方法
-  const registerUser = async (
-    email: string,
-    username: string,
-    password: string
-  ) => {
+  const registerUser = async (email: string, username: string, password: string) => {
     await registerAPI(email, username, password)
       .then((res) => {
         if (res) {
@@ -98,9 +97,13 @@ export const UserProvider = ({ children }: Props) => {
     localStorage.removeItem("token"); // 移除本地存储中的令牌
     localStorage.removeItem("user"); // 移除本地存储中的用户信息
     setUser(null); // 清空用户状态
-    setToken(""); // 清空令牌状态
+    setToken(null);//setToken(""); // 清空令牌状态, 使用空字符串 "" 表示令牌为空。这种方式也可以表示没有令牌，但在某些情况下，空字符串可能会被误认为是有效的非空值。使用 setToken(null) 更加直观和安全，因为它明确表示令牌不存在，避免了空字符串可能带来的混淆。
     navigate("/"); // 导航到根路径
   };
+
+  if (!isReady) {
+    return null; // 或者加载一个加载指示器
+  }
 
   return (
     // 提供 UserContext.Provider 给子组件使用,  // 在初始化完成后才渲染子组件
@@ -111,7 +114,15 @@ export const UserProvider = ({ children }: Props) => {
 };
 
 // 自定义 Hook，用于在组件中访问 UserContext
-export const useAuth = () => React.useContext(UserContext);
+//export const useAuth = () => React.useContext(UserContext);
+// 自定义 Hook，用于在组件中访问 UserContext
+export const useAuth = () => {
+  const context = React.useContext(UserContext);
+  if (context === undefined) {
+    throw new Error("useAuth must be used within a UserProvider");
+  }
+  return context;
+};
 
 /*
 useAuth.tsx 文件是一个 React 上下文，用于管理用户身份验证状态（例如用户信息和 token）。它使用 AuthService.tsx 中定义的 API 函数来与后端交互。

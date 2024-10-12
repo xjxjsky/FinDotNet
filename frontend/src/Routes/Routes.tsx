@@ -15,11 +15,17 @@ import DashBoardPage from "../Pages/DashBoardPage/DashBoardPage";
 import RealAlarmPage from "../Pages/RealAlarmPage/RealAlarmPage";
 import ResumePage from "../Pages/ResumePage/ResumePage";
 import ProjectPage from "../Pages/ProjectPage/ProjectPage";
+import Layout from "../Layout";
+import { UserProvider } from "../Context/useAuth";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element:  (     
+      <UserProvider> {/* 包裹 RouterProvider */}
+        <Layout />
+      </UserProvider>
+    ), // 使用 Layout 作为根路由， 移除 //element: <App />,
     children: [
       { path: "", element: <HomePage /> },
       
@@ -36,19 +42,15 @@ export const router = createBrowserRouter([
         ),
       },
 
-      { path: "DashBoard", element: <DashBoardPage message={"Hello, Dash Board! created by Jay!"} /> },
+      { path: "DashBoard", element: <DashBoardPage message={"Hello, Dash Board! created by Jay! I dont think how to present or render this page yet, give me some time to think about it! I gonna give you spectacle and prestige showcase! Let's dive in programming! Thank you!"} /> },
 
       { path: "RealAlarm", element: <RealAlarmPage message={"Alarm Table Demo - [Simulating ZTE Corp's Alarm Business Data]"} /> },
 
       { path: "Design-guide", element: <DesignGuide /> },
 
-      { path: "ResumePage", element: <ResumePage label={""} onClick={function (): void {
-        throw new Error("Function not implemented.");
-      } } /> },
+      { path: "ResumePage", element: <ResumePage label={""} onClick={function (): void {throw new Error("Function not implemented.");} } /> },
       
-      { path: "ProjectPage", element: <ProjectPage label={""} onClick={function (): void {
-        throw new Error("Function not implemented.");
-      } } /> },
+      { path: "ProjectPage", element: <ProjectPage label={""} onClick={function (): void {throw new Error("Function not implemented.");} } /> },
 
       {
         path: "company/:ticker",

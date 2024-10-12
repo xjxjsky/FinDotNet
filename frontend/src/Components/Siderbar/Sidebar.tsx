@@ -14,23 +14,20 @@ interface Props {
 
 const Sidebar: React.FC<Props> = ({ links, title }) => {
   return (
-    <nav className="block py-4 px-6 top-0 bottom-0 w-64 bg-white shadow-xl left-0 absolute flex-row flex-nowrap md:z-10 z-9999 transition-all duration-300 ease-in-out transform md:translate-x-0 -translate-x-full">
+    <nav className="fixed top-[80px] bottom-0 w-64 bg-white shadow-xl z-40 left-0 hidden md:block flex flex-col p-6">
+      
       {title && <h6 className="font-bold text-lg mb-4">{title}</h6>}
-      <div className="flex-col min-h-full px-0 flex flex-wrap items-center justify-between w-full mx-auto overflow-y-auto overflow-x-hidden">
-        <div className="flex bg-white flex-col items-stretch opacity-100 relative mt-4 overflow-y-auto overflow-x-hidden h-auto z-40 flex-1 rounded w-full">
-          <div className="md:flex-col md:min-w-full flex flex-col list-none">
-            {links.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold pt-1 pb-4 no-underline"
-              >
-                <FaHome />
-                <h6 className="ml-3">{link.label}</h6>
-              </Link>
-            ))}
-          </div>
-        </div>
+      <div className="flex flex-col min-h-full">
+        {links.map((link) => (
+          <Link
+            key={link.to}
+            to={link.to}
+            className="flex items-center text-blueGray-500 text-medium uppercase font-bold pt-1 pb-4 no-underline hover:bg-gray-200 rounded"
+          >
+            <FaHome />
+            <h6 className="ml-3">{link.label}</h6>
+          </Link>
+        ))}
       </div>
     </nav>
   );
@@ -38,6 +35,13 @@ const Sidebar: React.FC<Props> = ({ links, title }) => {
 
 export default Sidebar;
 
+/*
+解释：
+
+    使用 fixed 定位，将 Sidebar 固定在页面左侧。
+    通过 hidden md:block 类，在小屏幕上隐藏 Sidebar，在中等及以上屏幕上显示。
+    确保 Sidebar 的宽度与主内容区域的 margin-left (ml-64) 一致（16rem）。
+*/
 
 /* 旧的Sidebar,代之以新的可复用的Siderbar
 const Sidebar = (props: Props) => {

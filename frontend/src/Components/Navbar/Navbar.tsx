@@ -12,6 +12,8 @@ interface Props {}
 
 const Navbar: React.FC<Props> = () => {
   const { isLoggedIn, user, logout } = useAuth();
+  console.log("isLoggedIn:", isLoggedIn); // For debugging
+
   const { t, i18n } = useTranslation();
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState("en");
@@ -115,6 +117,7 @@ const Navbar: React.FC<Props> = () => {
             <div className="hover:text-darkBlue">
               {t("welcome")}, {user?.userName}
             </div>
+
             {/* 语言切换按钮 */}
             <div className="relative">
               <button
@@ -163,13 +166,19 @@ const Navbar: React.FC<Props> = () => {
             </Link>
           </div>
         )}
+
         {/* 汉堡菜单图标 */}
         <div className="lg:hidden">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <button
+            onClick={toggleMenu}
+            className="text-white focus:outline-none"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+          >
             {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
       </div>
+
       {/* 移动设备下的导航菜单 */}
       {menuOpen && (
         <div className="lg:hidden mt-4">

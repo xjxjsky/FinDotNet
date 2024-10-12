@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 //import { useParams } from "react-router";
-import Sidebar from "../../Components/Siderbar/Sidebar";
+//import Sidebar from "../../Components/Siderbar/Sidebar";
 import Spinner from "../../Components/Spinner/Spinner";
 import { realAlarmDataGetAPI } from "../../Services/AlarmService";
 import RealAlarmDashBoard from "../../Components/Alarm/RealAlarmDashBoard";
@@ -38,13 +38,14 @@ const RealAlarmPage = (props: Props) => {
   }, []); // 依赖项为空数组，意味着只会在组件挂载时运行一次
   
    // 定义侧边栏链接
+   /* Reorganize the UI Layout, delete it.
   const alarmLinks = [
     { to: "Real-alarm", label: "Real Alarm Table" },
     { to: "Create Real-alarm", label: "Create Real Alarm" },
     { to: "Update Real-alarm", label: "Update Real Alarm" },
     { to: "Delete Real-alarm", label: "Delete Real Alarm" },
 
-  ];
+  ];*/
   return ( 
     <>
       {loading ? (
@@ -52,11 +53,9 @@ const RealAlarmPage = (props: Props) => {
       ) : error ? (
         <div className="text-red-500 text-center">{error}</div> // 显示错误信息
       ) : (
-        <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-auto">
-          <Sidebar links={alarmLinks} title="Alarm Dashboard" />
-          <RealAlarmDashBoard message={props.message} alarms={alarms}>
-            {/* 主内容区域，显示具体数据 */}
-          </RealAlarmDashBoard>
+        <div className="w-full relative flex flex-col flex-grow overflow-y-auto">
+          {/* 这里移除了 Sidebar，因为它现在由 Layout 统一管理，不在镶嵌在RealAlarmPage中显示了 */}
+          <RealAlarmDashBoard message={props.message} alarms={alarms}/>{/* 主内容区域，显示具体数据 */}
         </div>
       )}
     </>

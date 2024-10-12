@@ -6,9 +6,12 @@ interface AlarmTableProps {
   alarms: AlarmGet[];
 }
 
+//关键点：
+//使用 min-w-max 和 whitespace-nowrap 类，确保表格宽度根据内容自动扩展，且内容不换行。
+//确保 overflow-x-auto 被正确应用到包裹 <table> 的 <div> 上，以启用横向滚动条。
 const AlarmTable: React.FC<AlarmTableProps> = ({ alarms }) => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto max-h-screen">
       <table className="min-w-max bg-white rounded-lg shadow-lg whitespace-nowrap">
         <thead className="bg-gray-800 text-white">
           <tr>
