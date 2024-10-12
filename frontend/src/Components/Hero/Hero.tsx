@@ -13,7 +13,10 @@ const Hero = (props: Props) => {
             Financial & Telecomm data with your dream.
           </h1>
           <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
-            This app can only be run on a desktop PC to view all features. The React Native mobile version is still under development.
+            This app can only be run on desktop PCs to view all features. 
+          </p>
+          <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
+            Menu "Search Stock" should be authorizated to access to, others are free to div in! The React Native mobile version is still under development.
           </p>
 
           <p>
