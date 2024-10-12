@@ -33,8 +33,8 @@ const Layout: React.FC = () => {
       {/* 顶部导航栏 */}
       <Navbar />
 
-       {/* Hamburger Menu 汉堡菜单按钮，仅在小屏幕上显示 */}
-       {shouldShowSidebar && (
+      {/* Hamburger Menu 汉堡菜单按钮，仅在小屏幕上显示 */}
+        {shouldShowSidebar && (
         <div className="md:hidden fixed top-0 left-0 p-4 z-50">
           <button onClick={toggleSidebar} className="text-black">
             {isSidebarOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -60,6 +60,7 @@ const Layout: React.FC = () => {
         </>
       )}
 
+      {/* Toast 消息内容区域 eg. "Login sucessfully...etc." */}
       <ToastContainer />
 
       {/* Main 内容区域 */}
