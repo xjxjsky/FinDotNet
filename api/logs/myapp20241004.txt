@@ -1,0 +1,589 @@
+2024-10-04 15:26:38.079 +10:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-04 15:26:38.372 +10:00 [DBG] Hosting starting
+2024-10-04 15:26:38.425 +10:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-04 15:26:38.448 +10:00 [DBG] Reading data from file 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys\key-09f4c327-8202-4127-a086-3279d0867f38.xml'.
+2024-10-04 15:26:38.456 +10:00 [DBG] Reading data from file 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys\key-0b92793b-215a-42ed-8eef-7290d0169511.xml'.
+2024-10-04 15:26:38.458 +10:00 [DBG] Reading data from file 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys\key-8e2aadec-6bc5-45ee-b40b-f1e00f30e606.xml'.
+2024-10-04 15:26:38.470 +10:00 [DBG] Found key {09f4c327-8202-4127-a086-3279d0867f38}.
+2024-10-04 15:26:38.479 +10:00 [DBG] Found key {0b92793b-215a-42ed-8eef-7290d0169511}.
+2024-10-04 15:26:38.480 +10:00 [DBG] Found key {8e2aadec-6bc5-45ee-b40b-f1e00f30e606}.
+2024-10-04 15:26:38.494 +10:00 [DBG] Considering key {0b92793b-215a-42ed-8eef-7290d0169511} with expiration date 2024-11-06 10:34:22Z as default key.
+2024-10-04 15:26:38.499 +10:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-04 15:26:38.503 +10:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-04 15:26:38.517 +10:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-04 15:26:38.527 +10:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-04 15:26:38.532 +10:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-04 15:26:38.536 +10:00 [DBG] Using key {0b92793b-215a-42ed-8eef-7290d0169511} as the default key.
+2024-10-04 15:26:38.538 +10:00 [DBG] Key ring with default key {0b92793b-215a-42ed-8eef-7290d0169511} was loaded during application startup.
+2024-10-04 15:26:38.693 +10:00 [INF] Now listening on: http://localhost:5177
+2024-10-04 15:26:38.693 +10:00 [DBG] Loaded hosting startup assembly api
+2024-10-04 15:26:38.693 +10:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-04 15:26:38.694 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-04 15:26:38.694 +10:00 [INF] Hosting environment: Development
+2024-10-04 15:26:38.694 +10:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-04 15:26:38.694 +10:00 [DBG] Hosting started
+2024-10-04 15:26:39.809 +10:00 [DBG] Connection id "0HN746KFSQT7B" accepted.
+2024-10-04 15:26:39.810 +10:00 [DBG] Connection id "0HN746KFSQT7C" accepted.
+2024-10-04 15:26:39.812 +10:00 [DBG] Connection id "0HN746KFSQT7B" started.
+2024-10-04 15:26:39.835 +10:00 [DBG] Connection id "0HN746KFSQT7C" started.
+2024-10-04 15:26:40.382 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 15:26:40.397 +10:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-04 15:26:40.463 +10:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-04 15:26:40.464 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:26:40.908 +10:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-04 15:26:40.972 +10:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-04 15:26:40.973 +10:00 [DBG] Connection id "0HN746KFSQT7C" completed keep alive response.
+2024-10-04 15:26:40.977 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 711.0081ms
+2024-10-04 15:26:41.266 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 15:26:41.271 +10:00 [DBG] Connection id "0HN746KFSQT7C" completed keep alive response.
+2024-10-04 15:26:41.272 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 5.9995ms
+2024-10-04 15:26:43.157 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 15:26:43.162 +10:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-04 15:26:43.162 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:26:44.311 +10:00 [DBG] Connection id "0HN746KFSQT7C" completed keep alive response.
+2024-10-04 15:26:44.312 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1154.519ms
+2024-10-04 15:28:00.499 +10:00 [DBG] Connection id "0HN746KFSQT7B" received FIN.
+2024-10-04 15:28:00.500 +10:00 [DBG] Connection id "0HN746KFSQT7D" accepted.
+2024-10-04 15:28:00.502 +10:00 [DBG] Connection id "0HN746KFSQT7B" disconnecting.
+2024-10-04 15:28:00.505 +10:00 [DBG] Connection id "0HN746KFSQT7B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:28:00.508 +10:00 [DBG] Connection id "0HN746KFSQT7D" started.
+2024-10-04 15:28:00.509 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 15:28:00.511 +10:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-04 15:28:00.512 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:28:00.513 +10:00 [DBG] Connection id "0HN746KFSQT7B" stopped.
+2024-10-04 15:28:00.534 +10:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-04 15:28:00.535 +10:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-04 15:28:00.536 +10:00 [DBG] Connection id "0HN746KFSQT7C" completed keep alive response.
+2024-10-04 15:28:00.536 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 26.6176ms
+2024-10-04 15:28:01.156 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 15:28:01.157 +10:00 [DBG] Connection id "0HN746KFSQT7C" completed keep alive response.
+2024-10-04 15:28:01.158 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.4996ms
+2024-10-04 15:28:03.990 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 15:28:03.992 +10:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-04 15:28:03.992 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:28:04.021 +10:00 [DBG] Connection id "0HN746KFSQT7C" completed keep alive response.
+2024-10-04 15:28:04.021 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.5117ms
+2024-10-04 15:29:06.548 +10:00 [INF] Application is shutting down...
+2024-10-04 15:29:06.549 +10:00 [DBG] Hosting stopping
+2024-10-04 15:29:06.557 +10:00 [DBG] Connection id "0HN746KFSQT7C" disconnecting.
+2024-10-04 15:29:06.558 +10:00 [DBG] Connection id "0HN746KFSQT7C" stopped.
+2024-10-04 15:29:06.557 +10:00 [DBG] Connection id "0HN746KFSQT7D" disconnecting.
+2024-10-04 15:29:06.558 +10:00 [DBG] Connection id "0HN746KFSQT7D" stopped.
+2024-10-04 15:29:06.559 +10:00 [DBG] Connection id "0HN746KFSQT7C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:29:06.559 +10:00 [DBG] Connection id "0HN746KFSQT7D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:29:06.565 +10:00 [DBG] Hosting stopped
+2024-10-04 15:29:06.570 +10:00 [INF] All the parts have been completed! Starting application...
+2024-10-04 15:29:33.410 +10:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-04 15:29:33.686 +10:00 [INF] All the parts have been completed! Starting application...
+2024-10-04 15:29:33.692 +10:00 [DBG] Hosting starting
+2024-10-04 15:29:33.742 +10:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-04 15:29:33.770 +10:00 [DBG] Reading data from file 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys\key-09f4c327-8202-4127-a086-3279d0867f38.xml'.
+2024-10-04 15:29:33.780 +10:00 [DBG] Reading data from file 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys\key-0b92793b-215a-42ed-8eef-7290d0169511.xml'.
+2024-10-04 15:29:33.825 +10:00 [DBG] Reading data from file 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys\key-8e2aadec-6bc5-45ee-b40b-f1e00f30e606.xml'.
+2024-10-04 15:29:33.834 +10:00 [DBG] Found key {09f4c327-8202-4127-a086-3279d0867f38}.
+2024-10-04 15:29:33.844 +10:00 [DBG] Found key {0b92793b-215a-42ed-8eef-7290d0169511}.
+2024-10-04 15:29:33.845 +10:00 [DBG] Found key {8e2aadec-6bc5-45ee-b40b-f1e00f30e606}.
+2024-10-04 15:29:33.860 +10:00 [DBG] Considering key {0b92793b-215a-42ed-8eef-7290d0169511} with expiration date 2024-11-06 10:34:22Z as default key.
+2024-10-04 15:29:33.865 +10:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-04 15:29:33.923 +10:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-04 15:29:33.926 +10:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-04 15:29:33.938 +10:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-04 15:29:33.945 +10:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-04 15:29:33.950 +10:00 [DBG] Using key {0b92793b-215a-42ed-8eef-7290d0169511} as the default key.
+2024-10-04 15:29:33.952 +10:00 [DBG] Key ring with default key {0b92793b-215a-42ed-8eef-7290d0169511} was loaded during application startup.
+2024-10-04 15:29:34.224 +10:00 [INF] Now listening on: http://localhost:5177
+2024-10-04 15:29:34.224 +10:00 [DBG] Loaded hosting startup assembly api
+2024-10-04 15:29:34.224 +10:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-04 15:29:34.224 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-04 15:29:34.224 +10:00 [INF] Hosting environment: Development
+2024-10-04 15:29:34.225 +10:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-04 15:29:34.225 +10:00 [DBG] Hosting started
+2024-10-04 15:29:35.613 +10:00 [DBG] Connection id "0HN746M49P2RT" accepted.
+2024-10-04 15:29:35.616 +10:00 [DBG] Connection id "0HN746M49P2RT" started.
+2024-10-04 15:29:35.657 +10:00 [DBG] Connection id "0HN746M49P2RU" accepted.
+2024-10-04 15:29:35.658 +10:00 [DBG] Connection id "0HN746M49P2RU" started.
+2024-10-04 15:29:37.047 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 15:29:37.074 +10:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-04 15:29:37.194 +10:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-04 15:29:37.197 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:29:37.869 +10:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-04 15:29:37.943 +10:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-04 15:29:37.944 +10:00 [DBG] Connection id "0HN746M49P2RU" completed keep alive response.
+2024-10-04 15:29:37.947 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 903.5234ms
+2024-10-04 15:29:38.488 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 15:29:38.493 +10:00 [DBG] Connection id "0HN746M49P2RU" completed keep alive response.
+2024-10-04 15:29:38.494 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 5.9667ms
+2024-10-04 15:29:40.353 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 15:29:40.358 +10:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-04 15:29:40.362 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:29:41.487 +10:00 [DBG] Connection id "0HN746M49P2RU" completed keep alive response.
+2024-10-04 15:29:41.487 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1134.8422ms
+2024-10-04 15:31:16.175 +10:00 [DBG] Connection id "0HN746M49P2RT" received FIN.
+2024-10-04 15:31:16.178 +10:00 [DBG] Connection id "0HN746M49P2RT" disconnecting.
+2024-10-04 15:31:16.183 +10:00 [DBG] Connection id "0HN746M49P2RT" stopped.
+2024-10-04 15:31:16.189 +10:00 [DBG] Connection id "0HN746M49P2RT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:31:51.901 +10:00 [DBG] Connection id "0HN746M49P2RU" disconnecting.
+2024-10-04 15:31:51.901 +10:00 [DBG] Connection id "0HN746M49P2RU" stopped.
+2024-10-04 15:31:51.904 +10:00 [DBG] Connection id "0HN746M49P2RU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:33:50.168 +10:00 [DBG] Connection id "0HN746M49P2RV" accepted.
+2024-10-04 15:33:50.169 +10:00 [DBG] Connection id "0HN746M49P2S0" accepted.
+2024-10-04 15:33:50.171 +10:00 [DBG] Connection id "0HN746M49P2RV" started.
+2024-10-04 15:33:50.175 +10:00 [DBG] Connection id "0HN746M49P2S0" started.
+2024-10-04 15:33:50.181 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 15:33:50.181 +10:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-04 15:33:50.182 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:33:50.197 +10:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-04 15:33:50.198 +10:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-04 15:33:50.198 +10:00 [DBG] Connection id "0HN746M49P2RV" completed keep alive response.
+2024-10-04 15:33:50.199 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 17.8294ms
+2024-10-04 15:33:50.644 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 15:33:50.645 +10:00 [DBG] Connection id "0HN746M49P2RV" completed keep alive response.
+2024-10-04 15:33:50.645 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.9352ms
+2024-10-04 15:33:53.440 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 15:33:53.441 +10:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-04 15:33:53.442 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:33:53.490 +10:00 [DBG] Connection id "0HN746M49P2RV" completed keep alive response.
+2024-10-04 15:33:53.492 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.7274ms
+2024-10-04 15:35:02.588 +10:00 [DBG] Connection id "0HN746M49P2S0" received FIN.
+2024-10-04 15:35:02.592 +10:00 [DBG] Connection id "0HN746M49P2S1" accepted.
+2024-10-04 15:35:02.593 +10:00 [DBG] Connection id "0HN746M49P2S0" disconnecting.
+2024-10-04 15:35:02.594 +10:00 [DBG] Connection id "0HN746M49P2S0" stopped.
+2024-10-04 15:35:02.596 +10:00 [DBG] Connection id "0HN746M49P2S1" started.
+2024-10-04 15:35:02.596 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 15:35:02.597 +10:00 [DBG] Connection id "0HN746M49P2S0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:35:02.597 +10:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-04 15:35:02.597 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:35:02.612 +10:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-04 15:35:02.613 +10:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-04 15:35:02.613 +10:00 [DBG] Connection id "0HN746M49P2RV" completed keep alive response.
+2024-10-04 15:35:02.613 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 17.3525ms
+2024-10-04 15:35:03.077 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 15:35:03.078 +10:00 [DBG] Connection id "0HN746M49P2RV" completed keep alive response.
+2024-10-04 15:35:03.078 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.786ms
+2024-10-04 15:35:07.144 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 15:35:07.146 +10:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-04 15:35:07.146 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:35:07.165 +10:00 [DBG] Connection id "0HN746M49P2RV" completed keep alive response.
+2024-10-04 15:35:07.165 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5463ms
+2024-10-04 15:36:15.941 +10:00 [DBG] Connection id "0HN746M49P2S1" received FIN.
+2024-10-04 15:36:15.941 +10:00 [DBG] Connection id "0HN746M49P2S1" disconnecting.
+2024-10-04 15:36:15.942 +10:00 [DBG] Connection id "0HN746M49P2S1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:36:15.942 +10:00 [DBG] Connection id "0HN746M49P2S1" stopped.
+2024-10-04 15:37:18.046 +10:00 [DBG] Connection id "0HN746M49P2RV" disconnecting.
+2024-10-04 15:37:18.046 +10:00 [DBG] Connection id "0HN746M49P2RV" stopped.
+2024-10-04 15:37:18.047 +10:00 [DBG] Connection id "0HN746M49P2RV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:39:43.820 +10:00 [DBG] Connection id "0HN746M49P2S2" accepted.
+2024-10-04 15:39:43.820 +10:00 [DBG] Connection id "0HN746M49P2S2" started.
+2024-10-04 15:39:43.821 +10:00 [DBG] Connection id "0HN746M49P2S3" accepted.
+2024-10-04 15:39:43.822 +10:00 [DBG] Connection id "0HN746M49P2S3" started.
+2024-10-04 15:39:43.826 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 15:39:43.827 +10:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-04 15:39:43.828 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:39:43.844 +10:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-04 15:39:43.845 +10:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-04 15:39:43.846 +10:00 [DBG] Connection id "0HN746M49P2S3" completed keep alive response.
+2024-10-04 15:39:43.846 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 21.3268ms
+2024-10-04 15:39:44.494 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 15:39:44.496 +10:00 [DBG] Connection id "0HN746M49P2S3" completed keep alive response.
+2024-10-04 15:39:44.496 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.7763ms
+2024-10-04 15:39:47.282 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 15:39:47.285 +10:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-04 15:39:47.285 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:39:47.306 +10:00 [DBG] Connection id "0HN746M49P2S3" completed keep alive response.
+2024-10-04 15:39:47.306 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.5179ms
+2024-10-04 15:41:15.946 +10:00 [DBG] Connection id "0HN746M49P2S2" received FIN.
+2024-10-04 15:41:15.946 +10:00 [DBG] Connection id "0HN746M49P2S2" disconnecting.
+2024-10-04 15:41:15.946 +10:00 [DBG] Connection id "0HN746M49P2S2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:41:15.950 +10:00 [DBG] Connection id "0HN746M49P2S2" stopped.
+2024-10-04 15:41:19.895 +10:00 [DBG] Connection id "0HN746M49P2S4" accepted.
+2024-10-04 15:41:19.896 +10:00 [DBG] Connection id "0HN746M49P2S4" started.
+2024-10-04 15:41:19.900 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 15:41:19.901 +10:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-04 15:41:19.903 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:41:19.915 +10:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-04 15:41:19.916 +10:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-04 15:41:19.916 +10:00 [DBG] Connection id "0HN746M49P2S3" completed keep alive response.
+2024-10-04 15:41:19.917 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 17.1148ms
+2024-10-04 15:41:20.521 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 15:41:20.521 +10:00 [DBG] Connection id "0HN746M49P2S3" completed keep alive response.
+2024-10-04 15:41:20.522 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.8249ms
+2024-10-04 15:41:23.104 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 15:41:23.106 +10:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-04 15:41:23.107 +10:00 [DBG] Request did not match any endpoints
+2024-10-04 15:41:23.127 +10:00 [DBG] Connection id "0HN746M49P2S3" completed keep alive response.
+2024-10-04 15:41:23.127 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.6264ms
+2024-10-04 15:43:30.998 +10:00 [DBG] Connection id "0HN746M49P2S4" disconnecting.
+2024-10-04 15:43:30.999 +10:00 [DBG] Connection id "0HN746M49P2S4" stopped.
+2024-10-04 15:43:30.999 +10:00 [DBG] Connection id "0HN746M49P2S4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 15:43:34.005 +10:00 [DBG] Connection id "0HN746M49P2S3" disconnecting.
+2024-10-04 15:43:34.008 +10:00 [DBG] Connection id "0HN746M49P2S3" stopped.
+2024-10-04 15:43:34.009 +10:00 [DBG] Connection id "0HN746M49P2S3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-04 16:37:57.889 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:37:58.153 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:37:58.419 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:38:38.143 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:38:38.409 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:38:38.670 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:38:42.914 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:38:43.182 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:39:20.749 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 16:39:21.007 +10:00 [DBG] Config reload token fired. Checking for changes...
+2024-10-04 17:00:09.697 +10:00 [INF] Application is shutting down...
+2024-10-04 17:00:09.700 +10:00 [DBG] Hosting stopping
+2024-10-04 17:00:09.710 +10:00 [DBG] Hosting stopped
+2024-10-04 17:00:44.770 +10:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-04 17:00:45.115 +10:00 [INF] Now listening on: http://localhost:5177
+2024-10-04 17:00:45.118 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-04 17:00:45.118 +10:00 [INF] Hosting environment: Development
+2024-10-04 17:00:45.119 +10:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-04 17:00:46.209 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 17:00:46.724 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 518.7698ms
+2024-10-04 17:00:47.014 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 17:00:47.020 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 6.6867ms
+2024-10-04 17:00:48.861 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 17:00:49.696 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 835.2211ms
+2024-10-04 17:01:41.266 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - null null
+2024-10-04 17:01:41.272 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:01:41.275 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - 204 null null 9.5147ms
+2024-10-04 17:01:41.341 +10:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/account/login - application/json 47
+2024-10-04 17:01:41.345 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:01:41.348 +10:00 [WRN] Failed to determine the https port for redirect.
+2024-10-04 17:01:42.222 +10:00 [INF] Executing endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 17:01:42.586 +10:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(api.Dtos.Account.LoginDto) on controller api.Controllers.AccountController (api).
+2024-10-04 17:01:54.860 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - null null
+2024-10-04 17:01:54.862 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:01:54.865 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - 204 null null 5.1516ms
+2024-10-04 17:01:54.922 +10:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/account/login - application/json 47
+2024-10-04 17:01:54.923 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:01:54.927 +10:00 [INF] Executing endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 17:01:54.929 +10:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(api.Dtos.Account.LoginDto) on controller api.Controllers.AccountController (api).
+2024-10-04 17:02:01.023 +10:00 [INF] Executed DbCommand (169ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__ToLower_0
+2024-10-04 17:02:01.023 +10:00 [INF] Executed DbCommand (169ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__ToLower_0
+2024-10-04 17:02:01.971 +10:00 [INF] Executing OkObjectResult, writing value of type 'api.Dtos.Account.NewUserDto'.
+2024-10-04 17:02:01.971 +10:00 [INF] Executing OkObjectResult, writing value of type 'api.Dtos.Account.NewUserDto'.
+2024-10-04 17:02:02.142 +10:00 [INF] Executed action api.Controllers.AccountController.Login (api) in 7203.307ms
+2024-10-04 17:02:02.143 +10:00 [INF] Executed endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 17:02:02.142 +10:00 [INF] Executed action api.Controllers.AccountController.Login (api) in 19507.1466ms
+2024-10-04 17:02:02.144 +10:00 [INF] Executed endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 17:02:02.158 +10:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/account/login - 200 393 application/json; charset=utf-8 20817.0106ms
+2024-10-04 17:02:02.158 +10:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/account/login - 200 393 application/json; charset=utf-8 7235.8085ms
+2024-10-04 17:02:03.018 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-04 17:02:03.020 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:03.020 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 1.9372ms
+2024-10-04 17:02:03.037 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-04 17:02:03.038 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:03.038 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 0.7356ms
+2024-10-04 17:02:03.234 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-04 17:02:03.235 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:03.290 +10:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 17:02:03.298 +10:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-04 17:02:03.542 +10:00 [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-04 17:02:04.004 +10:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-04 17:02:04.008 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 17:02:04.020 +10:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 720.8637ms
+2024-10-04 17:02:04.020 +10:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 17:02:04.021 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 786.3478ms
+2024-10-04 17:02:04.021 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-04 17:02:04.022 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:04.031 +10:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 17:02:04.034 +10:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-04 17:02:04.045 +10:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-04 17:02:04.056 +10:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-04 17:02:04.058 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 17:02:04.058 +10:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 23.8997ms
+2024-10-04 17:02:04.059 +10:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 17:02:04.059 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 37.8869ms
+2024-10-04 17:02:15.267 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - null null
+2024-10-04 17:02:15.267 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:15.269 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - 204 null null 2.4591ms
+2024-10-04 17:02:15.329 +10:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/account/login - application/json 47
+2024-10-04 17:02:15.330 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:15.332 +10:00 [INF] Executing endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 17:02:15.333 +10:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(api.Dtos.Account.LoginDto) on controller api.Controllers.AccountController (api).
+2024-10-04 17:02:15.346 +10:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__ToLower_0
+2024-10-04 17:02:15.529 +10:00 [INF] Executing OkObjectResult, writing value of type 'api.Dtos.Account.NewUserDto'.
+2024-10-04 17:02:15.530 +10:00 [INF] Executed action api.Controllers.AccountController.Login (api) in 196.5585ms
+2024-10-04 17:02:15.530 +10:00 [INF] Executed endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 17:02:15.531 +10:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/account/login - 200 393 application/json; charset=utf-8 202.1347ms
+2024-10-04 17:02:15.719 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-04 17:02:15.720 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:15.721 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 2.5721ms
+2024-10-04 17:02:15.758 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-04 17:02:15.759 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:15.760 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 1.4708ms
+2024-10-04 17:02:15.882 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-04 17:02:15.882 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:15.885 +10:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 17:02:15.885 +10:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-04 17:02:15.903 +10:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-04 17:02:15.907 +10:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-04 17:02:15.909 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 17:02:15.917 +10:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 32.4163ms
+2024-10-04 17:02:15.919 +10:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 17:02:15.921 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 39.0908ms
+2024-10-04 17:02:15.924 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-04 17:02:15.925 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:15.927 +10:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 17:02:15.936 +10:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-04 17:02:15.942 +10:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-04 17:02:15.951 +10:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-04 17:02:15.952 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 17:02:15.953 +10:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 16.2021ms
+2024-10-04 17:02:15.953 +10:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 17:02:15.954 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 29.8663ms
+2024-10-04 17:02:26.427 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-04 17:02:26.427 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:26.429 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - 204 null null 2.2577ms
+2024-10-04 17:02:26.534 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-04 17:02:26.534 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:26.535 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - 204 null null 0.5454ms
+2024-10-04 17:02:26.725 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-04 17:02:26.725 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:26.726 +10:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-04 17:02:26.736 +10:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-04 17:02:27.001 +10:00 [INF] Executed DbCommand (4ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-04 17:02:27.003 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 17:02:27.005 +10:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 268.6994ms
+2024-10-04 17:02:27.005 +10:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-04 17:02:27.006 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 281.6581ms
+2024-10-04 17:02:27.008 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-04 17:02:27.008 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:27.009 +10:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-04 17:02:27.010 +10:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-04 17:02:27.017 +10:00 [INF] Executed DbCommand (1ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-04 17:02:27.019 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 17:02:27.020 +10:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 10.3331ms
+2024-10-04 17:02:27.021 +10:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-04 17:02:27.022 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 13.9714ms
+2024-10-04 17:02:27.833 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-04 17:02:27.834 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:27.835 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 2.3663ms
+2024-10-04 17:02:27.856 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-04 17:02:27.856 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:27.860 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 4.5169ms
+2024-10-04 17:02:27.987 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-04 17:02:27.988 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:27.990 +10:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-04 17:02:28.008 +10:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-04 17:02:28.058 +10:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-04 17:02:28.068 +10:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-04 17:02:28.183 +10:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-04 17:02:28.364 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 17:02:28.375 +10:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 366.4061ms
+2024-10-04 17:02:28.375 +10:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-04 17:02:28.376 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 388.4894ms
+2024-10-04 17:02:28.415 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-04 17:02:28.416 +10:00 [INF] CORS policy execution successful.
+2024-10-04 17:02:28.417 +10:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-04 17:02:28.418 +10:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-04 17:02:28.422 +10:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-04 17:02:28.427 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 17:02:28.434 +10:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 15.305ms
+2024-10-04 17:02:28.434 +10:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-04 17:02:28.435 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 19.6302ms
+2024-10-04 21:01:08.849 +10:00 [INF] Application is shutting down...
+2024-10-04 21:01:08.917 +10:00 [INF] All the parts have been completed! Starting application...
+2024-10-04 21:03:28.618 +10:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-04 21:03:28.798 +10:00 [INF] Now listening on: http://localhost:5177
+2024-10-04 21:03:28.801 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-04 21:03:28.802 +10:00 [INF] Hosting environment: Development
+2024-10-04 21:03:28.802 +10:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-04 21:03:30.633 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 21:03:31.244 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 615.3385ms
+2024-10-04 21:03:31.672 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 21:03:31.676 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.8057ms
+2024-10-04 21:03:35.091 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 21:03:36.425 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1333.8455ms
+2024-10-04 21:13:59.142 +10:00 [INF] Application is shutting down...
+2024-10-04 21:13:59.161 +10:00 [INF] All the parts have been completed! Starting application...
+2024-10-04 21:53:15.784 +10:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-04 21:53:16.127 +10:00 [INF] Now listening on: http://localhost:5177
+2024-10-04 21:53:16.130 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-04 21:53:16.131 +10:00 [INF] Hosting environment: Development
+2024-10-04 21:53:16.131 +10:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-04 21:53:16.874 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - null null
+2024-10-04 21:53:17.055 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:17.087 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - 204 null null 215.9623ms
+2024-10-04 21:53:17.171 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-04 21:53:17.171 +10:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/account/login - application/json 47
+2024-10-04 21:53:17.179 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:17.202 +10:00 [WRN] Failed to determine the https port for redirect.
+2024-10-04 21:53:17.560 +10:00 [INF] Executing endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 21:53:17.591 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 420.5059ms
+2024-10-04 21:53:17.608 +10:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(api.Dtos.Account.LoginDto) on controller api.Controllers.AccountController (api).
+2024-10-04 21:53:17.853 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-04 21:53:17.857 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.696ms
+2024-10-04 21:53:19.869 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-04 21:53:20.910 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1041.6927ms
+2024-10-04 21:53:22.314 +10:00 [INF] Executed DbCommand (76ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__ToLower_0
+2024-10-04 21:53:22.866 +10:00 [INF] Executing OkObjectResult, writing value of type 'api.Dtos.Account.NewUserDto'.
+2024-10-04 21:53:22.931 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - null null
+2024-10-04 21:53:22.932 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:22.933 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - 204 null null 1.524ms
+2024-10-04 21:53:22.937 +10:00 [INF] Executed action api.Controllers.AccountController.Login (api) in 5317.4755ms
+2024-10-04 21:53:22.937 +10:00 [INF] Executed endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 21:53:22.965 +10:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/account/login - 200 393 application/json; charset=utf-8 5794.3835ms
+2024-10-04 21:53:23.031 +10:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/account/login - application/json 47
+2024-10-04 21:53:23.033 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:23.037 +10:00 [INF] Executing endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 21:53:23.063 +10:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(api.Dtos.Account.LoginDto) on controller api.Controllers.AccountController (api).
+2024-10-04 21:53:23.204 +10:00 [INF] Executed DbCommand (3ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__ToLower_0
+2024-10-04 21:53:23.409 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-04 21:53:23.410 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:23.411 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 1.5836ms
+2024-10-04 21:53:23.432 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-04 21:53:23.433 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:23.433 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 1.2249ms
+2024-10-04 21:53:23.448 +10:00 [INF] Executing OkObjectResult, writing value of type 'api.Dtos.Account.NewUserDto'.
+2024-10-04 21:53:23.449 +10:00 [INF] Executed action api.Controllers.AccountController.Login (api) in 383.1698ms
+2024-10-04 21:53:23.450 +10:00 [INF] Executed endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-04 21:53:23.451 +10:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/account/login - 200 393 application/json; charset=utf-8 420.1374ms
+2024-10-04 21:53:23.628 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-04 21:53:23.629 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:23.750 +10:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 21:53:23.766 +10:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-04 21:53:23.874 +10:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-04 21:53:24.115 +10:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-04 21:53:24.121 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 21:53:24.150 +10:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 383.9556ms
+2024-10-04 21:53:24.150 +10:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 21:53:24.151 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 522.7517ms
+2024-10-04 21:53:24.152 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-04 21:53:24.152 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:24.223 +10:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 21:53:24.223 +10:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-04 21:53:24.268 +10:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-04 21:53:24.274 +10:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-04 21:53:24.277 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 21:53:24.278 +10:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 53.7041ms
+2024-10-04 21:53:24.278 +10:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-04 21:53:24.279 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 126.6877ms
+2024-10-04 21:53:27.691 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-04 21:53:27.692 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:27.693 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 1.7615ms
+2024-10-04 21:53:27.718 +10:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-04 21:53:27.719 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:27.719 +10:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 1.2471ms
+2024-10-04 21:53:27.918 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-04 21:53:27.918 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:27.928 +10:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-04 21:53:27.969 +10:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-04 21:53:28.049 +10:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-04 21:53:28.050 +10:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-04 21:53:28.154 +10:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-04 21:53:28.320 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 21:53:28.348 +10:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 378.5045ms
+2024-10-04 21:53:28.348 +10:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-04 21:53:28.351 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 432.9363ms
+2024-10-04 21:53:28.352 +10:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-04 21:53:28.353 +10:00 [INF] CORS policy execution successful.
+2024-10-04 21:53:28.354 +10:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-04 21:53:28.359 +10:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-04 21:53:28.371 +10:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-04 21:53:28.384 +10:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 21:53:28.395 +10:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 34.7459ms
+2024-10-04 21:53:28.401 +10:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-04 21:53:28.402 +10:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 49.0174ms

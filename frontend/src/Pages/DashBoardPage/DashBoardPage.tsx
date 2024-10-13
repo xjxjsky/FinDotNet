@@ -110,7 +110,7 @@ const DashBoardPage: React.FC<Props> = ({ message }) => {
   return (
     <DashboardWrapper>
       <Typography variant="h4" gutterBottom>
-        Cool Modern Dashboard
+        Cool Modern Dashboard (Using MUI present the data and ongoing developing...)
       </Typography>
 
       {loading ? (

@@ -46,7 +46,7 @@ const Layout: React.FC = () => {
       {shouldShowSidebar && (
         <>
           {/* Sidebar for large screens 侧边栏（大屏幕显示）*/}
-          <Sidebar links={alarmLinks} title="Alarm Dashboard" />
+          <Sidebar links={alarmLinks} title="Commonly Display" />
 
           {/* Sidebar overlay for small screens 侧边栏覆盖层（小屏幕显示）*/}
           {isSidebarOpen && (

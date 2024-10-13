@@ -9,10 +9,35 @@
     "signup": "注册",
     "logout": "登出",
     "language": "语言",
+  
+
+    "menu_search_stock": "查询股票",
+    "tooltip_search_stock": "查询喜欢的股票!",
+ 
+    "menu_dashboard": "仪表盘",
+    "tooltip_dashboard": "网站内容展示~",
+
+    "menu_real_alarm": "实时告警",
+    "tooltip_real_alarm": "模拟的实时告警展示",
+
+    "menu_design_guide": "网站导航",
+    "tooltip_design_guide": "展示网站有趣的内容...",
+
+    "multi_fun_menu": "多菜单演示",
+    "multi_fun_menu_tip": "多菜单实时展示!",
+
+    "menu_about": "关于作者",
+    "tooltip_about": "我是谁？！...",
+
+    "login": "登入",
+    "signup": "注册",
+    "logout": "登出",
+    "language": "语言",
     "submenu1": "子菜单 1",
     "submenu2": "子菜单 2",
     "submenu3": "子菜单 3",
     "submenu2-1": "子菜单 2-1",
     "submenu2-2": "子菜单 2-2"
+
   }
   
