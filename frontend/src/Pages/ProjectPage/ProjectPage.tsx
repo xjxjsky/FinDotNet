@@ -104,7 +104,7 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
             <img src="/pics/.jpg" alt="Team Member 2" />
             <div className="photo-caption">
               <h4>Dev Team Member 2</h4>
-              <p>We're a dream team for being posted in HP office</p>
+              <p>We're a dream team for being posted @ HP office</p>
             </div>
           </div>
           
