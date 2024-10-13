@@ -1,7 +1,0 @@
-2024-10-13 13:30:13.837 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
-2024-10-13 13:30:13.848 +11:00 [INF] CORS policy execution successful.
-2024-10-13 13:30:13.850 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 11.8328ms
-2024-10-13 13:30:13.855 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
-2024-10-13 13:30:13.856 +11:00 [INF] CORS policy execution successful.
-2024-10-13 13:30:13.963 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
-2024-10-13 13:30:13.965 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
