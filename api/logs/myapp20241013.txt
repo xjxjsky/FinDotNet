@@ -120,3 +120,639 @@ INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code
 2024-10-13 17:45:50.868 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 95.9231ms
 2024-10-13 17:45:50.869 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
 2024-10-13 17:45:50.869 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 106.9498ms
+2024-10-13 19:28:25.133 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:28:25.134 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:28:25.135 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 1.6063ms
+2024-10-13 19:28:25.146 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:28:25.147 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:28:25.154 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:28:25.155 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 19:28:25.168 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 19:28:26.034 +11:00 [INF] Executed DbCommand (87ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 19:28:26.039 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:28:26.040 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 884.4635ms
+2024-10-13 19:28:26.040 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:28:26.045 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 899.9223ms
+2024-10-13 19:28:26.046 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:28:26.047 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:28:26.047 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:28:26.047 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 19:28:26.049 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 19:28:26.056 +11:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 19:28:26.069 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:28:26.070 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 22.1804ms
+2024-10-13 19:28:26.070 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:28:26.071 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 24.6046ms
+2024-10-13 19:28:30.897 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:28:30.898 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:28:30.898 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 0.9244ms
+2024-10-13 19:28:30.900 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:28:30.900 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:28:30.901 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:28:30.902 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:28:31.551 +11:00 [INF] Executed DbCommand (302ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:28:31.582 +11:00 [INF] Executed DbCommand (28ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:28:31.582 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:28:31.583 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 681.0183ms
+2024-10-13 19:28:31.583 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:28:31.585 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 685.8351ms
+2024-10-13 19:28:31.588 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:28:31.588 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:28:31.589 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:28:31.590 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:28:31.597 +11:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:28:31.601 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:28:31.601 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:28:31.602 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 11.7518ms
+2024-10-13 19:28:31.604 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:28:31.605 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 16.4617ms
+2024-10-13 19:31:19.305 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - null null
+2024-10-13 19:31:19.306 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:19.306 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/account/login - 204 null null 1.1133ms
+2024-10-13 19:31:19.369 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/account/login - application/json 51
+2024-10-13 19:31:19.371 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:19.386 +11:00 [INF] Executing endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-13 19:31:19.434 +11:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(api.Dtos.Account.LoginDto) on controller api.Controllers.AccountController (api).
+2024-10-13 19:31:19.962 +11:00 [INF] Executed DbCommand (17ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__ToLower_0
+2024-10-13 19:31:20.671 +11:00 [INF] Executing OkObjectResult, writing value of type 'api.Dtos.Account.NewUserDto'.
+2024-10-13 19:31:20.673 +11:00 [INF] Executed action api.Controllers.AccountController.Login (api) in 1238.6166ms
+2024-10-13 19:31:20.674 +11:00 [INF] Executed endpoint 'api.Controllers.AccountController.Login (api)'
+2024-10-13 19:31:20.675 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/account/login - 200 398 application/json; charset=utf-8 1305.9972ms
+2024-10-13 19:31:20.798 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:31:20.803 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:20.809 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 10.0235ms
+2024-10-13 19:31:20.813 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:31:20.818 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:20.819 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 7.0252ms
+2024-10-13 19:31:20.821 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:31:20.822 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:20.823 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:31:20.823 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:31:20.843 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:20.824 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:31:20.844 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:31:20.845 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:31:20.859 +11:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:31:20.871 +11:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:31:20.872 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:31:20.874 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 29.75ms
+2024-10-13 19:31:20.874 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:31:20.875 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 55.3175ms
+2024-10-13 19:31:20.903 +11:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:31:20.906 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:31:20.908 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:31:20.911 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 65.6572ms
+2024-10-13 19:31:20.911 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:31:20.912 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 89.1967ms
+2024-10-13 19:31:34.955 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:31:34.955 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:34.956 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - 204 null null 0.856ms
+2024-10-13 19:31:34.959 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:31:34.960 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:34.961 +11:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:31:34.972 +11:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-13 19:31:35.186 +11:00 [INF] Executed DbCommand (61ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-13 19:31:35.188 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:31:35.190 +11:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 217.6797ms
+2024-10-13 19:31:35.190 +11:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:31:35.193 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 233.0202ms
+2024-10-13 19:31:35.194 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:31:35.195 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:31:35.195 +11:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:31:35.197 +11:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-13 19:31:35.208 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-13 19:31:35.208 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:31:35.209 +11:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 11.7055ms
+2024-10-13 19:31:35.211 +11:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:31:35.212 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 18.018ms
+2024-10-13 19:32:16.928 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:32:16.929 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:32:16.936 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 8.6403ms
+2024-10-13 19:32:16.938 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:32:16.939 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:32:16.939 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 1.4322ms
+2024-10-13 19:32:16.960 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:32:16.960 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:32:16.962 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:32:16.962 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 19:32:16.968 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 19:32:16.974 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:32:16.975 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:32:16.978 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:32:16.979 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 19:32:16.981 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 19:32:17.001 +11:00 [INF] Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 19:32:17.005 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:32:17.006 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 43.2405ms
+2024-10-13 19:32:17.006 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:32:17.007 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 47.0291ms
+2024-10-13 19:32:17.063 +11:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 19:32:17.078 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:32:17.079 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 99.9104ms
+2024-10-13 19:32:17.079 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:32:17.079 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 105.0451ms
+2024-10-13 19:34:00.150 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:34:00.151 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:34:00.151 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 1.0556ms
+2024-10-13 19:34:00.156 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:34:00.156 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:34:00.156 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:34:00.157 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:34:00.157 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 1.3341ms
+2024-10-13 19:34:00.158 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:34:00.158 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:34:00.166 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:34:00.167 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:34:00.167 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:34:00.167 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:34:00.218 +11:00 [INF] Executed DbCommand (52ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:34:00.252 +11:00 [INF] Executed DbCommand (31ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:34:00.253 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:34:00.255 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 96.3037ms
+2024-10-13 19:34:00.255 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:34:00.256 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 100.177ms
+2024-10-13 19:34:00.280 +11:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:34:00.284 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:34:00.284 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:34:00.284 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 116.7191ms
+2024-10-13 19:34:00.284 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:34:00.285 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 118.1301ms
+2024-10-13 19:35:15.930 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:35:15.930 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:35:15.931 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 0.8404ms
+2024-10-13 19:35:15.933 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:35:15.933 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:35:15.934 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:35:15.934 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 19:35:15.938 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 19:35:15.970 +11:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 19:35:15.972 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:35:15.977 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 42.638ms
+2024-10-13 19:35:15.978 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:35:15.978 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 45.2997ms
+2024-10-13 19:35:16.098 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:35:16.098 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:35:16.098 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 0.3934ms
+2024-10-13 19:35:16.101 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:35:16.102 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:35:16.102 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:35:16.102 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 19:35:16.103 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 19:35:16.105 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 19:35:16.112 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:35:16.113 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 10.9656ms
+2024-10-13 19:35:16.113 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:35:16.114 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 12.1302ms
+2024-10-13 19:37:38.959 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:37:38.960 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:37:38.960 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 0.6585ms
+2024-10-13 19:37:38.960 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:37:38.960 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:37:38.960 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 0.3055ms
+2024-10-13 19:37:38.963 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:37:38.964 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:37:38.965 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:37:38.965 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:37:38.992 +11:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:37:39.011 +11:00 [INF] Executed DbCommand (16ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:37:39.012 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:37:39.012 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 41.8758ms
+2024-10-13 19:37:39.012 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:37:39.013 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 49.55ms
+2024-10-13 19:37:39.047 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:37:39.047 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:37:39.048 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:37:39.048 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:37:39.075 +11:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:37:39.081 +11:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:37:39.089 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:37:39.090 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 41.7374ms
+2024-10-13 19:37:39.090 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:37:39.090 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 42.9312ms
+2024-10-13 19:39:23.703 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:39:23.705 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:39:23.705 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 2.1384ms
+2024-10-13 19:39:23.707 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:39:23.707 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:39:23.709 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:39:23.710 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:39:23.741 +11:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:39:23.767 +11:00 [INF] Executed DbCommand (21ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:39:23.769 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:39:23.770 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 60.1468ms
+2024-10-13 19:39:23.770 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:39:23.771 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 64.1802ms
+2024-10-13 19:39:23.788 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:39:23.789 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:39:23.791 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:39:23.791 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:39:23.816 +11:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:39:23.821 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:39:23.821 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:39:23.823 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 31.2487ms
+2024-10-13 19:39:23.823 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:39:23.823 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 34.9401ms
+2024-10-13 19:40:03.264 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:40:03.264 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:03.265 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - 204 null null 0.7001ms
+2024-10-13 19:40:03.274 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:40:03.275 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:03.279 +11:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:40:03.279 +11:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-13 19:40:03.285 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:40:03.286 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:03.286 +11:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:40:03.286 +11:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-13 19:40:03.336 +11:00 [INF] Executed DbCommand (51ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-13 19:40:03.336 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:40:03.337 +11:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 57.193ms
+2024-10-13 19:40:03.337 +11:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:40:03.337 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 62.5901ms
+2024-10-13 19:40:03.488 +11:00 [INF] Executed DbCommand (96ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-13 19:40:03.489 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:40:03.489 +11:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 202.5892ms
+2024-10-13 19:40:03.489 +11:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:40:03.490 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 204.1012ms
+2024-10-13 19:40:08.148 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:40:08.148 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:08.149 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 0.9827ms
+2024-10-13 19:40:08.150 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:40:08.150 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:08.151 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 1.774ms
+2024-10-13 19:40:08.174 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:40:08.174 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:08.177 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:40:08.177 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:40:08.183 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 19:40:08.183 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:08.184 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:40:08.184 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 19:40:08.191 +11:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:40:08.200 +11:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:40:08.200 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:40:08.200 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 15.7615ms
+2024-10-13 19:40:08.200 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:40:08.200 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 17.6218ms
+2024-10-13 19:40:08.228 +11:00 [INF] Executed DbCommand (47ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 19:40:08.231 +11:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 19:40:08.231 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:40:08.231 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 53.5075ms
+2024-10-13 19:40:08.231 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 19:40:08.231 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 57.3257ms
+2024-10-13 19:40:45.528 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:40:45.528 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:40:45.528 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:45.529 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:45.529 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - 204 null null 0.608ms
+2024-10-13 19:40:45.529 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - 204 null null 0.4894ms
+2024-10-13 19:40:45.532 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:40:45.532 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:45.535 +11:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:40:45.537 +11:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-13 19:40:45.547 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 19:40:45.547 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:40:45.548 +11:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:40:45.548 +11:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-13 19:40:45.712 +11:00 [INF] Executed DbCommand (165ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-13 19:40:45.713 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:40:45.713 +11:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 176.2471ms
+2024-10-13 19:40:45.713 +11:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:40:45.713 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 181.6187ms
+2024-10-13 19:40:45.720 +11:00 [INF] Executed DbCommand (6ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-13 19:40:45.723 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:40:45.731 +11:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 182.9239ms
+2024-10-13 19:40:45.731 +11:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 19:40:45.731 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 184.2044ms
+2024-10-13 19:42:28.515 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:42:28.515 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:42:28.516 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 0.4938ms
+2024-10-13 19:42:28.606 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:42:28.606 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:42:28.608 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 0.3278ms
+2024-10-13 19:42:28.608 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:42:28.609 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:42:28.611 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:42:28.611 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 19:42:28.614 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 19:42:28.626 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 19:42:28.627 +11:00 [INF] CORS policy execution successful.
+2024-10-13 19:42:28.628 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:42:28.628 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 19:42:28.629 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 19:42:28.648 +11:00 [INF] Executed DbCommand (30ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 19:42:28.658 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:42:28.659 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 45.6461ms
+2024-10-13 19:42:28.659 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:42:28.660 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 51.2631ms
+2024-10-13 19:42:28.677 +11:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 19:42:28.680 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 19:42:28.681 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 53.1818ms
+2024-10-13 19:42:28.682 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 19:42:28.682 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 55.2421ms
+2024-10-13 20:52:11.612 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 20:52:11.614 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:11.614 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 2.5666ms
+2024-10-13 20:52:11.639 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - null null
+2024-10-13 20:52:11.649 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:11.649 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/portfolio/ - 204 null null 10.1629ms
+2024-10-13 20:52:11.651 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 20:52:11.652 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:11.653 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/portfolio/ - null null
+2024-10-13 20:52:11.653 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:11.661 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 20:52:11.663 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 20:52:11.665 +11:00 [INF] Executing endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 20:52:11.665 +11:00 [INF] Route matched with {action = "GetUserPortfolio", controller = "Portfolio"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserPortfolio() on controller api.Controllers.PortfolioController (api).
+2024-10-13 20:52:12.635 +11:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 20:52:12.641 +11:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-10-13 20:52:12.674 +11:00 [INF] Executed DbCommand (31ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 20:52:12.674 +11:00 [INF] Executed DbCommand (32ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[StockId] AS [Id], [s].[Symbol], [s].[CompanyName], [s].[Purchase], [s].[LastDiv], [s].[Industry], [s].[MarketCap]
+FROM [Portfolios] AS [p]
+INNER JOIN [Stocks] AS [s] ON [p].[StockId] = [s].[Id]
+WHERE [p].[AppUserId] = @__user_Id_0
+2024-10-13 20:52:12.675 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 20:52:12.676 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 1010.7671ms
+2024-10-13 20:52:12.676 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 20:52:12.676 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 1025.3044ms
+2024-10-13 20:52:12.677 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Models.Stock, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 20:52:12.679 +11:00 [INF] Executed action api.Controllers.PortfolioController.GetUserPortfolio (api) in 1014.8977ms
+2024-10-13 20:52:12.679 +11:00 [INF] Executed endpoint 'api.Controllers.PortfolioController.GetUserPortfolio (api)'
+2024-10-13 20:52:12.685 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/portfolio/ - 200 2 application/json; charset=utf-8 1032.1109ms
+2024-10-13 20:52:18.494 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 20:52:18.495 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:18.496 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - 204 null null 1.2535ms
+2024-10-13 20:52:18.496 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 20:52:18.496 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:18.498 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/comment/?Symbol=MSTR - 204 null null 2.0455ms
+2024-10-13 20:52:18.498 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 20:52:18.499 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:18.500 +11:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 20:52:18.500 +11:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-13 20:52:18.502 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - null null
+2024-10-13 20:52:18.502 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:18.503 +11:00 [INF] Executing endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 20:52:18.503 +11:00 [INF] Route matched with {action = "GetAll", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.CommentQueryObject) on controller api.Controllers.CommentController (api).
+2024-10-13 20:52:18.552 +11:00 [INF] Executed DbCommand (44ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-13 20:52:18.568 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 20:52:18.571 +11:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 67.7269ms
+2024-10-13 20:52:18.571 +11:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 20:52:18.584 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 82.8671ms
+2024-10-13 20:52:18.588 +11:00 [INF] Executed DbCommand (85ms) [Parameters=[@__queryObject_Symbol_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AppUserId], [c].[Content], [c].[CreatedOn], [c].[StockId], [c].[Title], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+LEFT JOIN [Stocks] AS [s] ON [c].[StockId] = [s].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserId] = [a].[Id]
+WHERE [s].[Symbol] = @__queryObject_Symbol_0
+2024-10-13 20:52:18.596 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[api.Models.Comment, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api.Dtos.Comment.CommentDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 20:52:18.597 +11:00 [INF] Executed action api.Controllers.CommentController.GetAll (api) in 96.7762ms
+2024-10-13 20:52:18.598 +11:00 [INF] Executed endpoint 'api.Controllers.CommentController.GetAll (api)'
+2024-10-13 20:52:18.598 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/comment/?Symbol=MSTR - 200 2 application/json; charset=utf-8 99.7518ms
+2024-10-13 20:52:40.493 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 20:52:40.497 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:40.498 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 4.7286ms
+2024-10-13 20:52:40.500 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - null null
+2024-10-13 20:52:40.500 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:40.501 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/alarm/ - 204 null null 0.337ms
+2024-10-13 20:52:40.514 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 20:52:40.514 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:40.514 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-13 20:52:40.515 +11:00 [INF] CORS policy execution successful.
+2024-10-13 20:52:40.515 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 20:52:40.515 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 20:52:40.516 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 20:52:40.518 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 20:52:40.527 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-13 20:52:40.528 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-13 20:52:40.779 +11:00 [INF] Executed DbCommand (248ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 20:52:40.781 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 20:52:40.782 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 255.4788ms
+2024-10-13 20:52:40.783 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 20:52:40.783 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 268.521ms
+2024-10-13 20:52:40.783 +11:00 [INF] Executed DbCommand (260ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-13 20:52:40.784 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-13 20:52:40.785 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 268.3813ms
+2024-10-13 20:52:40.785 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-13 20:52:40.785 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 270.8563ms
