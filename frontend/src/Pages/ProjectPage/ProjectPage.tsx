@@ -69,7 +69,7 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
             <img src="/pics/@HP(We're a dream team for being posted in HP office).jpg" alt="Team Member 2" />
             <div className="photo-caption">
               <h4>Dev Team Member 2</h4>
-              <p>We're a dream team for being posted in HP office</p>
+              <p>We're a dream team for being posted @ HP office</p>
             </div>
           </div>
           <div className="team-photo-card">
@@ -116,7 +116,7 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
         <h3>Dev Life & programmer dream Showcase</h3>
         <div className="team-photo-grid">
           <div className="team-photo-card">
-            <img src="/pics/atGoogleCalif.jpg" alt="Microsoft Azure Fundamental Cert" />
+            <img src="/pics/atGoogleCalif.png" alt="Microsoft Azure Fundamental Cert" />
             <div className="photo-caption">
               <h4>Mountain View, California U.S.</h4>
               <p>Google's headquarters in Mountain View</p>
@@ -124,7 +124,7 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
             </div>
           </div>
           <div className="team-photo-card">
-            <img src="/pics/apple2.JPG" alt="Team Member 2" />
+            <img src="/pics/apple2.png" alt="Team Member 2" />
             <div className="photo-caption">
               <h4>Infosys HTDM Team Award</h4>
               <p>High-Tech Discrete Manufacturing Industry Department & Microsoft Dev Team</p>
