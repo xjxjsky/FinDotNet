@@ -126,7 +126,7 @@ const ResumePage: React.FC<Props> = ({ label, onClick }) => {
           <div className="team-photo-card">
             <img src="/pics/apple2.png" alt="Team Member 2" />
             <div className="photo-caption">
-              <h4>Infosys HTDM Team Award</h4>
+              <h4>Infosys Hi-Tech Team</h4>
               <p>High-Tech Discrete Manufacturing Industry Department & Microsoft Dev Team</p>
             </div>
           </div>
