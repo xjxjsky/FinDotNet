@@ -11,6 +11,10 @@
 # production
 /build
 
+# Logs
+*.log
+logs/              # 新增：忽略 logs 文件夹
+
 # misc
 .DS_Store
 .env.local
