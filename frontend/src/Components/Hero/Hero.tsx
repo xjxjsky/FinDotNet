@@ -9,6 +9,19 @@ const Hero = (props: Props) => {
     <section id="hero">
       <div className="container flex flex-col-reverse mx-auto p-8 lg:flex-row">
         <div className="flex flex-col space-y-10 mb-44 m-10 lg:m-10 xl:m-20 lg:mt-16 lg:w-full xl:mb-52">
+          <p>
+            Welcome to my portfolio website! Click <strong style={{ color: 'Green' }}>Jay's Resume</strong>  below to view my resume for your reference.
+          </p>
+
+          <div className="mx-auto lg:mx-0">
+            <Link
+              to="/ResumePage"
+              className="py-5 px-10 text-2xl font-bold text-white bg-lightGreen rounded lg:py-4 hover:opacity-70"
+            >
+              Jay's Resume
+            </Link>
+          </div>
+
           <h1 className="text-5xl font-bold text-center lg:text-6xl lg:max-w-4xl xl:max-w-5xl lg:text-left leading-tight">
             Financial & Telecomm data with your dream.
           </h1>
@@ -18,21 +31,10 @@ const Hero = (props: Props) => {
           <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
             Menu "Search Stock" should be authorizated to access to, others are free to div in! The React Native mobile version is still under development.
           </p>
-
-          <p>
-            Welcome to my portfolio website! Click <strong style={{ color: 'Green' }}>Jay's Resume</strong>  below to view my resume for your reference.
-          </p>
           <p>
             To access the "Search Stock" menu, you should register an account or use "adminuser/FinDotNet_123" to log on directly.
           </p>
-          <div className="mx-auto lg:mx-0">
-            <Link
-              to="/ResumePage"
-              className="py-5 px-10 text-2xl font-bold text-white bg-lightGreen rounded lg:py-4 hover:opacity-70"
-            >
-              Jay's Resume
-            </Link>
-          </div>
+
 
           <p>
             Temporary Access Link for Telecom Alarm Demo Data <br />
