@@ -1,0 +1,6 @@
+@AlarmPersistenceService_HostAddress = http://localhost:5008
+
+GET {{AlarmPersistenceService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -15,3 +15,5 @@ export interface AlarmGet {
   alarmStatusDescription: string;  // 告警状态描述
   alarmDuration: string;          // 告警持续时间
 }
+
+

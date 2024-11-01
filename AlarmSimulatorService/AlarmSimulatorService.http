@@ -1,0 +1,6 @@
+@AlarmSimulatorService_HostAddress = http://localhost:5127
+
+GET {{AlarmSimulatorService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

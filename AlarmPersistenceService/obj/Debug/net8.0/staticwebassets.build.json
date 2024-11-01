@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KTsKKGQYC1q0Tn3/3y9qiSyfMf+QnnTpzHaTpFUfXdE=",
+  "Source": "AlarmPersistenceService",
+  "BasePath": "_content/AlarmPersistenceService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

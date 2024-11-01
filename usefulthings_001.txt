@@ -1,0 +1,135 @@
+
+1. cmd  redicrect to the folder you want:
+cd /d D:\Project_V2.0\PORTFOLIO\FinDotNet\alarmmonitorservice
+2.在一个项目AlarmSimulatorService中引入另外一个项目FinDotNet.Shared,这里的路径假设 FinDotNet.Shared 项目和 AlarmSimulatorService 项目在同一个解决方案文件夹内。
+dotnet add reference ../FinDotNet.Shared/FinDotNet.Shared.csproj
+3. 类库项目如FinDotNet.Shared不需要run, 无需在.vscode中的tasks.json中定义，只需要build即可，运行 dotnet watch run。
+4. 在RabbitMQ Command Line中运行 "rabbitmqctl list_queues"  可得消息队列数。RabbitMQ界面中也可观察到消息数，两者应该一致。
+如：
+C:\Program Files\RabbitMQ Server\rabbitmq_server-4.0.2\sbin>rabbitmqctl list_queues
+    Timeout: 60.0 seconds ...
+    Listing queues for vhost / ...
+    name    messages
+    alarmQueue      0
+
+    可以用以下命令手动发布消息到 alarmQueue，测试消息是否可以正常显示：
+    rabbitmqadmin publish routing_key=alarmQueue payload="Test Message"
+5.To access RabbitMQ management interface, open your browser and navigate to:
+http://localhost:15672
+The default login credentials are:
+    Username: guest
+    Password: guest
+if you still can't access it, try restarting your RabbitMQ service by stopping and then starting it again using the following commands:
+net stop rabbitmq
+net start rabbitmq
+
+您可以通过管理界面或命令行删除不需要的队: rabbitmq-plugins enable rabbitmq_management / rabbitmqctl delete_queue alarm.common
+使用 RabbitMQ 管理界面：
+    如果你尚未启用 RabbitMQ 的管理插件，可以通过以下命令启用：
+    bash
+    rabbitmq-plugins enable rabbitmq_management
+
+然后访问 http://localhost:15672/（默认端口），使用用户名和密码登录，你可以在管理界面中看到更详细的队列信息和活动。
+
+6. RabiitMQ 工作大致流程的伪代码：
+    1）生产者伪代码，这里定义了三个生产者消息队列email，sms，push.
+        # 连接到 RabbitMQ 服务器
+        connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+        channel = connection.channel()
+
+        # 声明交换机
+        channel.exchange_declare(exchange='notifications', exchange_type='direct')
+
+        # 声明队列
+        channel.queue_declare(queue='email_notifications')
+        channel.queue_declare(queue='sms_notifications')
+        channel.queue_declare(queue='push_notifications')
+
+        # 绑定队列和交换机
+        channel.queue_bind(exchange='notifications', queue='email_notifications', routing_key='email')
+        channel.queue_bind(exchange='notifications', queue='sms_notifications', routing_key='sms')
+        channel.queue_bind(exchange='notifications', queue='push_notifications', routing_key='push')
+
+        # 发送消息
+        channel.basic_publish(exchange='notifications', routing_key='email', body='This is an email notification')
+
+        # 关闭连接
+        connection.close()
+
+    2） 消费者微服务从队列接收消息的伪代码流程（python实现）：
+        2.1 Email Notification Service
+            import pika
+
+            # 连接到 RabbitMQ 服务器
+            connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+            channel = connection.channel()
+
+            # 声明队列
+            channel.queue_declare(queue='email_notifications')
+
+            # 定义回调函数，用于处理接收到的消息
+            def callback(ch, method, properties, body):
+                print(f"Received email notification: {body.decode()}")
+
+            # 设置消费队列
+            channel.basic_consume(queue='email_notifications', on_message_callback=callback, auto_ack=True)
+
+            print('Waiting for email notifications. To exit press CTRL+C')
+            # 开始消费消息
+            channel.start_consuming()
+
+        2.2 SMS Notification Service
+            import pika
+
+            # 连接到 RabbitMQ 服务器
+            connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+            channel = connection.channel()
+
+            # 声明队列
+            channel.queue_declare(queue='sms_notifications')
+
+            # 定义回调函数，用于处理接收到的消息
+            def callback(ch, method, properties, body):
+                print(f"Received SMS notification: {body.decode()}")
+
+            # 设置消费队列
+            channel.basic_consume(queue='sms_notifications', on_message_callback=callback, auto_ack=True)
+
+            print('Waiting for SMS notifications. To exit press CTRL+C')
+            # 开始消费消息
+            channel.start_consuming()
+
+        2.3 Push Notification Service
+            import pika
+
+            # 连接到 RabbitMQ 服务器
+            connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+            channel = connection.channel()
+
+            # 声明队列
+            channel.queue_declare(queue='push_notifications')
+
+            # 定义回调函数，用于处理接收到的消息
+            def callback(ch, method, properties, body):
+                print(f"Received push notification: {body.decode()}")
+
+            # 设置消费队列
+            channel.basic_consume(queue='push_notifications', on_message_callback=callback, auto_ack=True)
+
+            print('Waiting for push notifications. To exit press CTRL+C')
+            # 开始消费消息
+            channel.start_consuming()
+    伪代码流程说明：
+    连接到 RabbitMQ：每个微服务都会与 RabbitMQ 服务器建立连接。
+    声明队列：服务会声明它所监听的队列（email_notifications、sms_notifications、push_notifications）。
+    定义回调函数：每个服务会定义一个处理函数（callback），用于处理接收到的消息，并在控制台打印出消息内容。
+    消费消息：使用 basic_consume 方法，指定要消费的队列和回调函数。auto_ack=True 表示消息在被处理后会自动确认。
+    开始消费：调用 start_consuming 方法开始等待和处理消息。
+
+    运行：
+    要运行这些微服务：
+    在不同的终端或进程中启动它们。
+    当消息通过交换机发送到相应的队列时，每个微服务将会接收到并处理相应的消息。
+    通过这样的设计，每个微服务可以独立地处理不同类型的通知，使得系统的可扩展性和灵活性大大增强。
+
+7. 

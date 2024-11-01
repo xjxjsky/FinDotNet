@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qEVv7cx0har3aV1yfMtDKYtKjpWU9lP6zHQB4TnN1hc=",
+  "Source": "AlarmReportingService",
+  "BasePath": "_content/AlarmReportingService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "SWHwMz7EiB2wh8csfqemw0FXX8VfNcVP1JH3cuIVCT0=",
+  "Source": "AlarmMonitorService",
+  "BasePath": "_content/AlarmMonitorService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

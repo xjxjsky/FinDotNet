@@ -1,0 +1,233 @@
+﻿using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
+using System.Text;
+using System.Text.Json;
+using FinDotNet.Shared.Models;
+using Microsoft.Extensions.Logging;
+using FinDotNet.Shared.Interfaces;
+
+namespace AlarmMonitorService.Services
+{
+    // AlarmMonitorRabbitMqConsumerService 负责从 RabbitMQ 队列接收和处理告警消息。
+    public class AlarmMonitorRabbitMqConsumerService: IHostedService, IDisposable, IRabbitMqConsumerService
+    {
+        private readonly IConnection _connection; // RabbitMQ 连接
+        private readonly IModel _channel; // RabbitMQ 通道
+        private readonly string _exchangeName = "alarm_exchange"; // 交换机名称
+        private readonly string _queueName = "alarmMonitor"; // 监控服务队列
+        private readonly string _routingKey = "alarm.monitor"; // 路由键
+
+        private bool _disposed; // 资源是否已释放
+
+        private readonly ILogger<AlarmMonitorRabbitMqConsumerService> _logger; // 注入 ILogger
+
+        // 构造函数，初始化 RabbitMQ 连接和消费者
+        // RabbitMqConsumerService 实现了 IRabbitMqConsumerService 接口，负责从 RabbitMQ 队列接收和处理告警消息。
+        public AlarmMonitorRabbitMqConsumerService(string rabbitMqConnectionString, ILogger<AlarmMonitorRabbitMqConsumerService> logger)
+        {
+            _logger = logger;
+            _logger.LogInformation($"RabbitMQ Connection String in service: {rabbitMqConnectionString}");
+            var factory = new ConnectionFactory() { Uri = new Uri(rabbitMqConnectionString) };
+            try
+            {
+                // 创建 RabbitMQ 连接和通道
+                _connection = factory.CreateConnection();
+                _channel = _connection.CreateModel();
+
+                // 声明交换机，确保交换机存在
+                _channel.ExchangeDeclare(exchange: _exchangeName, type: ExchangeType.Topic); // 修改为使用 Topic 类型的交换机
+
+                // 声明队列，确保队列存在
+                _channel.QueueDeclare(queue: _queueName,
+                    durable: false,
+                    exclusive: false,
+                    autoDelete: false,
+                    arguments: null);
+
+                // 将队列绑定到交换机
+                _channel.QueueBind(queue: _queueName, exchange: _exchangeName, routingKey: _routingKey); // 绑定队列到交换机
+
+                // 启动消费者以接收消息
+                StartConsumer();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error connecting to RabbitMQ: {ex.Message}");
+                throw;
+            }
+        }
+
+        // 实现接口中的 StartConsumer 方法，启动 RabbitMQ 消费者
+        private void StartConsumer()
+        {
+            _logger.LogInformation("RabbitMQ StartConsumer: I am here!");
+
+            // 创建一个新的 RabbitMQ 消费者实例
+            var consumer = new EventingBasicConsumer(_channel);
+
+            // 订阅接收消息的事件
+            consumer.Received += (model, ea) =>
+            {
+                // 获取消息体的字节数组
+                var body = ea.Body.ToArray();
+
+                // 将字节数组转换为字符串
+                var jsonMessage = Encoding.UTF8.GetString(body);
+
+                try
+                {
+                    // 反序列化 JSON 消息为 AlarmMessage 对象
+                    var alarmMessage = JsonSerializer.Deserialize<AlarmMessage>(jsonMessage);
+
+                    // 记录接收到的告警信息及其时间戳
+                    _logger.LogInformation($"Received alarm: {alarmMessage.Message} at {alarmMessage.Timestamp}");
+
+                    // 在这里添加处理告警消息的逻辑 Process the message here
+                    // 例如：将消息存储到数据库或触发其他操作
+                    ProcessMessage(alarmMessage);
+
+                    // Acknowledge the message
+                    _channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
+                    _logger.LogInformation("RabbitMQ StartConsumer: This message has been acknowledged by _channel.BasicAck()!");
+                }
+                catch (Exception ex)
+                {
+                    // 如果处理消息时出现错误，记录错误信息
+                    _logger.LogError($"Error processing message: {ex.Message}, Message: {jsonMessage}");
+
+                    // Optionally handle NACK here if you want to re-queue the message
+                    // 选择重试或者将消息发送到死信队列
+                    // 在消费者中，如果处理消息时发生错误，可以使用 BasicNack 来拒绝消息并选择重试机制。例如，可以将消息重新排队到队列中，确保消息不会丢失：
+                    _channel.BasicNack(deliveryTag: ea.DeliveryTag, multiple: false, requeue: true);
+                }
+            };
+
+            // 开始消费消息，从指定队列中接收消息
+            // autoAck 设置为 true，表示消息一旦被接收就会被 RabbitMQ 标记为已处理(建议设为 false，理由如下面英文注释)
+            // You are using autoAck: true in BasicConsume(), which means messages will be acknowledged immediately upon receipt. 
+            // If an exception occurs in processing, the message will be lost. Consider using autoAck: false and manually acknowledging messages after successful processing.
+            _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
+
+        }
+
+        public void PublishMessage(AlarmMessage alarmMessage)
+        {
+            if (_disposed) throw new ObjectDisposedException(nameof(AlarmMonitorRabbitMqConsumerService));
+
+            // var jsonMessage = JsonSerializer.Serialize(alarmMessage);
+            // var body = Encoding.UTF8.GetBytes(jsonMessage);
+            var body = FinDotNet.Shared.Utilities.JSTools.SerializeMessage(alarmMessage);
+
+            try
+            {
+                var properties = _channel.CreateBasicProperties();
+                properties.Persistent = true; // 确保消息持久化 这将确保 RabbitMQ 将消息持久化到磁盘，避免在 RabbitMQ 容器崩溃时丢失消息。
+
+                // 使用交换机发布消息，指定交换机和路由键
+                _channel.BasicPublish(exchange: _exchangeName, // 修改为指定交换机
+                    routingKey: _routingKey, // 使用路由键
+                    basicProperties: properties,
+                    body: body);
+
+                // 等待消息确认
+                if (_channel.WaitForConfirms())
+                {
+                    _logger.LogInformation("Message successfully published to RabbitMQ.");
+                }
+                else
+                {
+                    _logger.LogError("Message was not confirmed by RabbitMQ.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error publishing message: {ex.Message}");
+            }
+        }
+
+        private void ProcessMessage(AlarmMessage alarmMessage)
+        {
+            // 在此实现处理告警消息的逻辑，例如存储到数据库或触发其他操作
+        }
+
+
+        // 释放资源
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    // 关闭通道和连接
+                    _channel?.Close();
+                    _connection?.Close();
+                }
+                _disposed = true; // 标记为已释放
+            }
+        }
+
+        public Task StartAsync(CancellationToken cancellationToken)
+        {
+            // 在应用启动时自动启动消费者
+            StartConsumer();
+            _logger.LogInformation("RabbitMqConsumerService started.");
+
+            return Task.CompletedTask;
+        }
+
+        public Task StopAsync(CancellationToken cancellationToken)
+        {
+            // 在应用停止时执行必要的清理操作
+            Dispose();
+            _logger.LogInformation("RabbitMqConsumerService stopped.");
+
+            return Task.CompletedTask;
+        }
+
+    }
+}
+
+/*
+接口 IRabbitMqConsumerService：定义了通用的 StartConsumer()、PublishMessage(AlarmMessage alarmMessage) 和 Dispose() 方法。
+RabbitMqConsumerService 类：实现了 IRabbitMqConsumerService 接口，使得服务在其他地方调用时更加通用。
+*/
+
+/*
+topic 交换机的功能比 fanout 交换机更强大，主要体现在以下几个方面：
+1. 路由灵活性
+
+    Fanout：所有绑定到 fanout 交换机的队列都会接收到每一条消息。这种方式适用于需要广播所有消息的场景，但缺乏灵活性。
+    Topic：允许根据路由键的匹配规则来选择性地路由消息。使用通配符（如 * 和 #）可以实现复杂的路由逻辑。例如，"order.*" 可以匹配所有以 order. 开头的路由键，而 "#.error" 可以匹配任何路由键以 .error 结尾的消息。
+
+2. 消息过滤
+
+    Fanout：没有消息过滤机制，所有消息都会被广播，所有消费者都接收相同的内容。
+    Topic：可以根据消费者的需求进行过滤，只接收感兴趣的消息。这对于需要处理不同类型消息的应用非常有用。
+
+3. 更适合复杂场景
+
+    Fanout：适合简单的广播场景，例如聊天应用的公告功能。
+    Topic：适合复杂的应用场景，比如日志处理系统、实时数据流等，可以根据消息类型或内容来选择性处理。
+
+4. 资源效率
+
+    Fanout：所有消息都被发送到所有队列，可能会导致不必要的资源消耗。
+    Topic：通过匹配特定的路由键，可以减少无关消息的处理，提升资源使用效率。
+
+例子
+
+假设你有一个电商系统：
+
+    使用 fanout 交换机时，所有消费者（如订单处理、库存更新、通知系统）都会收到每一条消息，可能导致不必要的处理。
+    使用 topic 交换机时，你可以只让库存更新的消费者接收与库存相关的消息，让订单处理的消费者只接收与订单相关的消息，达到更好的性能和资源利用。
+
+总结
+
+虽然 fanout 交换机在某些场景下（如需要广播消息时）非常有效，但 topic 交换机提供了更大的灵活性和控制能力，适用于需要复杂消息路由和过滤的场景。因此，可以说 topic 交换机的功能比 fanout 更加强大。
+*/

@@ -22,3 +22,8 @@ dotnet ef database update
 17. 33.Services React TypeScript Context Auth JWT, 需要在frontend目录下运行"npm install react-toastify"
 18. React TypeScript Context Auth JWT-34.Context: what's the difference between a custom hook and Context?  阐述了useAuth.tsx文件（custom hook）的由来。
 19. React TypeScript Context Auth JWT-35.Login(with React Hook Froms and Yup): type "npm install react-hook-form yup @hookform/resolvers" and "npm start", type "tsrafce" in ts file to create ts code.
+20. What you should know: WPF & WCF have already been deprecated by MS...
+    WPF（Windows Presentation Foundation）和 WCF（Windows Communication Foundation）曾经是 .NET Framework 中的两个重要组成部分，但它们在 .NET Core 中的命运各不相同：
+    WPF：在 .NET Core 3.0 及以上版本中已经得到了支持，主要在 Windows 平台上运行。你可以继续使用 WPF 来构建现代桌面应用。
+    WCF：不像 WPF，WCF 并没有被完全移植到 .NET Core 中。微软推荐使用 gRPC 或 ASP.NET Core Web API 作为替代方案来开发服务。如果你依赖 WCF 功能，你可能需要寻找一些替代方案或者继续在 .NET Framework 上开发。
+21. 

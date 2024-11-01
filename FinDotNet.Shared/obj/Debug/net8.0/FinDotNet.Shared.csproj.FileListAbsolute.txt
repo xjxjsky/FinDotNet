@@ -1,0 +1,13 @@
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\bin\Debug\net8.0\FinDotNet.Shared.deps.json
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\bin\Debug\net8.0\FinDotNet.Shared.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\bin\Debug\net8.0\FinDotNet.Shared.pdb
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\FinDotNet.Shared.csproj.AssemblyReference.cache
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\FinDotNet.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\FinDotNet.Shared.AssemblyInfoInputs.cache
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\FinDotNet.Shared.AssemblyInfo.cs
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\FinDotNet.Shared.csproj.CoreCompileInputs.cache
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\FinDotNet.Shared.sourcelink.json
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\FinDotNet.Shared.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\refint\FinDotNet.Shared.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\FinDotNet.Shared.pdb
+D:\Project_V2.0\PORTFOLIO\FinDotNet\FinDotNet.Shared\obj\Debug\net8.0\ref\FinDotNet.Shared.dll

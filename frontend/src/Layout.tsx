@@ -18,8 +18,8 @@ const Layout: React.FC = () => {
   const shouldShowSidebar = !noSidebarPaths.includes(location.pathname);
 
   const alarmLinks = [
-    { to: "Real-alarm", label: "Real-Alarm-Table" },
-    { to: "Create Real-alarm", label: "Create-Real-Alarm" },
+    { to: "Real-alarm", label: "Real-Alarm Get" },
+    { to: "/AlarmSimulatorPage", label: "Simulate-Alarm" },
     { to: "Update Real-alarm", label: "Update-Real-Alarm" },
     { to: "Delete Real-alarm", label: "Delete-Real-Alarm" },
   ];

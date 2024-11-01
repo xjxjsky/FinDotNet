@@ -1,0 +1,6 @@
+@AlarmReportingService_HostAddress = http://localhost:5290
+
+GET {{AlarmReportingService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

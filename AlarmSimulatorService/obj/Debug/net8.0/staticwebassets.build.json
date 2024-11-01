@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gpJVZWKMF0nj/6arzqQ7EXdpLR92wrVvIgDrMCotzTE=",
+  "Source": "AlarmSimulatorService",
+  "BasePath": "_content/AlarmSimulatorService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

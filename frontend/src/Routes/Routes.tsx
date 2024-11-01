@@ -17,6 +17,7 @@ import ResumePage from "../Pages/ResumePage/ResumePage";
 import ProjectPage from "../Pages/ProjectPage/ProjectPage";
 import Layout from "../Layout";
 import { UserProvider } from "../Context/useAuth";
+import AlarmSimulatorPage from "../Pages/AlarmSimulatorPage/AlarmSimulatorPage";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +46,8 @@ export const router = createBrowserRouter([
       { path: "DashBoard", element: <DashBoardPage message={"Hello, Dash Board! created by Jay! I dont think how to present or render this page yet, give me some time to think about it! I gonna give you spectacle and prestige showcase! Let's dive in programming! Thank you!"} /> },
 
       { path: "RealAlarm", element: <RealAlarmPage message={"Alarm Table Demo - [Simulating ZTE Corp's Alarm Business Data]"} /> },
+
+      { path: "AlarmSimulatorPage", element: <AlarmSimulatorPage message={"[Simulating to send ZTE Corp's Alarm Business Data to Back Server.]"} /> },
 
       { path: "Design-guide", element: <DesignGuide /> },
 

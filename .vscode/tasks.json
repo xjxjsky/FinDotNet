@@ -1,41 +1,91 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
-            "label": "build",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/FinDotNet.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "publish",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "publish",
-                "${workspaceFolder}/FinDotNet.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "watch",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "watch",
-                "run",
-                "--project",
-                "${workspaceFolder}/FinDotNet.sln"
-            ],
-            "problemMatcher": "$msCompile"
-        }
+      {
+        "label": "build",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "build",
+          "${workspaceFolder}/FinDotNet.sln",
+          "/property:GenerateFullPaths=true",
+          "/consoleloggerparameters:NoSummary;ForceNoAlign"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "publish",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "publish",
+          "${workspaceFolder}/FinDotNet.sln",
+          "/property:GenerateFullPaths=true",
+          "/consoleloggerparameters:NoSummary;ForceNoAlign"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "watch-api",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "watch",
+          "run",
+          "--project",
+          "${workspaceFolder}/api/api.csproj"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "watch-alarmmonitorservice",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "watch",
+          "run",
+          "--project",
+          "${workspaceFolder}/AlarmMonitorService/AlarmMonitorService.csproj"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "watch-alarmpersistence",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "watch",
+          "run",
+          "--project",
+          "${workspaceFolder}/AlarmPersistenceService/AlarmPersistenceService.csproj"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "watch-alarmreporting",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "watch",
+          "run",
+          "--project",
+          "${workspaceFolder}/AlarmReportingService/AlarmReportingService.csproj"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "watch-alarmsimulation",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "watch",
+          "run",
+          "--project",
+          "${workspaceFolder}/AlarmSimulatorService/AlarmSimulatorService.csproj"
+        ],
+        "problemMatcher": "$msCompile"
+      }
+
     ]
-}
+  }
+  

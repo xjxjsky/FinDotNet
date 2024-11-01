@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
+
+namespace AlarmSimulatorService.Services
+{
+public class RabbitMqConsumerService : BackgroundService
+{
+    private readonly ILogger<RabbitMqConsumerService> _logger;
+
+    public RabbitMqConsumerService(ILogger<RabbitMqConsumerService> logger)
+    {
+        _logger = logger;
+    }
+
+    protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        var factory = new ConnectionFactory() { Uri = new Uri("amqp://guest:guest@localhost:5672/") };
+        using var connection = factory.CreateConnection();
+        using var channel = connection.CreateModel();
+
+        channel.QueueDeclare(queue: "alarmQueue",
+                             durable: false,
+                             exclusive: false,
+                             autoDelete: false,
+                             arguments: null);
+
+        var consumer = new EventingBasicConsumer(channel);
+        consumer.Received += (model, ea) =>
+        {
+            var body = ea.Body.ToArray();
+            var message = Encoding.UTF8.GetString(body);
+            _logger.LogInformation($"Received message: {message}");
+        };
+
+        channel.BasicConsume(queue: "alarmQueue",
+                             autoAck: true,
+                             consumer: consumer);
+
+        return Task.CompletedTask;
+    }
+}
+
+}

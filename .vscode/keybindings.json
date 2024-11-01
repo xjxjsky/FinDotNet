@@ -1,0 +1,33 @@
+[
+    {
+      "key": "ctrl+shift+a",
+      "command": "workbench.action.tasks.runTask",
+      "args": "watch-api"
+    },
+    {
+      "key": "ctrl+shift+m",
+      "command": "workbench.action.tasks.runTask",
+      "args": "watch-alarmmonitorservice"
+    },
+    {
+      "key": "ctrl+shift+p",
+      "command": "workbench.action.tasks.runTask",
+      "args": "watch-alarmpersistence"
+    },
+    {
+      "key": "ctrl+shift+r",
+      "command": "workbench.action.tasks.runTask",
+      "args": "watch-alarmreporting"
+    },
+    {
+      "key": "ctrl+shift+s",
+      "command": "workbench.action.tasks.runTask",
+      "args": "watch-alarmsimulation"
+    },
+    {
+      "key": "ctrl+shift+f",
+      "command": "workbench.action.tasks.runTask",
+      "args": "watch-shared"
+    }
+  ]
+  

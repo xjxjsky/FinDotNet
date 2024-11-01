@@ -1,0 +1,129 @@
+2024-10-27 19:50:22.552 +11:00 [INF] Jay：Application starting...
+2024-10-27 19:50:27.640 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 19:50:28.944 +11:00 [INF] Now listening on: http://localhost:5177
+2024-10-27 19:50:28.947 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 19:50:28.948 +11:00 [INF] Hosting environment: Development
+2024-10-27 19:50:28.948 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-27 19:50:30.139 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-10-27 19:50:30.914 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 1039.694ms
+2024-10-27 19:50:31.202 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 19:50:31.206 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.8059ms
+2024-10-27 19:50:34.273 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-10-27 19:50:35.441 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1166.7601ms
+2024-10-27 19:51:47.829 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-27 19:51:47.830 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-27 19:51:47.839 +11:00 [INF] CORS policy execution successful.
+2024-10-27 19:51:47.839 +11:00 [INF] CORS policy execution successful.
+2024-10-27 19:51:47.842 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-10-27 19:51:50.526 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 19:51:50.526 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 19:51:50.611 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-27 19:51:50.611 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-27 19:51:52.566 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-27 19:51:52.566 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-27 19:51:56.198 +11:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-27 19:51:56.199 +11:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-27 19:52:00.747 +11:00 [INF] Executed DbCommand (824ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-27 19:52:00.747 +11:00 [INF] Executed DbCommand (824ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-27 19:52:00.951 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-27 19:52:00.951 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-27 19:52:01.134 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 10509.9789ms
+2024-10-27 19:52:01.134 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 10509.9807ms
+2024-10-27 19:52:01.135 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 19:52:01.135 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 19:52:01.149 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 13319.9948ms
+2024-10-27 19:52:01.150 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 13318.4707ms
+2024-10-27 20:09:03.564 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-27 20:09:03.567 +11:00 [INF] CORS policy execution successful.
+2024-10-27 20:09:03.572 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 20:09:03.572 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-27 20:09:03.581 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-27 20:09:04.937 +11:00 [INF] Executed DbCommand (185ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-27 20:09:04.945 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-27 20:09:04.947 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 1374.2743ms
+2024-10-27 20:09:04.947 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 20:09:04.948 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 1384.5168ms
+2024-10-27 20:09:04.968 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-27 20:09:04.969 +11:00 [INF] CORS policy execution successful.
+2024-10-27 20:09:04.969 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 20:09:04.970 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-27 20:09:04.971 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-27 20:09:04.985 +11:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-27 20:09:04.988 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-27 20:09:04.989 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 19.0649ms
+2024-10-27 20:09:04.993 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 20:09:04.993 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 25.4932ms
+2024-10-27 20:19:36.259 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-27 20:19:36.260 +11:00 [INF] CORS policy execution successful.
+2024-10-27 20:19:36.266 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 20:19:36.267 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-27 20:19:36.269 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-27 20:19:37.003 +11:00 [INF] Executed DbCommand (82ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-27 20:19:37.006 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-27 20:19:37.008 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 740.35ms
+2024-10-27 20:19:37.008 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 20:19:37.009 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 749.5624ms
+2024-10-27 20:19:37.020 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-10-27 20:19:37.021 +11:00 [INF] CORS policy execution successful.
+2024-10-27 20:19:37.022 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 20:19:37.022 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-10-27 20:19:37.024 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-10-27 20:19:37.034 +11:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[AlarmType_Code], [t0].[BaseStation_Id], [t0].[CompanyName], [t0].[FixOrNot], [t0].[HappenTime], [t0].[OpertionerName], [t0].[PhoneNumber], [t1].[BaseStation_Id], [t1].[BaseStationName], [t1].[Cell_Id], [t2].[AlarmType_Code], [t2].[AlarmName]
+FROM (
+    SELECT [t].[Id], [t].[AlarmType_Code], [t].[BaseStation_Id], [t].[CompanyName], [t].[FixOrNot], [t].[HappenTime], [t].[OpertionerName], [t].[PhoneNumber]
+    FROM [T_RealAlarm] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t0]
+INNER JOIN [T_BaseStation] AS [t1] ON [t0].[BaseStation_Id] = [t1].[BaseStation_Id]
+INNER JOIN [T_AlarmType] AS [t2] ON [t0].[AlarmType_Code] = [t2].[AlarmType_Code]
+2024-10-27 20:19:37.041 +11:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[api.Dtos.Alarm.AlarmDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-27 20:19:37.042 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 20.0601ms
+2024-10-27 20:19:37.043 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-10-27 20:19:37.047 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 200 2866 application/json; charset=utf-8 26.8732ms

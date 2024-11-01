@@ -2,7 +2,7 @@ import axios from "axios";
 import { handleError } from "../Helpers/ErrorHandler";
 import { AlarmGet, AlarmPost } from "../Models/RealAlarm";
 
-const api = process.env.REACT_APP_API_URL + "alarm/";//"http://localhost:5177/api/alarm/";
+const api = process.env.REACT_APP_API_URL + "alarm/"; //"http://localhost:5177/api/alarm/";
 
 export const realAlarmDataAddAPI = async (symbol: string) => {
   try {

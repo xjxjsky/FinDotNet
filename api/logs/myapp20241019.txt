@@ -1,0 +1,45 @@
+2024-10-19 10:53:22.086 +11:00 [INF] Jay：Application starting...
+2024-10-19 10:53:36.822 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-19 10:53:51.160 +11:00 [INF] Now listening on: https://localhost:5001
+2024-10-19 10:53:51.166 +11:00 [INF] Now listening on: http://localhost:5000
+2024-10-19 10:53:51.177 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-19 10:53:51.180 +11:00 [INF] Hosting environment: Development
+2024-10-19 10:53:51.183 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-19 10:54:35.738 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - null null
+2024-10-19 10:54:39.217 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - 404 0 null 3480.0015ms
+2024-10-19 10:54:39.263 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5001/, Response status code: 404
+2024-10-19 10:57:43.357 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - null null
+2024-10-19 10:57:43.372 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - 404 0 null 14.7691ms
+2024-10-19 10:57:43.422 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5001/, Response status code: 404
+2024-10-19 11:06:00.470 +11:00 [INF] Application is shutting down...
+2024-10-19 11:06:00.776 +11:00 [INF] Jay: All the parts have been completed! Starting application...
+2024-10-19 11:41:50.802 +11:00 [INF] Jay：Application starting...
+2024-10-19 11:41:52.117 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-19 11:41:52.851 +11:00 [INF] Now listening on: https://localhost:5001
+2024-10-19 11:41:52.854 +11:00 [INF] Now listening on: http://localhost:5000
+2024-10-19 11:41:52.862 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-19 11:41:52.864 +11:00 [INF] Hosting environment: Development
+2024-10-19 11:41:52.866 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-10-19 11:41:56.264 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - null null
+2024-10-19 11:41:56.681 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - 404 0 null 419.6367ms
+2024-10-19 11:41:56.711 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5001/, Response status code: 404
+2024-10-19 11:44:27.443 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - null null
+2024-10-19 11:44:28.418 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - null null
+2024-10-19 11:44:28.415 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - null null
+2024-10-19 11:44:28.418 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - null null
+2024-10-19 11:44:28.418 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-19 11:44:28.419 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 975.4739ms
+2024-10-19 11:44:28.453 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_vs/browserLink - null null
+2024-10-19 11:44:28.464 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 45.1956ms
+2024-10-19 11:44:28.551 +11:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-10-19 11:44:28.550 +11:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-10-19 11:44:28.575 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 156.4445ms
+2024-10-19 11:44:28.626 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - 200 144929 text/css 210.6566ms
+2024-10-19 11:44:28.656 +11:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-10-19 11:44:28.689 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 236.5392ms
+2024-10-19 11:44:28.703 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 285.5915ms
+2024-10-19 11:44:29.080 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - null null
+2024-10-19 11:44:29.452 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - null null
+2024-10-19 11:44:29.504 +11:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-10-19 11:44:29.508 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - 200 628 image/png 56.2477ms
+2024-10-19 11:44:30.205 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1124.665ms
