@@ -2650,3 +2650,628 @@ Path 'Maths.Operation.Operation.@ID', line 10, position 14.
 2024-11-04 20:57:53.243 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 400 null text/plain; charset=utf-8 329.8388ms
 2024-11-04 20:59:44.160 +11:00 [INF] Application is shutting down...
 2024-11-04 20:59:44.251 +11:00 [INF] Jay: All the parts have been completed! Starting application...
+2024-11-04 21:04:24.713 +11:00 [INF] Jay：Application starting...
+2024-11-04 21:04:25.073 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-04 21:04:25.218 +11:00 [INF] Now listening on: http://localhost:5177
+2024-11-04 21:04:25.221 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-04 21:04:25.221 +11:00 [INF] Hosting environment: Development
+2024-11-04 21:04:25.222 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-04 21:04:25.928 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-04 21:04:26.569 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 645.8279ms
+2024-11-04 21:04:27.011 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-04 21:04:27.016 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 5.1505ms
+2024-11-04 21:04:29.040 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-04 21:04:30.129 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1088.8925ms
+2024-11-04 21:04:40.937 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:04:40.944 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:04:40.946 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 8.8253ms
+2024-11-04 21:04:40.969 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:04:40.973 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:04:40.975 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-11-04 21:04:41.035 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:04:41.061 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:04:41.278 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:04:41.312 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 247.4251ms
+2024-11-04 21:04:41.312 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:04:41.317 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 348.3278ms
+2024-11-04 21:04:44.586 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:04:44.587 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:04:44.590 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:04:44.591 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:04:44.606 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:04:44.609 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 15.5795ms
+2024-11-04 21:04:44.609 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:04:44.610 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 23.8397ms
+2024-11-04 21:04:49.842 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:04:49.843 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:04:49.844 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 1.8675ms
+2024-11-04 21:04:49.868 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:04:49.869 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:04:49.875 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:04:49.878 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:04:49.887 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:04:49.889 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 10.4169ms
+2024-11-04 21:04:49.889 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:04:49.890 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 21.39ms
+2024-11-04 21:05:00.754 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:05:00.757 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:05:00.758 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 3.4481ms
+2024-11-04 21:05:00.781 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:05:00.782 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:05:00.783 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:05:00.784 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:05:00.786 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:05:00.791 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 6.7427ms
+2024-11-04 21:05:00.791 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:05:00.792 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 10.0871ms
+2024-11-04 21:05:01.475 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:05:01.476 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:05:01.476 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:05:01.477 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:05:01.480 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:05:01.484 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 6.807ms
+2024-11-04 21:05:01.485 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:05:01.487 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 12.0955ms
+2024-11-04 21:05:06.734 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:05:06.734 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:05:06.735 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 0.9611ms
+2024-11-04 21:05:06.756 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:05:06.756 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:05:06.757 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:05:06.758 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:05:06.759 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:05:06.760 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.1257ms
+2024-11-04 21:05:06.760 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:05:06.761 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 4.706ms
+2024-11-04 21:05:08.094 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:05:08.135 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:05:08.136 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:05:08.136 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:05:08.141 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:05:08.142 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 5.4503ms
+2024-11-04 21:05:08.143 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:05:08.143 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 48.6771ms
+2024-11-04 21:10:54.817 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:10:54.817 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:10:54.818 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 1.0412ms
+2024-11-04 21:10:54.843 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:10:54.843 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:10:54.844 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:10:54.844 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:10:54.877 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:10:54.910 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 57.4559ms
+2024-11-04 21:10:54.911 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:10:54.913 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 69.7535ms
+2024-11-04 21:11:14.802 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:11:14.804 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:14.804 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 2.5533ms
+2024-11-04 21:11:14.827 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:11:14.830 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:14.831 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:14.832 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:14.834 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:11:14.836 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 3.2563ms
+2024-11-04 21:11:14.836 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:14.837 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 9.5492ms
+2024-11-04 21:11:15.583 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:11:15.585 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:15.585 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:15.586 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:15.586 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:11:15.587 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.4222ms
+2024-11-04 21:11:15.588 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:15.588 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 4.6497ms
+2024-11-04 21:11:29.726 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:11:29.727 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:29.727 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 0.6955ms
+2024-11-04 21:11:29.752 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:11:29.753 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:29.754 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:29.754 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:29.769 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:29.770 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 14.9033ms
+2024-11-04 21:11:29.776 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:29.777 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 24.7077ms
+2024-11-04 21:11:30.907 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:11:30.908 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:30.908 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:30.909 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:30.918 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:30.919 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 9.6157ms
+2024-11-04 21:11:30.920 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:30.924 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 16.7896ms
+2024-11-04 21:11:31.424 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:11:31.424 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:31.425 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:31.425 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:31.426 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:31.431 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 6.0076ms
+2024-11-04 21:11:31.432 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:31.432 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 8.322ms
+2024-11-04 21:11:31.723 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:11:31.731 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:31.734 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:31.735 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:31.742 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:31.743 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 7.1454ms
+2024-11-04 21:11:31.749 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:31.750 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 26.7628ms
+2024-11-04 21:11:31.941 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:11:31.942 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:31.942 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:31.943 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:31.948 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:31.951 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 7.4074ms
+2024-11-04 21:11:31.952 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:31.952 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 11.3111ms
+2024-11-04 21:11:32.110 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:11:32.113 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:32.114 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:32.115 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:32.115 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:32.116 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.9679ms
+2024-11-04 21:11:32.116 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:32.116 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 5.9701ms
+2024-11-04 21:11:37.316 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:11:37.317 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:37.317 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 1.2508ms
+2024-11-04 21:11:37.342 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 112
+2024-11-04 21:11:37.343 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:37.346 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:37.347 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:37.349 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:37.349 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.8642ms
+2024-11-04 21:11:37.351 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:37.353 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 11.2943ms
+2024-11-04 21:11:52.771 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:11:52.771 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:52.772 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 0.5758ms
+2024-11-04 21:11:52.798 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:11:52.798 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:52.799 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:52.799 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:52.801 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:52.801 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.9386ms
+2024-11-04 21:11:52.805 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:52.805 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 7.3357ms
+2024-11-04 21:11:55.418 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:11:55.418 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:11:55.418 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:55.419 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:11:55.420 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:11:55.421 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.8579ms
+2024-11-04 21:11:55.421 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:11:55.422 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 4.2701ms
+2024-11-04 21:12:19.365 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:12:19.366 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:12:19.366 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 3.2177ms
+2024-11-04 21:12:19.387 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:12:19.398 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:12:19.399 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:12:19.399 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:12:19.400 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:12:19.400 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.8041ms
+2024-11-04 21:12:19.400 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:12:19.401 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 14.9294ms
+2024-11-04 21:12:23.203 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:12:23.203 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:12:23.204 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:12:23.204 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:12:23.206 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:12:23.207 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.172ms
+2024-11-04 21:12:23.207 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:12:23.208 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 4.9694ms
+2024-11-04 21:12:24.068 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:12:24.069 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:12:24.069 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:12:24.070 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:12:24.070 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:12:24.071 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.7871ms
+2024-11-04 21:12:24.071 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:12:24.071 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 3.0338ms
+2024-11-04 21:12:24.985 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:12:24.986 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:12:24.987 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 1.7802ms
+2024-11-04 21:12:25.013 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:12:25.014 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:12:25.014 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:12:25.015 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:12:25.016 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:12:25.016 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.1011ms
+2024-11-04 21:12:25.017 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:12:25.018 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 4.9037ms
+2024-11-04 21:14:16.703 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:14:16.704 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:16.704 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 0.6825ms
+2024-11-04 21:14:16.722 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:14:16.723 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:16.724 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:16.724 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:14:16.727 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:14:16.729 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 4.6629ms
+2024-11-04 21:14:16.729 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:16.730 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 7.5612ms
+2024-11-04 21:14:25.077 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:14:25.077 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:25.077 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 0.6406ms
+2024-11-04 21:14:25.099 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:14:25.100 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:25.100 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:25.101 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:14:25.101 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:14:25.102 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.3177ms
+2024-11-04 21:14:25.104 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:25.105 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 5.2231ms
+2024-11-04 21:14:26.190 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:14:26.190 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:26.191 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 1.4162ms
+2024-11-04 21:14:26.216 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:14:26.217 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:26.217 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:26.218 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:14:26.219 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:14:26.221 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.692ms
+2024-11-04 21:14:26.221 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:26.223 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 7.2695ms
+2024-11-04 21:14:26.933 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:14:26.934 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:26.934 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 1.3325ms
+2024-11-04 21:14:26.962 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:14:26.963 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:26.963 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:26.964 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:14:26.964 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:14:26.965 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.8617ms
+2024-11-04 21:14:26.965 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:26.965 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 3.6274ms
+2024-11-04 21:14:47.520 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:14:47.521 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:47.521 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 4.2776ms
+2024-11-04 21:14:47.541 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:14:47.542 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:47.543 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:47.547 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:14:47.549 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:14:47.549 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.7248ms
+2024-11-04 21:14:47.549 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:47.549 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 8.2133ms
+2024-11-04 21:14:53.741 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:14:53.741 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:53.742 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 1.8071ms
+2024-11-04 21:14:53.763 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:14:53.764 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:14:53.764 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:53.764 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:14:53.765 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:14:53.766 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.8298ms
+2024-11-04 21:14:53.766 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:14:53.766 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 3.0981ms
+2024-11-04 21:15:33.222 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:15:33.223 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:15:33.223 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 0.6078ms
+2024-11-04 21:15:33.344 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:15:33.345 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:15:33.347 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:15:33.348 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:15:46.939 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:15:46.939 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 13590.8789ms
+2024-11-04 21:15:46.940 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:15:48.911 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 15567.3079ms
+2024-11-04 21:16:45.238 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:16:45.238 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:16:45.238 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 4.1583ms
+2024-11-04 21:16:45.257 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:16:45.257 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:16:45.258 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:16:45.258 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:16:45.259 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:16:45.260 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.206ms
+2024-11-04 21:16:45.260 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:16:45.260 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 3.2063ms
+2024-11-04 21:17:31.782 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:17:31.784 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:17:31.786 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 3.8117ms
+2024-11-04 21:17:31.806 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:17:31.807 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:17:31.808 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:17:31.815 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:17:31.816 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:17:31.817 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.5465ms
+2024-11-04 21:17:31.818 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:17:31.818 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 12.3679ms
+2024-11-04 21:21:01.358 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:21:01.359 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:21:01.360 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 1.9685ms
+2024-11-04 21:21:01.394 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-04 21:21:01.397 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:21:01.398 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:21:01.399 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:21:13.882 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:21:13.883 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 12482.5858ms
+2024-11-04 21:21:13.883 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:21:13.883 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 12488.7147ms
+2024-11-04 21:21:23.893 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:21:23.897 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:21:23.898 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 5.1895ms
+2024-11-04 21:21:23.972 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 112
+2024-11-04 21:21:23.973 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:21:23.974 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:21:23.975 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:21:27.881 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-04 21:21:27.882 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 3906.5453ms
+2024-11-04 21:21:27.882 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:21:27.884 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 16 application/json; charset=utf-8 3910.6493ms
+2024-11-04 21:22:11.129 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:22:11.129 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:22:11.133 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 3.5285ms
+2024-11-04 21:22:11.155 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:22:11.156 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:22:11.156 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:22:11.157 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:22:11.158 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:22:11.159 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.256ms
+2024-11-04 21:22:11.159 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:22:11.160 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 5.3486ms
+2024-11-04 21:23:35.434 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:23:35.436 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:23:35.440 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 5.9854ms
+2024-11-04 21:23:35.471 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 336
+2024-11-04 21:23:35.472 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:23:35.472 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:23:35.473 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:23:35.475 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:23:35.479 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 5.544ms
+2024-11-04 21:23:35.480 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:23:35.481 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 10.1417ms
+2024-11-04 21:27:02.647 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - application/xml 239
+2024-11-04 21:27:02.648 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - 404 0 null 0.9677ms
+2024-11-04 21:27:02.649 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5177/api/DematicCalculatorService/calculate%0A, Response status code: 404
+2024-11-04 21:27:24.931 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - application/xml 239
+2024-11-04 21:27:24.941 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - 404 0 null 9.8473ms
+2024-11-04 21:27:24.941 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5177/api/DematicCalculatorService/calculate%0A, Response status code: 404
+2024-11-04 21:27:30.312 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - application/xml 239
+2024-11-04 21:27:30.313 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - 404 0 null 1.3048ms
+2024-11-04 21:27:30.313 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5177/api/DematicCalculatorService/calculate%0A, Response status code: 404
+2024-11-04 21:30:28.556 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:30:28.557 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:30:28.557 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 0.6557ms
+2024-11-04 21:30:28.585 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 228
+2024-11-04 21:30:28.585 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:30:28.586 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:30:28.586 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:30:28.587 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:30:28.588 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.9408ms
+2024-11-04 21:30:28.588 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:30:28.588 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 3.6785ms
+2024-11-04 21:39:22.994 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:39:22.998 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:39:23.003 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 10.1582ms
+2024-11-04 21:39:23.034 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 228
+2024-11-04 21:39:23.034 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:39:23.035 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:39:23.036 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:39:23.036 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:39:23.037 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.3362ms
+2024-11-04 21:39:23.039 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:39:23.040 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 5.6244ms
+2024-11-04 21:42:03.845 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-04 21:42:03.846 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:42:03.848 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 5.2598ms
+2024-11-04 21:42:03.881 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 228
+2024-11-04 21:42:03.894 +11:00 [INF] CORS policy execution successful.
+2024-11-04 21:42:03.895 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:42:03.896 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-04 21:42:03.897 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-04 21:42:03.898 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.0727ms
+2024-11-04 21:42:03.900 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-04 21:42:03.900 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 19.5002ms
+2024-11-04 21:43:49.137 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - application/xml 239
+2024-11-04 21:43:49.137 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - 404 0 null 3.1699ms
+2024-11-04 21:43:49.138 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5177/api/DematicCalculatorService/calculate%0A, Response status code: 404
+2024-11-04 21:43:50.920 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - application/xml 239
+2024-11-04 21:43:50.922 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate
+ - 404 0 null 2.6152ms
+2024-11-04 21:43:50.922 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5177/api/DematicCalculatorService/calculate%0A, Response status code: 404
+2024-11-04 22:25:02.794 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-11-04 22:25:02.796 +11:00 [INF] CORS policy execution successful.
+2024-11-04 22:25:02.797 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-11-04 22:25:02.894 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-11-04 22:25:02.894 +11:00 [INF] CORS policy execution successful.
+2024-11-04 22:25:02.894 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-11-04 22:25:02.917 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-11-04 22:25:02.918 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-11-04 22:25:03.882 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-11-04 22:25:03.882 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-11-04 22:25:06.045 +11:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-04 22:25:06.047 +11:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-04 22:25:07.962 +11:00 [ERR] An error occurred using the connection to database 'FinDotNet' on server 'localhost'.
+2024-11-04 22:25:07.962 +11:00 [ERR] An error occurred using the connection to database 'FinDotNet' on server 'localhost'.
+2024-11-04 22:25:08.042 +11:00 [ERR] An exception occurred while iterating over the results of a query for context type 'api.Data.ApplicationDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0431816d-54f4-4c66-a6a0-1f3f74a4b98d
+Error Number:-2146893019,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0431816d-54f4-4c66-a6a0-1f3f74a4b98d
+Error Number:-2146893019,State:0,Class:20
+2024-11-04 22:25:08.042 +11:00 [ERR] An exception occurred while iterating over the results of a query for context type 'api.Data.ApplicationDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0431816d-54f4-4c66-a6a0-1f3f74a4b98d
+Error Number:-2146893019,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0431816d-54f4-4c66-a6a0-1f3f74a4b98d
+Error Number:-2146893019,State:0,Class:20
+2024-11-04 22:25:08.514 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 5595.2246ms
+2024-11-04 22:25:08.514 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 5595.9855ms
+2024-11-04 22:25:08.531 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-11-04 22:25:08.531 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-11-04 22:25:08.542 +11:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at api.Repository.AlarmRepository.GetAllAsync(AlarmQueryObject query) in D:\Project_V2.0\PORTFOLIO\FinDotNet\api\Repository\AlarmRepository.cs:line 87
+   at api.Controllers.AlarmController.GetAll(AlarmQueryObject query) in D:\Project_V2.0\PORTFOLIO\FinDotNet\api\Controllers\AlarmController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:0431816d-54f4-4c66-a6a0-1f3f74a4b98d
+Error Number:-2146893019,State:0,Class:20
+2024-11-04 22:25:08.542 +11:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at api.Repository.AlarmRepository.GetAllAsync(AlarmQueryObject query) in D:\Project_V2.0\PORTFOLIO\FinDotNet\api\Repository\AlarmRepository.cs:line 87
+   at api.Controllers.AlarmController.GetAll(AlarmQueryObject query) in D:\Project_V2.0\PORTFOLIO\FinDotNet\api\Controllers\AlarmController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:0431816d-54f4-4c66-a6a0-1f3f74a4b98d
+Error Number:-2146893019,State:0,Class:20
+2024-11-04 22:25:08.691 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 500 null text/plain; charset=utf-8 5897.4813ms
+2024-11-04 22:25:08.697 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 500 null text/plain; charset=utf-8 5803.6449ms

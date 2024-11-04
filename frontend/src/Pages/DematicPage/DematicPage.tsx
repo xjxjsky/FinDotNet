@@ -201,14 +201,14 @@ const DematicPage: React.FC<Props> = ({ label, onClick }) => {
       <header className="resume-header text-center mb-8">
         <h1 className="text-3xl font-bold">{label}</h1>
         <h2 className="text-xl text-gray-600">Software Engineer</h2>
-        <p className="mt-2 text-gray-500">计算服务 - 支持XML和JSON格式</p>
+        <p className="mt-2 text-gray-500">Calculate Service - Support XML & JSON Formate</p>
       </header>
 
       {/* 格式选择和输入 */}
       <section className="resume-section mb-6">
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            选择输入格式：
+            Formate Selector：
           </label>
           <select
             value={inputFormat}
