@@ -1,6 +1,10 @@
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\appsettings.Development.json
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\appsettings.json
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\appsettings.Production.json
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.TestPlatform.AdapterUtilities.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\api.exe
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\api.deps.json
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\api.runtimeconfig.json
@@ -45,6 +49,8 @@ D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 D:\Project_V2.0\PORTFOLIO\FinDotNet\api\bin\Debug\net8.0\RabbitMQ.Client.dll

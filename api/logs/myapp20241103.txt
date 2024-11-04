@@ -1,0 +1,374 @@
+2024-11-03 00:00:22.503 +11:00 [INF] Jay：Application starting...
+2024-11-03 00:00:41.071 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 00:00:42.746 +11:00 [INF] Now listening on: https://localhost:5001
+2024-11-03 00:00:42.747 +11:00 [INF] Now listening on: http://localhost:5000
+2024-11-03 00:00:42.750 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 00:00:42.751 +11:00 [INF] Hosting environment: Development
+2024-11-03 00:00:42.751 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-03 00:00:47.580 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - null null
+2024-11-03 00:00:49.438 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - 404 0 null 1965.9344ms
+2024-11-03 00:00:49.451 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5001/, Response status code: 404
+2024-11-03 00:18:47.284 +11:00 [INF] Jay：Application starting...
+2024-11-03 00:18:47.742 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 00:18:47.854 +11:00 [INF] Now listening on: http://localhost:5177
+2024-11-03 00:18:47.856 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 00:18:47.857 +11:00 [INF] Hosting environment: Development
+2024-11-03 00:18:47.857 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-03 00:18:48.792 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-03 00:18:49.294 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 504.7375ms
+2024-11-03 00:18:49.513 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-03 00:18:49.517 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.066ms
+2024-11-03 00:18:51.604 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-03 00:18:52.824 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1219.8712ms
+2024-11-03 00:19:09.278 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:19:09.288 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:19:09.290 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 11.81ms
+2024-11-03 00:19:09.382 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 359
+2024-11-03 00:19:09.389 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:19:09.491 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-11-03 00:19:09.853 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:19:10.026 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:19:10.407 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:19:10.528 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 496.231ms
+2024-11-03 00:19:10.529 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:19:10.530 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 1147.6967ms
+2024-11-03 00:20:05.890 +11:00 [INF] Application is shutting down...
+2024-11-03 00:20:05.953 +11:00 [INF] Jay: All the parts have been completed! Starting application...
+2024-11-03 00:30:05.080 +11:00 [INF] Jay：Application starting...
+2024-11-03 00:30:05.693 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 00:30:05.861 +11:00 [INF] Now listening on: http://localhost:5177
+2024-11-03 00:30:05.863 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 00:30:05.864 +11:00 [INF] Hosting environment: Development
+2024-11-03 00:30:05.864 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-03 00:30:06.895 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-03 00:30:07.486 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 591.8994ms
+2024-11-03 00:30:07.649 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-03 00:30:07.658 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 8.7448ms
+2024-11-03 00:30:09.698 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-03 00:30:10.868 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1170.3735ms
+2024-11-03 00:30:21.396 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:30:21.402 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:30:21.408 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 12.3712ms
+2024-11-03 00:30:21.436 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 359
+2024-11-03 00:30:21.445 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:30:21.450 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-11-03 00:30:21.549 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:30:21.591 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:30:21.860 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:30:21.943 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 342.1963ms
+2024-11-03 00:30:21.944 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:30:21.945 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 508.981ms
+2024-11-03 00:32:07.796 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-03 00:32:07.814 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 18.6874ms
+2024-11-03 00:32:08.070 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-03 00:32:08.072 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.2353ms
+2024-11-03 00:32:09.719 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-03 00:32:09.788 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.0239ms
+2024-11-03 00:32:26.433 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-03 00:32:26.437 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 4.7379ms
+2024-11-03 00:32:26.705 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-03 00:32:26.706 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4614ms
+2024-11-03 00:32:27.496 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-03 00:32:27.517 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.0918ms
+2024-11-03 00:37:10.862 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:37:10.864 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:10.865 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 3.4747ms
+2024-11-03 00:37:10.894 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 359
+2024-11-03 00:37:10.898 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:10.907 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:10.914 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:37:10.924 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:37:10.927 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 12.2465ms
+2024-11-03 00:37:10.927 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:10.929 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 35.3726ms
+2024-11-03 00:37:25.072 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:37:25.073 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:25.074 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 2.507ms
+2024-11-03 00:37:25.106 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 359
+2024-11-03 00:37:25.110 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:25.115 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:25.115 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:37:25.121 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:37:25.123 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 6.7999ms
+2024-11-03 00:37:25.125 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:25.126 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 20.1377ms
+2024-11-03 00:37:26.215 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:37:26.222 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:26.223 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 7.1378ms
+2024-11-03 00:37:26.254 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 359
+2024-11-03 00:37:26.257 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:26.259 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:26.260 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:37:26.262 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:37:26.309 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 48.9127ms
+2024-11-03 00:37:26.314 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:26.315 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 62.099ms
+2024-11-03 00:37:27.120 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:37:27.121 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:27.122 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 1.3378ms
+2024-11-03 00:37:27.155 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 359
+2024-11-03 00:37:27.157 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:27.159 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:27.160 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:37:27.163 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:37:27.164 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 3.6956ms
+2024-11-03 00:37:27.164 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:27.165 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 9.7099ms
+2024-11-03 00:37:27.960 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:37:27.960 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:27.960 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 0.697ms
+2024-11-03 00:37:27.994 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 359
+2024-11-03 00:37:27.996 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:27.997 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:27.999 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:37:28.004 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:37:28.006 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 7.1317ms
+2024-11-03 00:37:28.008 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:28.009 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 13.8485ms
+2024-11-03 00:37:45.474 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:37:45.475 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:45.476 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 1.3851ms
+2024-11-03 00:37:45.509 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 359
+2024-11-03 00:37:45.512 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:37:45.535 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:45.537 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:37:45.541 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:37:45.542 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.6234ms
+2024-11-03 00:37:45.546 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:37:45.547 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 37.8494ms
+2024-11-03 00:42:45.630 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:42:45.631 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:42:45.631 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 0.7266ms
+2024-11-03 00:42:45.675 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 280
+2024-11-03 00:42:45.675 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:42:45.676 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:42:45.676 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:42:45.677 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:42:45.677 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.21ms
+2024-11-03 00:42:45.677 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:42:45.678 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 2.5059ms
+2024-11-03 00:42:50.413 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:42:50.413 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:42:50.414 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 1.5438ms
+2024-11-03 00:42:50.448 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 280
+2024-11-03 00:42:50.450 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:42:50.450 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:42:50.451 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:42:50.454 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:42:50.456 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 4.6145ms
+2024-11-03 00:42:50.456 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:42:50.456 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 8.4462ms
+2024-11-03 00:45:35.057 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:45:35.058 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:45:35.058 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 0.9296ms
+2024-11-03 00:45:35.093 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:45:35.099 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:45:35.099 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:45:35.101 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:45:35.103 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:45:35.104 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 3.0016ms
+2024-11-03 00:45:35.105 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:45:35.105 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 12.2043ms
+2024-11-03 00:45:36.400 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:45:36.401 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:45:36.401 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 1.7895ms
+2024-11-03 00:45:36.472 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:45:36.473 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:45:36.474 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:45:36.475 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:45:36.477 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:45:36.483 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 6.8215ms
+2024-11-03 00:45:36.483 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:45:36.484 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 11.2307ms
+2024-11-03 00:45:39.002 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:45:39.002 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:45:39.003 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 0.6051ms
+2024-11-03 00:45:39.034 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:45:39.034 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:45:39.035 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:45:39.035 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:45:39.037 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:45:39.037 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.2995ms
+2024-11-03 00:45:39.038 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:45:39.042 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 8.7687ms
+2024-11-03 00:48:01.250 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:48:01.251 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:48:01.251 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 1.4808ms
+2024-11-03 00:48:01.284 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:48:01.284 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:48:01.285 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:48:01.285 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:48:01.286 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:48:01.287 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.5049ms
+2024-11-03 00:48:01.289 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:48:01.290 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 5.4144ms
+2024-11-03 00:48:20.199 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:48:20.201 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:48:20.201 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 2.3484ms
+2024-11-03 00:48:20.233 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:48:20.233 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:48:20.234 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:48:20.235 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:48:20.235 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:48:20.236 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.9083ms
+2024-11-03 00:48:20.236 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:48:20.241 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 2.9099ms
+2024-11-03 00:48:26.231 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:48:26.232 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:48:26.233 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 1.7166ms
+2024-11-03 00:48:26.265 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:48:26.268 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:48:26.275 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:48:26.283 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:48:26.285 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:48:26.294 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 9.8589ms
+2024-11-03 00:48:26.294 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:48:26.295 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 29.7651ms
+2024-11-03 00:48:35.110 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:48:35.111 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:48:35.111 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 0.6841ms
+2024-11-03 00:48:35.139 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:48:35.140 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:48:35.143 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:48:35.145 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:48:35.147 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:48:35.148 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.8835ms
+2024-11-03 00:48:35.148 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:48:35.149 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 10.1639ms
+2024-11-03 00:49:14.320 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:49:14.322 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:49:14.322 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 2.034ms
+2024-11-03 00:49:14.356 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:49:14.357 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:49:14.359 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:49:14.360 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:49:14.362 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:49:14.363 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.9642ms
+2024-11-03 00:49:14.363 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:49:14.364 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 7.8517ms
+2024-11-03 00:49:55.994 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:49:55.995 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:49:55.995 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 1.4423ms
+2024-11-03 00:49:56.028 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:49:56.029 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:49:56.029 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:49:56.030 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:49:56.035 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:49:56.037 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 6.1126ms
+2024-11-03 00:49:56.037 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:49:56.037 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 8.8446ms
+2024-11-03 00:50:44.120 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 00:50:44.120 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:50:44.120 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 2.1759ms
+2024-11-03 00:50:44.174 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 00:50:44.174 +11:00 [INF] CORS policy execution successful.
+2024-11-03 00:50:44.174 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:50:44.174 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 00:50:44.175 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 00:50:44.176 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 0.9778ms
+2024-11-03 00:50:44.176 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 00:50:44.176 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 2.2385ms
+2024-11-03 01:01:16.460 +11:00 [INF] Jay：Application starting...
+2024-11-03 01:01:16.872 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 01:01:17.015 +11:00 [INF] Now listening on: http://localhost:5177
+2024-11-03 01:01:17.018 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 01:01:17.018 +11:00 [INF] Hosting environment: Development
+2024-11-03 01:01:17.018 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-03 01:01:18.245 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-03 01:01:18.623 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 381.0437ms
+2024-11-03 01:01:18.810 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-03 01:01:18.814 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.1592ms
+2024-11-03 01:01:20.947 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-03 01:01:21.863 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 915.5713ms
+2024-11-03 01:01:38.032 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 01:01:38.043 +11:00 [INF] CORS policy execution successful.
+2024-11-03 01:01:38.047 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 14.6684ms
+2024-11-03 01:01:38.081 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 01:01:38.093 +11:00 [INF] CORS policy execution successful.
+2024-11-03 01:01:38.115 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-11-03 01:01:38.217 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 01:01:38.242 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 01:01:38.479 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 01:01:38.603 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 352.5118ms
+2024-11-03 01:01:38.605 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 01:01:38.606 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 524.5676ms
+2024-11-03 20:14:35.860 +11:00 [INF] Application is shutting down...
+2024-11-03 20:14:35.906 +11:00 [INF] Jay: All the parts have been completed! Starting application...
+2024-11-03 20:17:43.275 +11:00 [INF] Jay：Application starting...
+2024-11-03 20:17:50.695 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 20:17:51.238 +11:00 [INF] Now listening on: http://localhost:5177
+2024-11-03 20:17:51.242 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 20:17:51.243 +11:00 [INF] Hosting environment: Development
+2024-11-03 20:17:51.244 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-03 20:17:53.444 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-03 20:17:53.773 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 335.0121ms
+2024-11-03 20:17:54.165 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-03 20:17:54.169 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.3198ms
+2024-11-03 20:17:56.945 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-03 20:17:58.534 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1589.156ms
+2024-11-03 20:20:19.427 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 20:20:19.435 +11:00 [INF] CORS policy execution successful.
+2024-11-03 20:20:19.438 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 10.7622ms
+2024-11-03 20:20:19.472 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 20:20:19.476 +11:00 [INF] CORS policy execution successful.
+2024-11-03 20:20:19.479 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-11-03 20:20:25.628 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 20:20:25.671 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 20:20:26.032 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 20:20:26.104 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 428.3668ms
+2024-11-03 20:20:26.104 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 20:20:26.105 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 6632.8112ms
+2024-11-03 20:23:18.124 +11:00 [INF] Application is shutting down...
+2024-11-03 20:23:18.278 +11:00 [INF] Jay: All the parts have been completed! Starting application...
+2024-11-03 20:24:17.414 +11:00 [INF] Jay：Application starting...
+2024-11-03 20:24:29.082 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 20:24:32.021 +11:00 [INF] Now listening on: https://localhost:5001
+2024-11-03 20:24:32.025 +11:00 [INF] Now listening on: http://localhost:5000
+2024-11-03 20:24:32.032 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 20:24:32.034 +11:00 [INF] Hosting environment: Development
+2024-11-03 20:24:32.034 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-03 20:24:34.972 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - null null
+2024-11-03 20:24:38.584 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - 404 0 null 3619.0901ms
+2024-11-03 20:24:38.594 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5001/, Response status code: 404
+2024-11-03 20:35:12.312 +11:00 [INF] Jay：Application starting...
+2024-11-03 20:35:15.527 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 20:35:15.856 +11:00 [INF] Now listening on: https://localhost:5001
+2024-11-03 20:35:15.856 +11:00 [INF] Now listening on: http://localhost:5000
+2024-11-03 20:35:15.860 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 20:35:15.862 +11:00 [INF] Hosting environment: Development
+2024-11-03 20:35:15.862 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-03 20:35:16.483 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - null null
+2024-11-03 20:35:19.227 +11:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - 404 0 null 2747.2075ms
+2024-11-03 20:35:19.239 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5001/, Response status code: 404
+2024-11-03 20:58:36.432 +11:00 [INF] Jay：Application starting...
+2024-11-03 20:58:37.282 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 20:58:37.491 +11:00 [INF] Now listening on: http://localhost:5177
+2024-11-03 20:58:37.494 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 20:58:37.495 +11:00 [INF] Hosting environment: Development
+2024-11-03 20:58:37.495 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-03 20:58:38.081 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/ - null null
+2024-11-03 20:58:38.210 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-11-03 20:58:38.418 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/ - 404 0 null 340.0597ms
+2024-11-03 20:58:38.430 +11:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5177/, Response status code: 404
+2024-11-03 20:59:03.363 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 20:59:03.370 +11:00 [INF] CORS policy execution successful.
+2024-11-03 20:59:03.377 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 13.9993ms
+2024-11-03 20:59:03.454 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 20:59:03.463 +11:00 [INF] CORS policy execution successful.
+2024-11-03 20:59:03.471 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 20:59:03.541 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 20:59:03.992 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 20:59:04.120 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 572.1732ms
+2024-11-03 20:59:04.120 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 20:59:04.121 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 667.1714ms
+2024-11-03 20:59:44.676 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-03 20:59:44.680 +11:00 [INF] CORS policy execution successful.
+2024-11-03 20:59:44.680 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 4.2942ms
+2024-11-03 20:59:44.776 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/json 404
+2024-11-03 20:59:44.777 +11:00 [INF] CORS policy execution successful.
+2024-11-03 20:59:44.792 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 20:59:44.794 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-03 20:59:44.801 +11:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-03 20:59:44.804 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 9.4662ms
+2024-11-03 20:59:44.806 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-03 20:59:44.809 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 400 252 application/problem+json; charset=utf-8 29.9799ms

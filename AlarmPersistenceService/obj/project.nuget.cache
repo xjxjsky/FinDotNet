@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FFsBMwVeW3bjnlf261laH+dgpOpgWy2VoiyeF1JyZVQknqUwwxMpJUBNeHW4I8s7d1nVPj7NHozaEV8NMdJMDg==",
+  "dgSpecHash": "OMLIzy+MH0hMpGtyX3XlD/WiKkYHBfDXbAhiXjNaCeTejEEnqcaK7keRYklBPBREspYt5mRMcdV/LILRdK992A==",
   "success": true,
-  "projectFilePath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmpersistenceservice\\AlarmPersistenceService.csproj",
+  "projectFilePath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmPersistenceService\\AlarmPersistenceService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IBM-PC\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\IBM-PC\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

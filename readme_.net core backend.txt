@@ -26,4 +26,9 @@ dotnet ef database update
     WPF（Windows Presentation Foundation）和 WCF（Windows Communication Foundation）曾经是 .NET Framework 中的两个重要组成部分，但它们在 .NET Core 中的命运各不相同：
     WPF：在 .NET Core 3.0 及以上版本中已经得到了支持，主要在 Windows 平台上运行。你可以继续使用 WPF 来构建现代桌面应用。
     WCF：不像 WPF，WCF 并没有被完全移植到 .NET Core 中。微软推荐使用 gRPC 或 ASP.NET Core Web API 作为替代方案来开发服务。如果你依赖 WCF 功能，你可能需要寻找一些替代方案或者继续在 .NET Framework 上开发。
-21. 
+21. dotnet back end 后端一些常用命令
+    -- dotnet clean / dotnet build
+    有时编译错误可能会导致项目不生成 DLL。可以通过使用详细日志查看是否有编译错误或警告:
+    -- dotnet build -v detailed
+    测试单独构建 api 项目：尝试仅构建 api 项目，看看是否生成 api.dll，以及是否有任何错误信息：
+    -- dotnet build api/api.csproj

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmmonitorservice\\AlarmMonitorService.csproj": {}
+    "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmMonitorService\\AlarmMonitorService.csproj": {}
   },
   "projects": {
-    "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmmonitorservice\\AlarmMonitorService.csproj": {
+    "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmMonitorService\\AlarmMonitorService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmmonitorservice\\AlarmMonitorService.csproj",
+        "projectUniqueName": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmMonitorService\\AlarmMonitorService.csproj",
         "projectName": "AlarmMonitorService",
-        "projectPath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmmonitorservice\\AlarmMonitorService.csproj",
+        "projectPath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmMonitorService\\AlarmMonitorService.csproj",
         "packagesPath": "C:\\Users\\IBM-PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmmonitorservice\\obj\\",
+        "outputPath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmMonitorService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

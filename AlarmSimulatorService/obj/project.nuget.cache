@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VQ09wzXnKjQD55wdyrYTGwkYsaDV/YK9Hu2Gvhd2hFhV+q/WHCrNr0lyPlCfNYF7PI7csRF2QL4Anwx1+Qhzjw==",
+  "dgSpecHash": "SPxKYRSmPbcUt/dj1ZJFYfYO0mtSndhCQ6/mECnsrxjYKqqF/Fd2kvOHwml+vMRI/3DYhqIo5Lqlm8szZHNlhg==",
   "success": true,
-  "projectFilePath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmsimulatorservice\\AlarmSimulatorService.csproj",
+  "projectFilePath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmSimulatorService\\AlarmSimulatorService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IBM-PC\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\IBM-PC\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

@@ -12,7 +12,7 @@ const Layout: React.FC = () => {
   const location = useLocation(); // 获取当前路径
 
   // 定义不需要显示 Sidebar 的路径
-  const noSidebarPaths = ["/", "/login", "/register", "/ResumePage","/ProjectPage", "/some-other-page"];
+  const noSidebarPaths = ["/", "/login", "/register", "/ResumePage","/ProjectPage", "/some-other-page", "/DematicPage"];
 
   // 检查当前路径是否在不显示 Sidebar 的路径列表中
   const shouldShowSidebar = !noSidebarPaths.includes(location.pathname);

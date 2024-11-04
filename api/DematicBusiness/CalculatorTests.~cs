@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace api.DematicBusiness
+{
+    [TestFixture]
+    public class CalculatorTests
+    {
+        private ICalculator _calculator;
+
+        [SetUp]
+        public void Setup()
+        {
+            _calculator = new Calculator();
+        }
+
+        [Test]
+        public void TestAddition()
+        {
+            var addition = new Addition { Values = new List<double> { 2, 3 } };
+            Assert.AreEqual(5, _calculator.Calculate(addition));
+        }
+
+        [Test]
+        public void TestMultiplication()
+        {
+            var multiplication = new Multiplication { Values = new List<double> { 4, 5 } };
+            Assert.AreEqual(20, _calculator.Calculate(multiplication));
+        }
+
+        [Test]
+        public void TestComplexOperation()
+        {
+            var addition = new Addition
+            {
+                Values = new List<double> { 2, 3 },
+                NestedOperations = new List<Operation>
+            {
+                new Multiplication { Values = new List<double> { 4, 5 } }
+            }
+            };
+            Assert.AreEqual(25, _calculator.Calculate(addition));
+        }
+
+        [Test]
+        public void TestInvalidOperation()
+        {
+            Assert.Throws<InvalidOperationException>(() =>
+            {
+                var invalidOperation = new OperationContainer { OperationType = "Unknown" }.ToOperation();
+            });
+        }
+    }
+
+}

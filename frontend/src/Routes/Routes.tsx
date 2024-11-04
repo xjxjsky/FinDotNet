@@ -14,6 +14,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import DashBoardPage from "../Pages/DashBoardPage/DashBoardPage";
 import RealAlarmPage from "../Pages/RealAlarmPage/RealAlarmPage";
 import ResumePage from "../Pages/ResumePage/ResumePage";
+import DematicPage from "../Pages/DematicPage/DematicPage";
 import ProjectPage from "../Pages/ProjectPage/ProjectPage";
 import Layout from "../Layout";
 import { UserProvider } from "../Context/useAuth";
@@ -52,6 +53,8 @@ export const router = createBrowserRouter([
       { path: "Design-guide", element: <DesignGuide /> },
 
       { path: "ResumePage", element: <ResumePage label={""} onClick={function (): void {throw new Error("Function not implemented.");} } /> },
+
+      { path: "DematicPage", element: <DematicPage label={"Dematic Company"} onClick={function (): void {throw new Error("Function not implemented.");} } /> },
       
       { path: "ProjectPage", element: <ProjectPage label={""} onClick={function (): void {throw new Error("Function not implemented.");} } /> },
 

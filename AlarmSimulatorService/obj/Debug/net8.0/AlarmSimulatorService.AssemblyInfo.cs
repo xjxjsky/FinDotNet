@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlarmSimulatorService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92476400630de1cd1750915866961d19d7fe5c7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlarmSimulatorService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlarmSimulatorService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

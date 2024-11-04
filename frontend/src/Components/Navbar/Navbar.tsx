@@ -155,7 +155,7 @@ const Navbar: React.FC<Props> = () => {
           </div>
         ) : (
           <div className="hidden lg:flex items-center space-x-6">
-            <Link to="/login" className="hover:text-darkBlue">
+            <Link to="/login" className="text-white hover:text-lightGreen">
               {t("login")}
             </Link>
             <Link

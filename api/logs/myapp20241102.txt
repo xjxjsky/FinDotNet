@@ -1,0 +1,101 @@
+2024-11-02 22:35:00.584 +11:00 [INF] Jay：Application starting...
+2024-11-02 22:35:07.307 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-02 22:35:07.782 +11:00 [INF] Now listening on: http://localhost:5177
+2024-11-02 22:35:07.785 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 22:35:07.786 +11:00 [INF] Hosting environment: Development
+2024-11-02 22:35:07.786 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-02 22:35:11.644 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-02 22:35:13.974 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 2673.5616ms
+2024-11-02 22:35:15.293 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-02 22:35:15.298 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 5.1017ms
+2024-11-02 22:35:18.843 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-02 22:35:20.758 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1914.5416ms
+2024-11-02 22:45:43.800 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-02 22:45:43.837 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 37.4636ms
+2024-11-02 22:45:43.860 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-02 22:45:43.866 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 5.5276ms
+2024-11-02 22:45:44.597 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-02 22:45:44.599 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.8562ms
+2024-11-02 22:45:47.653 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-02 22:45:47.692 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.4538ms
+2024-11-02 22:54:59.229 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-02 22:54:59.236 +11:00 [INF] CORS policy execution successful.
+2024-11-02 22:54:59.298 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 69.7106ms
+2024-11-02 22:54:59.584 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/xml 336
+2024-11-02 22:54:59.590 +11:00 [INF] CORS policy execution successful.
+2024-11-02 22:54:59.662 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-11-02 22:55:03.164 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-02 22:55:03.272 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-02 22:55:03.382 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-02 22:55:03.642 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 365.4351ms
+2024-11-02 22:55:03.642 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-02 22:55:03.643 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 415 176 application/problem+json; charset=utf-8 4059.4756ms
+2024-11-02 22:55:20.730 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - null null
+2024-11-02 22:55:20.732 +11:00 [INF] CORS policy execution successful.
+2024-11-02 22:55:20.735 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculate/ - 204 null null 4.8205ms
+2024-11-02 22:55:20.762 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - application/xml 336
+2024-11-02 22:55:20.763 +11:00 [INF] CORS policy execution successful.
+2024-11-02 22:55:20.765 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-02 22:55:20.766 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(api.DematicBusiness.MathsRequest, System.String) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-02 22:55:20.772 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-02 22:55:20.773 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 7.0252ms
+2024-11-02 22:55:20.773 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-02 22:55:20.774 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculate/ - 415 176 application/problem+json; charset=utf-8 11.2768ms
+2024-11-02 22:58:31.984 +11:00 [INF] Application is shutting down...
+2024-11-02 22:58:32.039 +11:00 [INF] Jay: All the parts have been completed! Starting application...
+2024-11-02 22:59:16.167 +11:00 [INF] Jay：Application starting...
+2024-11-02 22:59:18.131 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-02 22:59:19.002 +11:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5001: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+ ---> System.Net.Sockets.SocketException (10048): 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-02 23:00:41.093 +11:00 [INF] Jay：Application starting...
+2024-11-02 23:00:42.590 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-02 23:00:42.975 +11:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5001: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+ ---> System.Net.Sockets.SocketException (10048): 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmpersistenceservice\\AlarmPersistenceService.csproj": {}
+    "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmPersistenceService\\AlarmPersistenceService.csproj": {}
   },
   "projects": {
-    "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmpersistenceservice\\AlarmPersistenceService.csproj": {
+    "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmPersistenceService\\AlarmPersistenceService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmpersistenceservice\\AlarmPersistenceService.csproj",
+        "projectUniqueName": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmPersistenceService\\AlarmPersistenceService.csproj",
         "projectName": "AlarmPersistenceService",
-        "projectPath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmpersistenceservice\\AlarmPersistenceService.csproj",
+        "projectPath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmPersistenceService\\AlarmPersistenceService.csproj",
         "packagesPath": "C:\\Users\\IBM-PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\alarmpersistenceservice\\obj\\",
+        "outputPath": "D:\\Project_V2.0\\PORTFOLIO\\FinDotNet\\AlarmPersistenceService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

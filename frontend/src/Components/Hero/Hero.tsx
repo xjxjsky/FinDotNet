@@ -13,12 +13,20 @@ const Hero = (props: Props) => {
             Welcome to my portfolio website! Click <strong style={{ color: 'Green' }}>Jay's Resume</strong>  below to view my resume for your reference.
           </p>
 
-          <div className="mx-auto lg:mx-0">
+          <div className="mx-auto lg:mx-0 flex space-x-4">
             <Link
               to="/ResumePage"
-              className="py-5 px-10 text-2xl font-bold text-white bg-lightGreen rounded lg:py-4 hover:opacity-70"
+              className="py-5 px-10 text-2xl font-bold text-white bg-lightGreen rounded-full lg:py-4 hover:opacity-70" 
             >
               Jay's Resume
+            </Link>
+  
+ 
+            <Link
+              to="/DematicPage"
+              className="py-5 px-10 text-2xl font-bold text-white bg-yellow-600 font-semibold rounded-full lg:py-4 hover:opacity-70"
+            >
+              DEMATIC Function
             </Link>
           </div>
 

@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 using api.Middleware;
 using api.Helpers;
+using api.DematicBusiness;
 
 //Minimal Hosting Model：在 .NET 8 中，WebApplication.CreateBuilder(args) 已经自动加载了 appsettings.json、appsettings.{Environment}.json 和环境变量。
 //因此，无需手动配置 ConfigureAppConfiguration，除非有特定需求。
@@ -154,6 +155,9 @@ builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 builder.Services.AddScoped<IFMPService, FMPService>();
 builder.Services.AddHttpClient<IFMPService, FMPService>();
 builder.Services.AddScoped<IAlarmRepository, AlarmRepository>();
+
+/*Dematic DJ*/
+builder.Services.AddScoped<ICalculator, Calculator>();
 
 // 1.8 集成 Azure Key Vault（可选）
 // 目前不使用 Azure Key Vault，但保留集成代码以备将来使用。
