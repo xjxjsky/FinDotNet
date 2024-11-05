@@ -10,7 +10,7 @@ namespace api.DematicBusiness
         public List<double> Values { get; set; } = new();
         public List<Operation> NestedOperations { get; set; } = new();
 
-        // 抽象方法，供子类实现具体的操作逻辑
+        // Abstract methods that allow subclasses to implement concrete operation logic
         public abstract double Execute();
     }
 }

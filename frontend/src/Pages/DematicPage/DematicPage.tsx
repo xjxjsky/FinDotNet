@@ -47,20 +47,65 @@ const DematicPage: React.FC<Props> = ({ label, onClick }) => {
     }
   };
 
+  // Validate JSON or XML format
+  const validateFormat = (): boolean => {
+    if (inputFormat === "JSON") {
+      try {
+        JSON.parse(inputData); // Try parsing as JSON
+        return true;
+      } catch (e) {
+        alert("Invalid JSON format. Please check your input.");
+        return false;
+      }
+    } else {
+      try {
+        // Parse as XML
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(inputData, "application/xml");
+        const parseError = xmlDoc.getElementsByTagName("parsererror");
+        if (parseError.length > 0) {
+          alert("Invalid XML format. Please check your input.");
+          return false;
+        }
+        return true;
+      } catch (error) {
+        alert("Invalid XML format. Please check your input.");
+        return false;
+      }
+    }
+  };
+
+  // 验证输入格式是否正确
+  const isInputValid = () => {
+    if (inputFormat === "XML") {
+      alert("Not Support XML Formate now，Select JSON please!");
+      return false;
+    }
+
+    // 尝试解析 JSON 格式，如果失败则表示格式不正确
+    if (inputFormat === "JSON") {
+      try {
+        JSON.parse(inputData);
+      } catch (error) {
+        alert("JSON formate incorrect，please check again!");
+        return false;
+      }
+    }
+    return true;
+  };
+
   // 根据 inputFormat 选择正确的 API 端点
   // const endpoint = inputFormat === "XML" ? "calculate/xml" : "calculate/json";
   // const api = `${process.env.REACT_APP_API_URL}DematicCalculatorService/${endpoint}`;
   const handleSubmit = async () => {
+    // 在提交之前进行格式验证
+    if (!isInputValid()) {
+      return; // 若验证不通过，终止提交操作
+    }
+    
     const api = `${process.env.REACT_APP_API_URL}DematicCalculatorService/calculate`;
     console.info("API endpoint:", api);
     setLoading(true);
-
-    // Check if input format is XML
-    // if (inputFormat === "XML") {
-    //   alert("目前仅支持 JSON 格式解析。");
-    //   setLoading(false);
-    //   return; // Exit the function
-    // }
 
     const xmlData = `<Maths>
                           <Operation ID="Plus">
@@ -201,7 +246,9 @@ const DematicPage: React.FC<Props> = ({ label, onClick }) => {
       <header className="resume-header text-center mb-8">
         <h1 className="text-3xl font-bold">{label}</h1>
         <h2 className="text-xl text-gray-600">Software Engineer</h2>
-        <p className="mt-2 text-gray-500">Calculate Service - Support XML & JSON Formate</p>
+        <p className="mt-2 text-gray-500">
+          Calculate Service - Support XML & JSON Formate
+        </p>
       </header>
 
       {/* 格式选择和输入 */}

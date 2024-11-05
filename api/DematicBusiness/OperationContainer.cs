@@ -30,14 +30,14 @@ namespace api.DematicBusiness
         //public List<OperationContainer> NestedOperations { get; set; } = new(); // support multiple nested operations
 
 
-        //类的核心方法，用于将 JSON 或 XML 数据结构转换成相应的 Operation 对象
+        // Class's core method for converting JSON or XML data structures into corresponding Operation objects
         public Operation ToOperation()
         {
             // 调试输出整个容器
-            Console.WriteLine($"Jay OperationContainer: {JsonConvert.SerializeObject(this)}"); // 记录整个对象以提高可见性
+            Console.WriteLine($"Jay's OperationContainer: {JsonConvert.SerializeObject(this)}"); // 记录整个对象以提高可见性
 
             // 调试输出操作类型
-            Console.WriteLine($"Jay OperationType: '{OperationType}'");
+            Console.WriteLine($"Jay's OperationType: '{OperationType}'");
 
             // 检查 OperationType 是否为空
             if (string.IsNullOrEmpty(OperationType))
@@ -60,7 +60,7 @@ namespace api.DematicBusiness
                 {
                     return value;
                 }
-                throw new InvalidOperationException($"无法将值 '{v}' 转换为 double。");
+                throw new InvalidOperationException($"Cannot convert the value '{v}' to double.");
             }).ToList();
 
             // 处理单个嵌套操作
@@ -69,7 +69,7 @@ namespace api.DematicBusiness
                 operation.NestedOperations.Add(NestedOperation.ToOperation());
             }
                       
-            // 处理多个个嵌套操作
+            // 处理多个嵌套操作
             // foreach (var nestedOperation in NestedOperations)
             // {
             //     operation.NestedOperations.Add(nestedOperation.ToOperation());

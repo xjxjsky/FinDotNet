@@ -41,11 +41,11 @@ namespace api.Controllers
 
             if (Request.ContentType == "application/json")
             {
-                // 将 JSON 数据转换为字符串进行反序列化
+                // Convert JSON data to a string for deserialization
                 string jsonData = data.ToString();
                 Console.WriteLine($"DematicCalculatorServiceController.Calculate Received JSON: {jsonData}");// 在反序列化之前，打印 JSON 数据以确认其格式
 
-                // 解析 JSON 数据
+                // Parsing JSON data
                 try
                 {
                     // jsonData = @"{
@@ -70,7 +70,7 @@ namespace api.Controllers
                     //                 }";
 
                     var jsonOperations = JsonConvert.DeserializeObject<JsonMathsOperations>(jsonData);
-                    operationContainer = jsonOperations?.Maths?.Operation; // 调整为访问 .Maths
+                    operationContainer = jsonOperations?.Maths?.Operation; // Adjust to access.Maths
 
                     /* Debug by Jay start*/
                     // if (operationContainer != null) // 使用 operationContainer 进行 null 检查
@@ -99,7 +99,7 @@ namespace api.Controllers
             }
             else if (Request.ContentType == "application/xml")
             {
-                // 解析 XML 数据
+                // Parsing XML data
                 var serializer = new XmlSerializer(typeof(XmlMathsOperations));
                 using (var reader = new StringReader(data.ToString()))
                 {
@@ -112,7 +112,7 @@ namespace api.Controllers
                 return BadRequest("Unsupported content type. Please use application/json or application/xml.");
             }
 
-            // 检查 operationContainer 是否为 null
+            // Check whether the operationContainer is null
             if (operationContainer == null)
             {
                 return BadRequest("operationContainer data is missing in the request.");

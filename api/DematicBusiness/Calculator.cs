@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace api.DematicBusiness
 {
-    //实现递归和异常处理
+    //Implement recursion and exception handling
     public class Calculator : ICalculator
     {
         public double Calculate(Operation operation)

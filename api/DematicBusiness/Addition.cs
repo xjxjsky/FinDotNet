@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 
 namespace api.DematicBusiness
 {
-    //基础运算类和继承
+    //Basic arithmetic classes and inheritance
     public class Addition : Operation
     {
         //public override double Execute() => Values.Sum() + NestedOperations.Sum(op => op.Execute());
         public override double Execute()
         {
-            double sum = Values.Sum(); // 计算所有值的总和
+            double sum = Values.Sum(); // Calculate the sum of all values
             foreach (var nestedOperation in NestedOperations)
             {
-                sum += nestedOperation.Execute(); // 加上嵌套操作的结果
+                sum += nestedOperation.Execute(); // Add the result of the nested operation
             }
             return sum;
         }

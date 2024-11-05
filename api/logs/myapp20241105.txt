@@ -1,0 +1,297 @@
+2024-11-05 08:24:26.801 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-11-05 08:24:27.236 +11:00 [INF] CORS policy execution successful.
+2024-11-05 08:24:27.237 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-11-05 08:24:27.238 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-11-05 08:24:27.256 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-11-05 08:24:27.742 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/api/alarm/ - null null
+2024-11-05 08:24:27.742 +11:00 [INF] CORS policy execution successful.
+2024-11-05 08:24:27.743 +11:00 [INF] Executing endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-11-05 08:24:27.743 +11:00 [INF] Route matched with {action = "GetAll", controller = "Alarm"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(api.Helpers.AlarmQueryObject) on controller api.Controllers.AlarmController (api).
+2024-11-05 08:24:27.745 +11:00 [INF] Jay's here: AlarmController IActionResult GetAll
+2024-11-05 08:24:28.740 +11:00 [ERR] An error occurred using the connection to database 'FinDotNet' on server 'localhost'.
+2024-11-05 08:24:28.740 +11:00 [ERR] An error occurred using the connection to database 'FinDotNet' on server 'localhost'.
+2024-11-05 08:24:28.746 +11:00 [ERR] An exception occurred while iterating over the results of a query for context type 'api.Data.ApplicationDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:766b3856-76c3-4958-b906-0c6722625700
+Error Number:-2146893019,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:766b3856-76c3-4958-b906-0c6722625700
+Error Number:-2146893019,State:0,Class:20
+2024-11-05 08:24:28.746 +11:00 [ERR] An exception occurred while iterating over the results of a query for context type 'api.Data.ApplicationDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:766b3856-76c3-4958-b906-0c6722625700
+Error Number:-2146893019,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:766b3856-76c3-4958-b906-0c6722625700
+Error Number:-2146893019,State:0,Class:20
+2024-11-05 08:24:29.528 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 1784.8833ms
+2024-11-05 08:24:29.530 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-11-05 08:24:29.534 +11:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at api.Repository.AlarmRepository.GetAllAsync(AlarmQueryObject query) in D:\Project_V2.0\PORTFOLIO\FinDotNet\api\Repository\AlarmRepository.cs:line 87
+   at api.Controllers.AlarmController.GetAll(AlarmQueryObject query) in D:\Project_V2.0\PORTFOLIO\FinDotNet\api\Controllers\AlarmController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:766b3856-76c3-4958-b906-0c6722625700
+Error Number:-2146893019,State:0,Class:20
+2024-11-05 08:24:29.556 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 500 null text/plain; charset=utf-8 1814.2074ms
+2024-11-05 08:24:29.569 +11:00 [INF] Executed action api.Controllers.AlarmController.GetAll (api) in 2330.9618ms
+2024-11-05 08:24:29.576 +11:00 [INF] Executed endpoint 'api.Controllers.AlarmController.GetAll (api)'
+2024-11-05 08:24:29.776 +11:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 证书链是由不受信任的颁发机构颁发的。)
+ ---> System.ComponentModel.Win32Exception (0x80090325): 证书链是由不受信任的颁发机构颁发的。
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at api.Repository.AlarmRepository.GetAllAsync(AlarmQueryObject query) in D:\Project_V2.0\PORTFOLIO\FinDotNet\api\Repository\AlarmRepository.cs:line 87
+   at api.Controllers.AlarmController.GetAll(AlarmQueryObject query) in D:\Project_V2.0\PORTFOLIO\FinDotNet\api\Controllers\AlarmController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:766b3856-76c3-4958-b906-0c6722625700
+Error Number:-2146893019,State:0,Class:20
+2024-11-05 08:24:29.802 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/api/alarm/ - 500 null text/plain; charset=utf-8 3001.8571ms
+2024-11-05 08:25:37.848 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-05 08:25:37.849 +11:00 [INF] CORS policy execution successful.
+2024-11-05 08:25:37.849 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 0.602ms
+2024-11-05 08:25:37.881 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-05 08:25:37.882 +11:00 [INF] CORS policy execution successful.
+2024-11-05 08:25:37.883 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 08:25:37.887 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 08:25:50.874 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-05 08:25:50.875 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 12984.3334ms
+2024-11-05 08:25:50.875 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 08:25:50.875 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 12994.0857ms
+2024-11-05 08:26:19.486 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-05 08:26:19.488 +11:00 [INF] CORS policy execution successful.
+2024-11-05 08:26:19.489 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 2.2104ms
+2024-11-05 08:26:19.524 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-05 08:26:19.524 +11:00 [INF] CORS policy execution successful.
+2024-11-05 08:26:19.524 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 08:26:19.524 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 08:26:25.654 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-05 08:26:25.654 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 6128.9661ms
+2024-11-05 08:26:25.654 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 08:26:25.655 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 6134.6912ms
+2024-11-05 21:24:59.367 +11:00 [INF] Jay：Application starting...
+2024-11-05 21:25:03.250 +11:00 [INF] User profile is available. Using 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-05 21:25:03.625 +11:00 [INF] Creating key {c59dcd41-117e-4afa-a4f6-b8703bb2398e} with creation date 2024-11-05 10:25:03Z, activation date 2024-11-06 10:34:22Z, and expiration date 2025-02-03 10:25:03Z.
+2024-11-05 21:25:03.665 +11:00 [INF] Writing data to file 'C:\Users\IBM-PC\AppData\Local\ASP.NET\DataProtection-Keys\key-c59dcd41-117e-4afa-a4f6-b8703bb2398e.xml'.
+2024-11-05 21:25:04.246 +11:00 [INF] Now listening on: http://localhost:5177
+2024-11-05 21:25:04.248 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-05 21:25:04.249 +11:00 [INF] Hosting environment: Development
+2024-11-05 21:25:04.249 +11:00 [INF] Content root path: D:\Project_V2.0\PORTFOLIO\FinDotNet\api
+2024-11-05 21:25:05.255 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/index.html - null null
+2024-11-05 21:25:06.665 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/index.html - 200 null text/html;charset=utf-8 1422.7414ms
+2024-11-05 21:25:06.826 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-05 21:25:06.862 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 36.2011ms
+2024-11-05 21:25:08.920 +11:00 [INF] Request starting HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - null null
+2024-11-05 21:25:10.863 +11:00 [INF] Request finished HTTP/1.1 GET http://localhost:5177/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1942.6733ms
+2024-11-05 21:25:20.856 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-05 21:25:20.863 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:25:20.866 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 9.3002ms
+2024-11-05 21:25:20.885 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 424
+2024-11-05 21:25:20.903 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:25:20.941 +11:00 [WRN] Failed to determine the https port for redirect.
+2024-11-05 21:25:23.309 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:25:23.420 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 21:25:23.472 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-05 21:25:23.861 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 435.6572ms
+2024-11-05 21:25:23.862 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:25:23.863 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 2977.3483ms
+2024-11-05 21:25:28.981 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-05 21:25:28.983 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:25:28.984 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 2.4054ms
+2024-11-05 21:25:28.996 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 424
+2024-11-05 21:25:28.998 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:25:29.001 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:25:29.003 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 21:25:29.033 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-05 21:25:29.037 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 33.5188ms
+2024-11-05 21:25:29.038 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:25:29.045 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 48.766ms
+2024-11-05 21:27:35.074 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-05 21:27:35.078 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:27:35.079 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 5.1791ms
+2024-11-05 21:27:35.093 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/json 111
+2024-11-05 21:27:35.095 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:27:35.107 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:35.109 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 21:27:35.478 +11:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-05 21:27:35.483 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 371.2624ms
+2024-11-05 21:27:35.485 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:35.486 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 200 15 application/json; charset=utf-8 392.8731ms
+2024-11-05 21:27:41.962 +11:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - null null
+2024-11-05 21:27:41.963 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:27:41.964 +11:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5177/api/DematicCalculatorService/calculate - 204 null null 2.3797ms
+2024-11-05 21:27:41.992 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 424
+2024-11-05 21:27:41.994 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:27:42.009 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:42.010 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 21:27:42.012 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-05 21:27:42.271 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 259.6347ms
+2024-11-05 21:27:42.272 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:42.272 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 280.526ms
+2024-11-05 21:27:44.406 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 424
+2024-11-05 21:27:44.407 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:27:44.408 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:44.409 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 21:27:44.410 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-05 21:27:44.412 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.6683ms
+2024-11-05 21:27:44.412 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:44.413 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 7.543ms
+2024-11-05 21:27:45.498 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 424
+2024-11-05 21:27:45.499 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:27:45.504 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:45.504 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 21:27:45.505 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-05 21:27:45.507 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 1.8137ms
+2024-11-05 21:27:45.508 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:45.510 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 9.8411ms
+2024-11-05 21:27:46.364 +11:00 [INF] Request starting HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - application/xml 424
+2024-11-05 21:27:46.367 +11:00 [INF] CORS policy execution successful.
+2024-11-05 21:27:46.369 +11:00 [INF] Executing endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:46.370 +11:00 [INF] Route matched with {action = "Calculate", controller = "DematicCalculatorService"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(System.Object) on controller api.Controllers.DematicCalculatorServiceController (api).
+2024-11-05 21:27:46.372 +11:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-11-05 21:27:46.373 +11:00 [INF] Executed action api.Controllers.DematicCalculatorServiceController.Calculate (api) in 2.6654ms
+2024-11-05 21:27:46.374 +11:00 [INF] Executed endpoint 'api.Controllers.DematicCalculatorServiceController.Calculate (api)'
+2024-11-05 21:27:46.377 +11:00 [INF] Request finished HTTP/1.1 POST http://localhost:5177/api/DematicCalculatorService/calculate - 415 176 application/problem+json; charset=utf-8 10.4524ms
